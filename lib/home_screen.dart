@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:page_flip/page_flip.dart';
-import 'package:tsunzu/page.dart';
+
+import 'pages/pages.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
     Key? key,
@@ -20,9 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: PageFlipWidget(
         key: _controller,
         initialIndex: 0,
-        children: <Widget>[
-          for (var i = 0; i < 10; i++) DemoPage(page: i),
-        ],
+        children:pages,
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.looks_5_outlined),
