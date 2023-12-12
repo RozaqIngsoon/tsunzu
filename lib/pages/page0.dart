@@ -38,7 +38,7 @@ class Page0 extends StatelessWidget {
                   child: Text(
                     'Art of War\nTsun Zu',
                     style: GoogleFonts.merienda(
-                      textStyle: TextStyle(color: Colors.amber, fontSize: 65,fontWeight: FontWeight.bold),
+                      textStyle: TextStyle(color: Colors.yellow, fontSize: 65,fontWeight: FontWeight.bold),
                     ),
                     textAlign: TextAlign.center,
                   ),

@@ -49,12 +49,12 @@ class Page1 extends StatelessWidget {
                 children: [
                   Text('Daftar Isi',
                       style: GoogleFonts.merienda(
-                        textStyle: TextStyle(color: Colors.amber, fontSize: 20),
+                        textStyle: TextStyle(color: Colors.yellow, fontSize: 20),
                       )),
                   isi(
                       no: '1',
                       judul: 'Perencanaan',
-                      halaman: '01',
+                      halaman: '02',
                       lompatke: 2),
                 ],
               ),
