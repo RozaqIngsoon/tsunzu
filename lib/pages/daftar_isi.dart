@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tsunzu/pages/pages.dart';
 
 import '../home_screen.dart';
 
-class Page1 extends StatelessWidget {
-  const Page1({super.key});
+class DaftarIsi extends StatelessWidget {
+  const DaftarIsi({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,13 +49,23 @@ class Page1 extends StatelessWidget {
                 children: [
                   Text('Daftar Isi',
                       style: GoogleFonts.merienda(
-                        textStyle: TextStyle(color: Colors.yellow, fontSize: 20),
+                        textStyle: TextStyle(color: Colors.yellow, fontSize: 20,fontWeight: FontWeight.bold),
                       )),
                   isi(
                       no: '1',
                       judul: 'Perencanaan',
-                      halaman: '02',
-                      lompatke: 2),
+                      halaman: '0${pages.indexOf(page1_cover)}',
+                      lompatke: pages.indexOf(page1_cover),),
+                  isi(
+                    no: '2',
+                    judul: 'Peperangan',
+                    halaman: '0${pages.indexOf(page5_cover)}',
+                    lompatke: pages.indexOf(page5_cover),),
+                  isi(
+                    no: '3',
+                    judul: 'Strategi',
+                    halaman: '${pages.indexOf(page10_cover)}',
+                    lompatke: pages.indexOf(page10_cover),),
                 ],
               ),
             ))
