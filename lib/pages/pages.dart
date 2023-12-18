@@ -1,53 +1,68 @@
 import 'package:flutter/material.dart';
+import 'package:tsunzu/pages/bab1_4.dart';
+import 'package:tsunzu/pages/bab1_5.dart';
+import 'package:tsunzu/pages/bab2_5.dart';
+import 'package:tsunzu/pages/bab3_5.dart';
+import 'package:tsunzu/pages/bab3_6.dart';
 import 'package:tsunzu/pages/cover_depan.dart';
 import 'package:tsunzu/pages/daftar_isi.dart';
-import 'package:tsunzu/pages/page10_cover.dart';
-import 'package:tsunzu/pages/page11.dart';
-import 'package:tsunzu/pages/page12.dart';
-import 'package:tsunzu/pages/page13.dart';
-import 'package:tsunzu/pages/page14.dart';
-import 'package:tsunzu/pages/page1_cover.dart';
-import 'package:tsunzu/pages/page2.dart';
-import 'package:tsunzu/pages/page3.dart';
-import 'package:tsunzu/pages/page4.dart';
-import 'package:tsunzu/pages/page5_cover.dart';
-import 'package:tsunzu/pages/page6.dart';
-import 'package:tsunzu/pages/page7.dart';
-import 'package:tsunzu/pages/page8.dart';
-import 'package:tsunzu/pages/page9.dart';
+import 'package:tsunzu/pages/bab3_cover.dart';
+import 'package:tsunzu/pages/bab3_1.dart';
+import 'package:tsunzu/pages/bab3_2.dart';
+import 'package:tsunzu/pages/bab3_3.dart';
+import 'package:tsunzu/pages/bab3_4.dart';
+import 'package:tsunzu/pages/bab1_cover.dart';
+import 'package:tsunzu/pages/bab1_1.dart';
+import 'package:tsunzu/pages/bab1_2.dart';
+import 'package:tsunzu/pages/bab1_3.dart';
+import 'package:tsunzu/pages/bab2_cover.dart';
+import 'package:tsunzu/pages/bab2_1.dart';
+import 'package:tsunzu/pages/bab2_2.dart';
+import 'package:tsunzu/pages/bab2_3.dart';
+import 'package:tsunzu/pages/bab2_4.dart';
 
 var coverDepan = CoverDepan();
 var daftarIsi = DaftarIsi();
-Widget page1_cover = Page1();
-Widget page2 = Page2();
-Widget page3 = Page3();
-Widget page4 = Page4();
-Widget page5_cover = Page5();
-Widget page6 = Page6();
-Widget page7 = Page7();
-Widget page8 = Page8();
-Widget page9 = Page9();
-Widget page10_cover = Page10();
-Widget page11 = Page11();
-Widget page12 = Page12();
-Widget page13 = Page13();
-Widget page14 = Page14();
+Widget bab1_cover = BabSatuCover();
+Widget bab1_1 = BabSatu1();
+Widget bab1_2 = BabSatu2();
+Widget bab1_3 = BabSatu3();
+Widget bab1_4 = BabSatu4();
+Widget bab1_5 = BabSatu5();
+Widget bab2_cover = BabDuaCover();
+Widget bab2_1 = BabDua1();
+Widget bab2_2 = BabDua2();
+Widget bab2_3 = BabDua3();
+Widget bab2_4 = BabDua4();
+Widget bab2_5 = BabDua5();
+Widget bab3_cover = BabTigaCover();
+Widget bab3_1 = BabTiga1();
+Widget bab3_2 = BabTiga2();
+Widget bab3_3 = BabTiga3();
+Widget bab3_4 = BabTiga4();
+Widget bab3_5 = BabTiga5();
+Widget bab3_6 = BabTiga6();
 
 List<Widget> pages = [
   coverDepan,
   daftarIsi,
-  page1_cover,
-  page2,
-  page3,
-  page4,
-  page5_cover,
-  page6,
-  page7,
-  page8,
-  page9,
-  page10_cover,
-  page11,
-  page12,
-  page13,
-  page14
+  bab1_cover,
+  bab1_1,
+  bab1_2,
+  bab1_3,
+  bab1_4,
+  bab1_5,
+  bab2_cover,
+  bab2_1,
+  bab2_2,
+  bab2_3,
+  bab2_4,
+  bab2_5,
+  bab3_cover,
+  bab3_1,
+  bab3_2,
+  bab3_3,
+  bab3_4,
+  bab3_5,
+  bab3_6
 ];

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Page5 extends StatelessWidget {
-  const Page5({super.key});
+class BabTigaCover extends StatelessWidget {
+  const BabTigaCover({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,19 +27,19 @@ class Page5 extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Image.asset(
-                        'assets/no2.png',
+                        'assets/no3.png',
                         height: 120,
                         width: 120,
                       ),
                       Text(
-                        'Bab Dua',
+                        'Bab Tiga',
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                       SizedBox(
                         height: 50,
                       ),
                       Text(
-                        'Peperangan',
+                        'Strategi',
                         style: GoogleFonts.merienda(
                           textStyle: TextStyle(
                               color: Colors.yellow,
@@ -68,7 +68,7 @@ class Page5 extends StatelessWidget {
                   height: 150,
                   child: Center(
                     child: Text(
-                      '"Tidak ada contoh sebuah negara yang mendapat manfaat dari perang yang berkepanjangan"',
+                      '"Keunggulan strategi tertinggi terletak pada meruntuhkan perlawanan musuh tanpa harus bertempur"',
                       style: TextStyle(
                           fontSize: 19,
                           color: Colors.white,

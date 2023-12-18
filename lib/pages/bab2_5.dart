@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class Page9 extends StatelessWidget {
-  const Page9({super.key});
+class BabDua5 extends StatelessWidget {
+  const BabDua5({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +24,11 @@ class Page9 extends StatelessWidget {
             Expanded(child: Container(
               padding: EdgeInsets.only(top: 30,left: 8,right: 8,bottom: 8),
               color: Colors.white.withOpacity(0.5),
-              child: Markdown(
-                data: konten1,
+              child: MarkDownku(
+                teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:page9,bab: 'Peperangan',)
+            NoHalaman(pages: pages,itemOfPages:bab2_5,bab: 'Peperangan',)
           ],
         ),
       ),
@@ -35,7 +36,8 @@ class Page9 extends StatelessWidget {
   }
 }
 
-const String konten1 = '''
+const String teks = '''
+### Oleh karena itu, dalam pertempuran kereta, ketika sepuluh atau lebih kereta telah diambil, mereka yang pertama kali mengambilnya harus diberi imbalan. Bendera kita sendiri harus digantikan dengan bendera musuh, dan kereta-kereta itu harus dicampur dan digunakan bersama dengan kita. Para tentara yang ditangkap harus diperlakukan dengan baik dan tetap dipertahankan.
 ### Ini disebut dengan memanfaatkan musuh yang ditaklukkan untuk memperkuat kekuatan sendiri.
 ### Dalam perang, maka tujuan utama Anda haruslah kemenangan, bukan kampanye yang berkepanjangan.
 ### Dengan demikian dapat diketahui bahwa pemimpin pasukan adalah hakim atas nasib rakyat, orang yang menentukan apakah negara akan dalam keadaan damai atau dalam bahaya.

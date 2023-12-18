@@ -54,18 +54,18 @@ class DaftarIsi extends StatelessWidget {
                   isi(
                       no: '1',
                       judul: 'Perencanaan',
-                      halaman: '0${pages.indexOf(page1_cover)}',
-                      lompatke: pages.indexOf(page1_cover),),
+                      halaman: '0${pages.indexOf(bab1_cover)}',
+                      lompatke: pages.indexOf(bab1_cover),),
                   isi(
                     no: '2',
                     judul: 'Peperangan',
-                    halaman: '0${pages.indexOf(page5_cover)}',
-                    lompatke: pages.indexOf(page5_cover),),
+                    halaman: '0${pages.indexOf(bab2_cover)}',
+                    lompatke: pages.indexOf(bab2_cover),),
                   isi(
                     no: '3',
                     judul: 'Strategi',
-                    halaman: '${pages.indexOf(page10_cover)}',
-                    lompatke: pages.indexOf(page10_cover),),
+                    halaman: '${pages.indexOf(bab3_cover)}',
+                    lompatke: pages.indexOf(bab3_cover),),
                 ],
               ),
             ))
