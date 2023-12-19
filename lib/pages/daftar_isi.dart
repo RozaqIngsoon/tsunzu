@@ -17,11 +17,11 @@ class DaftarIsi extends StatelessWidget {
       return ListTile(
         leading: Text(
           no,
-          style: TextStyle(color: Colors.white, fontSize: 17),
+          style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.width / 20),
         ),
-        title: Text(judul, style: TextStyle(color: Colors.white, fontSize: 17)),
+        title: Text(judul, style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.width / 20)),
         trailing:
-            Text(halaman, style: TextStyle(color: Colors.white, fontSize: 17)),
+            Text(halaman, style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.width / 20)),
         onTap: () {
           controller.currentState?.goToPage(lompatke); //menggunakan index page
         },
@@ -49,7 +49,7 @@ class DaftarIsi extends StatelessWidget {
                 children: [
                   Text('Daftar Isi',
                       style: GoogleFonts.merienda(
-                        textStyle: TextStyle(color: Colors.yellow, fontSize: 20,fontWeight: FontWeight.bold),
+                        textStyle: TextStyle(color: Colors.yellow, fontSize: MediaQuery.of(context).size.width / 18,fontWeight: FontWeight.bold,letterSpacing: 1.0),
                       )),
                   isi(
                       no: '1',
