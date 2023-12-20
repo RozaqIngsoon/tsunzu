@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:tsunzu/shared/menu.dart';
 
 import '../shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
@@ -30,6 +31,8 @@ class BabTiga4 extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: menu(context),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
     );
   }
 }

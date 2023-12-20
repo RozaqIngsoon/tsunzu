@@ -24,10 +24,10 @@ class NoHalaman extends StatelessWidget {
             ' $bab',
             style: TextStyle(color: Colors.yellow, fontStyle: FontStyle.italic),
           ),
-          Icon(
-            Icons.menu_book,
-            color: Colors.amber,
-          ),
+          // Icon(
+          //   Icons.menu_book,
+          //   color: Colors.amber,
+          // ),
           Text(
             '${pages.indexOf(itemOfPages).toString().length < 2 ? "0${pages.indexOf(itemOfPages)}" : pages.indexOf(itemOfPages)} ',
             style: TextStyle(color: Colors.yellow, fontStyle: FontStyle.italic),

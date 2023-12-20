@@ -38,6 +38,10 @@ dependencies:
   page_flip: ^0.2.3
   flutter_markdown: ^0.6.18+2
   google_fonts: ^6.1.0
+  get: ^4.6.5
+  image_gallery_saver: ^2.0.3
+  share_plus: ^6.3.4
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:

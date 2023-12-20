@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:tsunzu/kontroller.dart';
 
 class LastPage extends StatelessWidget {
   const LastPage({super.key});
@@ -7,6 +9,7 @@ class LastPage extends StatelessWidget {
   Widget build(BuildContext context) {
     double lebar = double.infinity;
     double tinggi = double.infinity;
+    final kontrol = Get.find<Kontroller>();
     return Scaffold(
       body: Container(
         padding: EdgeInsets.all(8),
@@ -40,9 +43,7 @@ class LastPage extends StatelessWidget {
                   SizedBox(
                     height: 25,
                   ),
-                  Image.asset(
-                    'assets/ikon_app.png',
-                  ),
+                  Image.asset(kontrol.coverBuku),
                   SizedBox(
                     height: 25,
                   ),
