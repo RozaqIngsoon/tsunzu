@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:page_flip/page_flip.dart';
+import 'package:tsunzu/pages/lastPage.dart';
 
 import 'pages/pages.dart';
 
@@ -24,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: PageFlipWidget(
         key: controller,
         initialIndex: 0,
+        lastPage: LastPage(),
         children:pages,
       ),
     );

@@ -36,7 +36,7 @@ class CoverDepan extends StatelessWidget {
                 FittedBox(
                   fit: BoxFit.scaleDown,
                   child: Text(
-                    'Art of War\nTsun Zu',
+                    'Art of War\nSun Tzu',
                     style: GoogleFonts.merienda(
                       textStyle: TextStyle(color: Colors.yellow, fontSize: 65,fontWeight: FontWeight.bold),
                     ),
@@ -59,7 +59,7 @@ class CoverDepan extends StatelessWidget {
                 SizedBox(
                   height: 25,
                 ),
-                Text(' Tsun Zu : Tiongkok Klasik\n544 – 496 SM',
+                Text(' Sun Tzu : Tiongkok Klasik\n544 – 496 SM',
                     style: TextStyle(color: Colors.white),
                     textAlign: TextAlign.center),
                 SizedBox(

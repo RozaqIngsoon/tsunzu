@@ -38,7 +38,7 @@ class DaftarIsi extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              width: 50,
+              width: 25,
               color: Color(0xff1d2031),
             ),
             Expanded(
