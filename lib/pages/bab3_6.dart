@@ -35,7 +35,8 @@ class BabTiga6 extends StatelessWidget {
 }
 
 const String teks = '''
-### diintervensi oleh penguasa.
+### yang tidak siap.
+### 5. Dia akan menang bila memiliki kemampuan militer dan tidak diintervensi oleh penguasa.
 ### Maka ada pepatah: Jika Anda mengenal musuh dan mengenal diri sendiri, Anda tidak perlu takut terhadap hasil dari seratus pertempuran. Jika Anda mengenal diri sendiri tetapi tidak mengenal musuh, untuk setiap kemenangan yang didapat Anda juga akan menderita kekalahan. Jika Anda tidak mengenal baik musuh maupun diri sendiri, Anda akan tunduk dalam setiap pertempuran.
 
 ''';

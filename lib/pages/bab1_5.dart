@@ -37,7 +37,7 @@ class BabSatu5 extends StatelessWidget {
 }
 
 const String teks = '''
-### Serang dia di tempat yang tidak siap, muncul di tempat yang tidak diharapkan. 
+### agar dia menjadi sombong. Jika dia sedang bersantai, jangan beri dia istirahat. Jika pasukannya bersatu, pisahkan mereka. Serang dia di tempat yang tidak siap, muncul di tempat yang tidak diharapkan. 
 ### Taktik militer ini, yang mengarah pada kemenangan, tidak boleh diungkapkan sebelumnya. Sekarang, jenderal yang memenangkan pertempuran melakukan banyak perhitungan di tenda tempat pertempuran berlangsung. Jenderal yang kalah dalam pertempuran hanya melakukan sedikit perhitungan sebelumnya. Dengan demikian, banyak perhitungan mengarah pada kemenangan, dan sedikit perhitungan mengarah pada kekalahan; apalagi tidak ada perhitungan sama sekali.
 
 ''';

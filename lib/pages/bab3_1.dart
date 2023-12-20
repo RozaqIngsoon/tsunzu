@@ -40,6 +40,6 @@ const String teks = '''
 ## Bab 3 : STRATEGI
 ### Dalam seni perang, yang terbaik dari semuanya adalah merebut negara musuh secara utuh dan tak rusak; menghancurkannya bukanlah pilihan yang terbaik. Demikian juga, lebih baik merebut pasukan secara utuh daripada menghancurkannya, merebut resimen, pasukan kecil, atau kompi secara utuh.
 ### Oleh karena itu, berperang dan menaklukkan dalam semua pertempuran bukanlah keunggulan tertinggi; keunggulan tertinggi terletak pada meruntuhkan perlawanan musuh tanpa harus bertempur.
-### Dengan demikian, bentuk tertinggi kepemimpinan jenderal adalah menggagalkan rencana musuh; yang terbaik selanjutnya adalah mencegah penyatuan pasukan musuh; yang selanjutnya adalah menyerang pasukan musuh di medan; dan kebijakan terburuk dari semuanya 
+### Dengan demikian, bentuk tertinggi kepemimpinan jenderal adalah menggagalkan rencana musuh; yang terbaik selanjutnya adalah mencegah penyatuan pasukan musuh; yang selanjutnya adalah menyerang pasukan musuh di medan; dan 
 
 ''';

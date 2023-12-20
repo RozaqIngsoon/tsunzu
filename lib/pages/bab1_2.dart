@@ -42,5 +42,5 @@ const String teks = '''
 ### BUMI mencakup jarak, besar dan kecil; bahaya dan keamanan; tanah terbuka dan celah sempit; peluang hidup dan mati.
 ### KOMANDAN melambangkan pengutamaan kebijaksanaan, ketulusan, kebaikan hati, keberanian, dan ketegasan.
 ### Dengan METODE DAN DISIPLIN dimaksudkan pengaturan tentara dalam subdivisi yang sesuai, tingkatan pangkat di antara para perwira, pemeliharaan jalan-jalan agar pasokan dapat mencapai tentara, dan pengendalian pengeluaran militer.
-### Lima prinsip ini harus menjadi pengetahuan dasar setiap jenderal; siapa yang mengenalinya akan meraih
+### Lima prinsip ini harus menjadi pengetahuan dasar setiap jenderal; 
 ''';

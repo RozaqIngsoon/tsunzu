@@ -5,8 +5,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabSatu4 extends StatelessWidget {
-  const BabSatu4({super.key});
+class BabDua6 extends StatelessWidget {
+  const BabDua6({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class BabSatu4 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab1_4,bab: 'Perencanaan',)
+            NoHalaman(pages: pages,itemOfPages:bab2_6,bab: 'Peperangan',)
           ],
         ),
       ),
@@ -37,6 +37,6 @@ class BabSatu4 extends StatelessWidget {
 }
 
 const String teks = '''
-### baik dalam pemberian imbalan maupun hukuman?
-### Berdasarkan pada sejauh mana keadaan menguntungkan, seseorang sebaiknya memodifikasi rencananya. Semua perang didasarkan pada tipuan. Oleh karena itu, saat kita mampu menyerang, kita harus tampak tidak mampu; saat menggunakan kekuatan kita, kita harus tampak tidak aktif; saat kita berada dekat, kita harus membuat musuh percaya bahwa kita jauh; saat kita jauh, kita harus membuatnya percaya bahwa kita dekat. Tawarkan umpan untuk memikat musuh. Tertipu, dan hancurkan dia. Jika dia merasa aman di semua titik, bersiaplah untuk menghadapinya. Jika dia memiliki kekuatan yang lebih unggul, hindari dia. Jika lawan Anda memiliki sifat yang mudah marah, usahakan untuk mengiritasinya. Berpura-pura lemah,  
+### menentukan apakah negara akan dalam keadaan damai atau dalam bahaya.
+
 ''';

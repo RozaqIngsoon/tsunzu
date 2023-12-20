@@ -37,9 +37,9 @@ class BabDua5 extends StatelessWidget {
 }
 
 const String teks = '''
-### mendapatkan imbalan. Oleh karena itu, dalam pertempuran kendaraan, ketika sepuluh atau lebih kendaraan telah diambil, mereka yang pertama kali mengambilnya harus diberi imbalan. Bendera kita sendiri harus digantikan dengan bendera musuh, dan kendaraan-kendaraan itu harus dicampur dan digunakan bersama dengan kita. Para tentara yang ditangkap harus diperlakukan dengan baik dan tetap dipertahankan.
+### marah; agar ada keuntungan dari mengalahkan musuh, mereka harus mendapatkan imbalan. Oleh karena itu, dalam pertempuran kendaraan, ketika sepuluh atau lebih kendaraan telah diambil, mereka yang pertama kali mengambilnya harus diberi imbalan. Bendera kita sendiri harus digantikan dengan bendera musuh, dan kendaraan-kendaraan itu harus dicampur dan digunakan bersama dengan kita. Para tentara yang ditangkap harus diperlakukan dengan baik dan tetap dipertahankan.
 ### Ini disebut dengan memanfaatkan musuh yang ditaklukkan untuk memperkuat kekuatan sendiri.
 ### Dalam perang, maka tujuan utama Anda haruslah kemenangan, bukan kampanye yang berkepanjangan.
-### Dengan demikian dapat diketahui bahwa pemimpin pasukan adalah hakim atas nasib rakyat, orang yang menentukan apakah negara akan dalam keadaan damai atau dalam bahaya.
+### Dengan demikian dapat diketahui bahwa pemimpin pasukan adalah hakim atas nasib rakyat, orang yang
 
 ''';

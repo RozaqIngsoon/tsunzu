@@ -14,6 +14,7 @@ class NoHalaman extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 50,
       color: Color(0xff1d2031),
       padding: EdgeInsets.symmetric(vertical: 3),
       child: Row(

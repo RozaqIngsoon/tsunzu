@@ -37,9 +37,8 @@ class BabTiga3 extends StatelessWidget {
 }
 
 const String teks = '''
-### kerajaan mereka tanpa operasi yang berkepanjangan di medan perang.
+### merebut kota mereka tanpa mengepungnya; dia menggulingkan kerajaan mereka tanpa operasi yang berkepanjangan di medan perang.
 ### Dengan pasukannya tetap utuh, dia akan bersaing untuk memperebutkan penguasaan atas Kekaisaran, dan dengan demikian, tanpa kehilangan seorang pun, kemenangannya akan lengkap. Ini adalah metode menyerang dengan menggunakan strategi.
 ### Ini adalah aturan dalam perang, jika pasukan kita sepuluh kali lipat pasukan musuh, maka kita harus mengepungnya; jika lima kali lipat, kita harus menyerangnya; jika dua kali lipat jumlahnya, kita harus membagi pasukan kita menjadi dua bagian.
-### Jika jumlahnya seimbang, kita dapat menawarkan pertempuran; jika sedikit lebih rendah dalam jumlah, kita dapat menghindari musuh; jika sangat tidak seimbang dalam segala hal, kita dapat melarikan diri dari musuh.
-### Oleh karena itu, meskipun 
+### Jika jumlahnya seimbang, kita dapat menawarkan pertempuran; jika sedikit lebih rendah dalam jumlah, kita dapat menghindari musuh; jika sangat tidak seimbang dalam segala hal, kita dapat
 ''';

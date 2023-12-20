@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tsunzu/pages/bab1_4.dart';
 import 'package:tsunzu/pages/bab1_5.dart';
 import 'package:tsunzu/pages/bab2_5.dart';
+import 'package:tsunzu/pages/bab2_6.dart';
 import 'package:tsunzu/pages/bab3_5.dart';
 import 'package:tsunzu/pages/bab3_6.dart';
 import 'package:tsunzu/pages/cover_depan.dart';
@@ -35,6 +36,7 @@ Widget bab2_2 = BabDua2();
 Widget bab2_3 = BabDua3();
 Widget bab2_4 = BabDua4();
 Widget bab2_5 = BabDua5();
+Widget bab2_6 = BabDua6();
 Widget bab3_cover = BabTigaCover();
 Widget bab3_1 = BabTiga1();
 Widget bab3_2 = BabTiga2();
@@ -58,6 +60,7 @@ List<Widget> pages = [
   bab2_3,
   bab2_4,
   bab2_5,
+  bab2_6,
   bab3_cover,
   bab3_1,
   bab3_2,
