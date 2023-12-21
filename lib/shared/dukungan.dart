@@ -57,7 +57,7 @@ class _DukunganState extends State<Dukungan> {
                       ),
                       Divider(thickness: 1,),
                       Text(
-                        'Hai teman-teman, dukung kami supaya terus semangat mengembangkan app yang bermanfaat ya...',
+                        'Hai sobat, support ingsoon untuk terus mengembangkan app yang bermanfaat ya...',
                         style: TextStyle( color: Colors.white),textAlign: TextAlign.justify,
                       ),
                       Align(
@@ -102,7 +102,7 @@ class _DukunganState extends State<Dukungan> {
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.green,
                                 foregroundColor: Colors.white,
-                                shadowColor: Colors.greenAccent,
+                                shadowColor: Colors.white,
                                 elevation: 3,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10.0)),
@@ -117,7 +117,7 @@ class _DukunganState extends State<Dukungan> {
                       ),
                       ListTile(
                         subtitle: Text(
-                            'Kemudian scan qr "qris ingsoon" yang sudah ada di galeri hp menggunakan e-wallet / mobile banking kesayangan teman-teman.',
+                            'Kemudian scan qr "qris ingsoon" yang sudah ada di galeri hp menggunakan e-wallet / mobile banking kesayangan kamu.',
                             style: TextStyle(color: Colors.white)),
                       ),
                       SizedBox(

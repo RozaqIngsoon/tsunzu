@@ -23,7 +23,7 @@ class DaftarIsi extends StatelessWidget {
         trailing:
             Text(halaman, style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.width / 20)),
         onTap: () {
-          controller.currentState?.goToPage(lompatke); //menggunakan index page
+          controllerPageFlip.currentState?.goToPage(lompatke); //menggunakan index page
         },
       );
     }
