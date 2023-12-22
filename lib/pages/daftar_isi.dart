@@ -16,8 +16,8 @@ class DaftarIsi extends StatelessWidget {
         required int lompatke}) {
       return ListTile(
         leading: Text(
-          no,
-          style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.width / 20),
+          ' $no.',
+          style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.width / 20,backgroundColor: Color(0xff1d2031)),
         ),
         title: Text(judul, style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.width / 20)),
         trailing:
@@ -44,10 +44,10 @@ class DaftarIsi extends StatelessWidget {
             Expanded(
                 child: Container(
               padding:
-                  const EdgeInsets.only(top: 20, bottom: 8, left: 8, right: 8),
+                  const EdgeInsets.only(top: 20, bottom: 8, right: 8),
               child: ListView(
                 children: [
-                  Text('Daftar Isi',
+                  Text('  Daftar Isi',
                       style: GoogleFonts.merienda(
                         textStyle: TextStyle(color: Colors.yellow, fontSize: MediaQuery.of(context).size.width / 18,fontWeight: FontWeight.bold,letterSpacing: 1.0),
                       )),

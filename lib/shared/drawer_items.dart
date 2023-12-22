@@ -40,33 +40,7 @@ class _DrawerItemsState extends State<DrawerItems> {
               children: <Widget>[
                 drawerHeader,
                 ListTile(
-                  // title: const Text('Lompat ke halaman :'),
-                  title: TextField(
-                    controller: kontrol.editingController,
-                    keyboardType: TextInputType.number,
-                    decoration: const InputDecoration(
-                      labelText: 'Lompat ke halaman :',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                      ),
-                    ),
-                  ),
-                  trailing: IconButton(
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.blue,
-                    ),
-                    onPressed: () {
-                      print(kontrol.editingController.text);
-                        controllerPageFlip.currentState?.goToPage(int.parse(kontrol.editingController.text)); //menggunakan index page
-                        Navigator.pop(context);
-
-                    },
-                  ),
-                ),
-                const Divider(),
-                ListTile(
-                  title:  Text('Tandai halaman ini'),
+                  title:  Text('Tandai halaman ${controllerPageFlip.currentState!.pageNumber} ini'),
                   trailing: Icon(
                     Icons.bookmark,
                     color: Colors.blue,
@@ -79,7 +53,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                 ),
                 const Divider(),
                 ListTile(
-                  title:  Text('Halaman terahir ditandai : ${kontrol.bookmarkNo.value}'),
+                  title:  Text('Tanda terahir di halaman : ${kontrol.bookmarkNo.value}'),
                   trailing: Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.blue,
@@ -87,6 +61,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                   onTap: () {
                     controllerPageFlip.currentState?.goToPage(kontrol.bookmarkNo.value); //menggunakan index page
                     Navigator.pop(context);
+
                   },
                 ),
                 const Divider(),

@@ -7,7 +7,6 @@ class Kontroller extends GetxController{
   Color backgroundTerang = Colors.blueGrey;
   String bookmark = 'PAGE_BOOKMARK';//key di sharepreference
   String coverBuku = 'assets/ikon_app.png';
-  final TextEditingController editingController = TextEditingController();
   var bookmarkNo = 1000.obs;
 
   @override
