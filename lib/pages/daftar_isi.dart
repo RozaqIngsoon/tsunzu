@@ -70,6 +70,14 @@ class DaftarIsi extends StatelessWidget {
                         judul: 'Strategi',
                         halaman: '${pages.indexOf(bab3_cover)}',
                         lompatke: pages.indexOf(bab3_cover),),
+                      isi(
+                        judul: 'Taktik',
+                        halaman: '${pages.indexOf(bab4_cover)}',
+                        lompatke: pages.indexOf(bab4_cover),),
+                      isi(
+                        judul: 'Halaman Terahir',
+                        halaman: '${pages.indexOf(lastPage)}',
+                        lompatke: pages.indexOf(lastPage),),
                     ],
                   ),
                 ))

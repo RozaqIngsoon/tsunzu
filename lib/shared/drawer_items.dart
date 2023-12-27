@@ -4,6 +4,7 @@ import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tsunzu/home_screen.dart';
 import 'package:tsunzu/kontroller.dart';
+import 'package:tsunzu/pages/pages.dart';
 import 'dukungan.dart';
 
 class DrawerItems extends StatefulWidget {
@@ -72,7 +73,19 @@ class _DrawerItemsState extends State<DrawerItems> {
                     color: Colors.blue,
                   ),
                   onTap: () {
-                    controllerPageFlip.currentState?.goToPage(1); //menggunakan index page
+                    controllerPageFlip.currentState?.goToPage(pages.indexOf(daftarIsi)); //menggunakan index page
+                    Navigator.pop(context);
+                  },
+                ),
+                const Divider(),
+                ListTile(
+                  title: Text('Lompat ke halaman terahir'),
+                  trailing: Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.blue,
+                  ),
+                  onTap: () {
+                    controllerPageFlip.currentState?.goToPage(pages.indexOf(lastPage)); //menggunakan index page
                     Navigator.pop(context);
                   },
                 ),
