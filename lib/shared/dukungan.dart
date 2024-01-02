@@ -57,8 +57,8 @@ class _DukunganState extends State<Dukungan> {
                       ),
                       Divider(thickness: 1,),
                       Text(
-                        'Hai sobat, support ingsoon untuk terus mengembangkan app yang bermanfaat ya...',
-                        style: TextStyle( color: Colors.white),textAlign: TextAlign.justify,
+                        'Hai sobat, support ingsoon untuk terus berkarya membuat app yang bermanfaat ya...',
+                        style: TextStyle( color: Colors.white),textAlign: TextAlign.left,
                       ),
                       Align(
                         alignment: Alignment.bottomRight,

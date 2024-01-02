@@ -85,7 +85,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                     color: Colors.blue,
                   ),
                   onTap: () {
-                    controllerPageFlip.currentState?.goToPage(pages.indexOf(lastPage)); //menggunakan index page
+                    controllerPageFlip.currentState?.goToPage(pages.indexOf(bab5_6)+1); //menggunakan index page terahir + 1
                     Navigator.pop(context);
                   },
                 ),
