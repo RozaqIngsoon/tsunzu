@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:page_flip/page_flip.dart';
 import 'package:tsunzu/pages/pages.dart';
 
 import '../home_screen.dart';
@@ -59,25 +60,33 @@ class DaftarIsi extends StatelessWidget {
                                 letterSpacing: 1.0),
                           )),
                       isi(
-                        judul: 'Perencanaan',
+                        judul: '01. Perencanaan',
                         halaman: '0${pages.indexOf(bab1_cover)}',
                         lompatke: pages.indexOf(bab1_cover),),
                       isi(
-                        judul: 'Peperangan',
+                        judul: '02. Peperangan',
                         halaman: '0${pages.indexOf(bab2_cover)}',
                         lompatke: pages.indexOf(bab2_cover),),
                       isi(
-                        judul: 'Strategi',
+                        judul: '03. Strategi',
                         halaman: '${pages.indexOf(bab3_cover)}',
                         lompatke: pages.indexOf(bab3_cover),),
                       isi(
-                        judul: 'Taktik',
+                        judul: '04. Taktik',
                         halaman: '${pages.indexOf(bab4_cover)}',
                         lompatke: pages.indexOf(bab4_cover),),
                       isi(
-                        judul: 'Halaman Terahir',
-                        halaman: '${pages.indexOf(lastPage)}',
-                        lompatke: pages.indexOf(lastPage),),
+                        judul: '05. Energi',
+                        halaman: '${pages.indexOf(bab5_cover)}',
+                        lompatke: pages.indexOf(bab5_cover),),
+                      isi(
+                        judul: '06. Titik Lemah dan Kuat',
+                        halaman: '${pages.indexOf(bab6_cover)}',
+                        lompatke: pages.indexOf(bab6_cover),),
+                      isi(
+                        judul: 'Halaman Penutup',
+                        halaman: '${pages.indexOf(pages.last)}',
+                        lompatke: pages.indexOf(pages.last),),
                     ],
                   ),
                 ))
