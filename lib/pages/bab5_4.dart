@@ -29,12 +29,11 @@ class BabLima4 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab5_4,bab: 'Energi',)
+            NoHalaman(pages: pages,itemOfPages:bab5_4,bab: 'Energi',context: context)
           ],
         ),
       ),
-      floatingActionButton: menu(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
+
     );
   }
 }

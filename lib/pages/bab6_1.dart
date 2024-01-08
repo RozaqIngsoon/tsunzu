@@ -29,12 +29,11 @@ class BabEnam1 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab6_1,bab: 'Titik Lemah & Kuat',)
+            NoHalaman(pages: pages,itemOfPages:bab6_1,bab: 'Titik Lemah & Kuat',context: context)
           ],
         ),
       ),
-      floatingActionButton: menu(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
+
     );
   }
 }

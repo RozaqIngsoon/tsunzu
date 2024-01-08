@@ -32,13 +32,12 @@ class BabSatu1 extends StatelessWidget {
             NoHalaman(
               pages: pages,
               itemOfPages: bab1_1,
-              bab: 'Perencanaan',
+              bab: 'Perencanaan', context: context,
             )
           ],
         ),
       ),
-      floatingActionButton: menu(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
+
     );
   }
 }

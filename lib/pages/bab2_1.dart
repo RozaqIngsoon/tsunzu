@@ -28,12 +28,11 @@ class BabDua1 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab2_1,bab: 'Peperangan',)
+            NoHalaman(pages: pages,itemOfPages:bab2_1,bab: 'Peperangan',context: context)
           ],
         ),
       ),
-      floatingActionButton: menu(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
+
     );
   }
 }

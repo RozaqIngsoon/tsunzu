@@ -47,6 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: const Drawer(
         child: DrawerItems(),
       ),
+      drawerEnableOpenDragGesture: false,//mematikan swipe drawer
     );
   }
 }

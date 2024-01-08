@@ -27,12 +27,11 @@ class BabTiga6 extends StatelessWidget {
               color: Colors.white.withOpacity(0.5),
               child: MarkDownku(teksData:teks ,)
             )),
-            NoHalaman(pages: pages,itemOfPages:bab3_6,bab: 'Strategi',)
+            NoHalaman(pages: pages,itemOfPages:bab3_6,bab: 'Strategi',context: context)
           ],
         ),
       ),
-      floatingActionButton: menu(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
+
     );
   }
 }

@@ -42,19 +42,19 @@ class _DrawerItemsState extends State<DrawerItems> {
             child: ListView(
               children: <Widget>[
                 drawerHeader,
-                ListTile(
-                  title:  Text('Tandai halaman ${controllerPageFlip.currentState!.pageNumber} ini'),
-                  trailing: Icon(
-                    Icons.bookmark,
-                    color: Colors.blue,
-                  ),
-                  onTap: () {
-                    kontrol.setBookmark(controllerPageFlip.currentState!.pageNumber);
-                    kontrol.bookmarkNo.value = controllerPageFlip.currentState!.pageNumber;
-                    Navigator.pop(context);
-                  },
-                ),
-                const Divider(),
+                // ListTile(
+                //   title:  Text('Tandai halaman ${controllerPageFlip.currentState!.pageNumber} ini'),
+                //   trailing: Icon(
+                //     Icons.bookmark,
+                //     color: Colors.blue,
+                //   ),
+                //   onTap: () {
+                //     kontrol.setBookmark(controllerPageFlip.currentState!.pageNumber);
+                //     kontrol.bookmarkNo.value = controllerPageFlip.currentState!.pageNumber;
+                //     Navigator.pop(context);
+                //   },
+                // ),
+                // const Divider(),
                 ListTile(
                   title:  Text('Ke penanda halaman : ${kontrol.bookmarkNo.value}'),
                   trailing: Icon(
@@ -80,21 +80,21 @@ class _DrawerItemsState extends State<DrawerItems> {
                     Navigator.pop(context);
                   },
                 ),
-                // const Divider(),
-                // ListTile(
-                //   title: Text('Ke daftar isi'),
-                //   trailing: Icon(
-                //     Icons.arrow_forward_ios,
-                //     color: Colors.blue,
-                //   ),
-                //   onTap: () {
-                //     controllerPageFlip.currentState?.goToPage(pages.indexOf(daftarIsi)); //menggunakan index page
-                //     Navigator.pop(context);
-                //   },
-                // ),
                 const Divider(),
                 ListTile(
-                  title: Text('Penutup'),
+                  title: Text('Halaman sampul'),
+                  trailing: Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.blue,
+                  ),
+                  onTap: () {
+                    controllerPageFlip.currentState?.goToPage(pages.indexOf(coverDepan)); //menggunakan index page
+                    Navigator.pop(context);
+                  },
+                ),
+                const Divider(),
+                ListTile(
+                  title: Text('Halaman penutup'),
                   trailing: Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.blue,

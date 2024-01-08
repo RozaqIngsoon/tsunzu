@@ -6,13 +6,10 @@ Widget menu(BuildContext context){
     child: Container(
       width: 50,
       height: 50,
-      child: Align(
-        alignment: Alignment.topRight,
-        child: Icon(
-              Icons.menu_book, size: 22,
-              color: Color(0xff1d2031),
-            ),
-      ),
+      child: Icon(
+            Icons.menu_book, size: 22,
+            color: Colors.yellow,
+          ),
     ),
   );
 }

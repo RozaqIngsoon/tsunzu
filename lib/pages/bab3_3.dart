@@ -29,12 +29,11 @@ class BabTiga3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab3_3,bab: 'Strategi',)
+            NoHalaman(pages: pages,itemOfPages:bab3_3,bab: 'Strategi',context: context)
           ],
         ),
       ),
-      floatingActionButton: menu(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
+
     );
   }
 }

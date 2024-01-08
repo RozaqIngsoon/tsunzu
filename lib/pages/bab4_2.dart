@@ -29,12 +29,11 @@ class BabEmpat2 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab4_2,bab: 'Taktik',)
+            NoHalaman(pages: pages,itemOfPages:bab4_2,bab: 'Taktik',context: context)
           ],
         ),
       ),
-      floatingActionButton: menu(context),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
+
     );
   }
 }
