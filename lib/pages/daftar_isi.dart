@@ -83,10 +83,14 @@ class DaftarIsi extends StatelessWidget {
                         judul: '06. Titik Lemah dan Kuat',
                         halaman: '${pages.indexOf(bab6_cover)}',
                         lompatke: pages.indexOf(bab6_cover),),
-                      // isi(
-                      //   judul: 'Halaman Penutup',
-                      //   halaman: '${pages.indexOf(pages.last)}',
-                      //   lompatke: pages.indexOf(pages.last),),
+                      isi(
+                        judul: '07. Manuver',
+                        halaman: '${pages.indexOf(bab7_cover)}',
+                        lompatke: pages.indexOf(bab7_cover),),
+                      isi(
+                        judul: 'Halaman Penutup',
+                        halaman: '${pages.indexOf(pages.last)}',
+                        lompatke: pages.indexOf(pages.last),),
                     ],
                   ),
                 ))

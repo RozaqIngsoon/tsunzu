@@ -27,7 +27,7 @@ class LastPage extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(top: 30),
                 child: Text(
-                  'TAMAT',
+                  'SELESAI',
                   style: TextStyle(color: Colors.white,),
                 ),
               ),
