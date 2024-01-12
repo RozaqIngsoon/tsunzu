@@ -35,26 +35,12 @@ class _DrawerItemsState extends State<DrawerItems> {
         child: Image(image: AssetImage(kontrol.coverBuku)),
       ),
     );
-    return Scaffold(
-      body: Column(
+    return Column(
         children: [
           Expanded(
             child: ListView(
               children: <Widget>[
                 drawerHeader,
-                // ListTile(
-                //   title:  Text('Tandai halaman ${controllerPageFlip.currentState!.pageNumber} ini'),
-                //   trailing: Icon(
-                //     Icons.bookmark,
-                //     color: Colors.blue,
-                //   ),
-                //   onTap: () {
-                //     kontrol.setBookmark(controllerPageFlip.currentState!.pageNumber);
-                //     kontrol.bookmarkNo.value = controllerPageFlip.currentState!.pageNumber;
-                //     Navigator.pop(context);
-                //   },
-                // ),
-                // const Divider(),
                 ListTile(
                   title:  Text('Ke penanda halaman : ${kontrol.bookmarkNo.value}'),
                   trailing: Icon(
@@ -146,7 +132,6 @@ class _DrawerItemsState extends State<DrawerItems> {
           ),
 
         ],
-      ),
-    );
+      );
   }
 }

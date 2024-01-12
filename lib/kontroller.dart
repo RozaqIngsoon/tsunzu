@@ -44,19 +44,39 @@ class Kontroller extends GetxController {
     prefs.setInt(bookmark, hal);
   }
 
+  var isHalamanTerbaca =0.obs;
   tampilkanIklan() {
-    print('...........method iklan');
     var hal = controllerPageFlip.currentState?.pageNumber;
+    print('...........method iklan (halaman : $hal');
     List awalBab = [
-      pages.indexOf(bab1_1),
-      pages.indexOf(bab2_1),
-      pages.indexOf(bab3_1),
-      pages.indexOf(bab4_1),
-      pages.indexOf(bab5_1),
-      pages.indexOf(bab6_1)
+      pages.indexOf(bab1_cover),
+      pages.indexOf(bab2_cover),
+      pages.indexOf(bab3_cover),
+      pages.indexOf(bab4_cover),
+      pages.indexOf(bab5_cover),
+      pages.indexOf(bab6_cover),
+      pages.indexOf(bab7_cover),
+      pages.indexOf(bab8_cover),
     ];
-    if (awalBab.contains(hal)) {
-      print('...........iklan di tampilkan $hal');
+    // if (awalBab.contains(hal)) {
+    //   print('...........iklan di tampilkan $hal');
+    // }
+    //iklan ditampilkan bila telah membaca 3 halaman
+    if (isHalamanTerbaca.value >1 && isHalamanTerbaca.value%3 == 0) {
+      print('...........iklan di tampilkan setelah membaca 3 halaman');
     }
+    //dia anggap membaca bila halaman terbuka lebih dari 3 detik
+    if(hal! > 2 &&
+        hal >= isHalamanTerbaca.value){
+      Future.delayed(Duration(seconds: 3)).then((_) {
+        isHalamanTerbaca.value = isHalamanTerbaca.value+1;
+        print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');
+      });
+    }
+
+
+    // if(isHalamanTerbaca.value%4 == 0&& interstitialAd != null){
+    //   interstitialAd!.show();
+    // }
   }
 }

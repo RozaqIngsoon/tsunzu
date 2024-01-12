@@ -88,6 +88,10 @@ class DaftarIsi extends StatelessWidget {
                         halaman: '${pages.indexOf(bab7_cover)}',
                         lompatke: pages.indexOf(bab7_cover),),
                       isi(
+                        judul: '08. Variasi Taktik',
+                        halaman: '${pages.indexOf(bab8_cover)}',
+                        lompatke: pages.indexOf(bab8_cover),),
+                      isi(
                         judul: 'Halaman Penutup',
                         halaman: '${pages.indexOf(pages.last)}',
                         lompatke: pages.indexOf(pages.last),),
