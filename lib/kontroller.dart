@@ -43,34 +43,22 @@ class Kontroller extends GetxController {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt(bookmark, hal);
   }
-
+//atur iklan
+  Timer? _timer;
   var isHalamanTerbaca =0.obs;
   tampilkanIklan() {
+    _timer?.cancel();
     var hal = controllerPageFlip.currentState?.pageNumber;
     print('...........method iklan (halaman : $hal');
-    List awalBab = [
-      pages.indexOf(bab1_cover),
-      pages.indexOf(bab2_cover),
-      pages.indexOf(bab3_cover),
-      pages.indexOf(bab4_cover),
-      pages.indexOf(bab5_cover),
-      pages.indexOf(bab6_cover),
-      pages.indexOf(bab7_cover),
-      pages.indexOf(bab8_cover),
-    ];
-    // if (awalBab.contains(hal)) {
-    //   print('...........iklan di tampilkan $hal');
-    // }
     //iklan ditampilkan bila telah membaca 3 halaman
     if (isHalamanTerbaca.value >1 && isHalamanTerbaca.value%3 == 0) {
       print('...........iklan di tampilkan setelah membaca 3 halaman');
     }
-    //dia anggap membaca bila halaman terbuka lebih dari 3 detik
-    if(hal! > 2 &&
-        hal >= isHalamanTerbaca.value){
-      Future.delayed(Duration(seconds: 3)).then((_) {
-        isHalamanTerbaca.value = isHalamanTerbaca.value+1;
-        print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');
+    //dia anggap membaca bila halaman terbuka lebih dari 3 detik selain halaman cover depan & daftar isi
+    if(hal! > 2 ){
+      _timer = Timer(Duration(seconds: 3),(){
+          isHalamanTerbaca.value = isHalamanTerbaca.value+1;
+          print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');
       });
     }
 
