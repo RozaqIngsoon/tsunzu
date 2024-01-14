@@ -38,6 +38,10 @@ import 'package:tsunzu/pages/bab7_7.dart';
 import 'package:tsunzu/pages/bab7_8.dart';
 import 'package:tsunzu/pages/bab7_9.dart';
 import 'package:tsunzu/pages/bab7_cover.dart';
+import 'package:tsunzu/pages/bab8_1.dart';
+import 'package:tsunzu/pages/bab8_2.dart';
+import 'package:tsunzu/pages/bab8_3.dart';
+import 'package:tsunzu/pages/bab8_4.dart';
 import 'package:tsunzu/pages/bab8_cover.dart';
 import 'package:tsunzu/pages/cover_depan.dart';
 import 'package:tsunzu/pages/daftar_isi.dart';
@@ -115,6 +119,10 @@ Widget bab7_7 = BabTujuh7();
 Widget bab7_8 = BabTujuh8();
 Widget bab7_9 = BabTujuh9();
 Widget bab8_cover = BabDelapanCover();
+Widget bab8_1 = BabDelapan1();
+Widget bab8_2 = BabDelapan2();
+Widget bab8_3 = BabDelapan3();
+Widget bab8_4 = BabDelapan4();
 
 List<Widget> pages = [
   coverDepan,
@@ -172,5 +180,9 @@ List<Widget> pages = [
   bab7_7,
   bab7_8,
   bab7_9,
-  bab8_cover
+  bab8_cover,
+  bab8_1,
+  bab8_2,
+  bab8_3,
+  bab8_4
 ];
