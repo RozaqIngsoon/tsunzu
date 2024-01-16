@@ -92,6 +92,10 @@ class DaftarIsi extends StatelessWidget {
                         halaman: '${pages.indexOf(bab8_cover)}',
                         lompatke: pages.indexOf(bab8_cover),),
                       isi(
+                        judul: '09. Pergerakan Pasukan',
+                        halaman: '${pages.indexOf(bab9_cover)}',
+                        lompatke: pages.indexOf(bab9_cover),),
+                      isi(
                         judul: 'Halaman Penutup',
                         halaman: '${pages.indexOf(pages.last)}',
                         lompatke: pages.indexOf(pages.last),),

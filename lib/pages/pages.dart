@@ -43,6 +43,16 @@ import 'package:tsunzu/pages/bab8_2.dart';
 import 'package:tsunzu/pages/bab8_3.dart';
 import 'package:tsunzu/pages/bab8_4.dart';
 import 'package:tsunzu/pages/bab8_cover.dart';
+import 'package:tsunzu/pages/bab9_1.dart';
+import 'package:tsunzu/pages/bab9_10.dart';
+import 'package:tsunzu/pages/bab9_11.dart';
+import 'package:tsunzu/pages/bab9_2.dart';
+import 'package:tsunzu/pages/bab9_4.dart';
+import 'package:tsunzu/pages/bab9_6.dart';
+import 'package:tsunzu/pages/bab9_7.dart';
+import 'package:tsunzu/pages/bab9_8.dart';
+import 'package:tsunzu/pages/bab9_9.dart';
+import 'package:tsunzu/pages/bab9_cover.dart';
 import 'package:tsunzu/pages/cover_depan.dart';
 import 'package:tsunzu/pages/daftar_isi.dart';
 import 'package:tsunzu/pages/bab3_cover.dart';
@@ -60,6 +70,8 @@ import 'package:tsunzu/pages/bab2_2.dart';
 import 'package:tsunzu/pages/bab2_3.dart';
 import 'package:tsunzu/pages/bab2_4.dart';
 
+import 'bab9_3.dart';
+import 'bab9_5.dart';
 import 'lastPage.dart';
 
 var coverDepan = CoverDepan();
@@ -123,6 +135,18 @@ Widget bab8_1 = BabDelapan1();
 Widget bab8_2 = BabDelapan2();
 Widget bab8_3 = BabDelapan3();
 Widget bab8_4 = BabDelapan4();
+Widget bab9_cover = BabSembilanCover();
+Widget bab9_1 = BabSembilan1();
+Widget bab9_2 = BabSembilan2();
+Widget bab9_3 = BabSembilan3();
+Widget bab9_4 = BabSembilan4();
+Widget bab9_5 = BabSembilan5();
+Widget bab9_6 = BabSembilan6();
+Widget bab9_7 = BabSembilan7();
+Widget bab9_8 = BabSembilan8();
+Widget bab9_9 = BabSembilan9();
+Widget bab9_10 = BabSembilan10();
+Widget bab9_11 = BabSembilan11();
 
 List<Widget> pages = [
   coverDepan,
@@ -184,5 +208,17 @@ List<Widget> pages = [
   bab8_1,
   bab8_2,
   bab8_3,
-  bab8_4
+  bab8_4,
+  bab9_cover,
+  bab9_1,
+  bab9_2,
+  bab9_3,
+  bab9_4,
+  bab9_5,
+  bab9_6,
+  bab9_7,
+  bab9_8,
+  bab9_9,
+  bab9_10,
+  bab9_11
 ];

@@ -54,9 +54,9 @@ class Kontroller extends GetxController {
     if (isHalamanTerbaca.value >1 && isHalamanTerbaca.value%3 == 0) {
       print('...........iklan di tampilkan setelah membaca 3 halaman');
     }
-    //dianggap membaca bila halaman terbuka lebih dari 3 detik selain halaman cover depan & daftar isi
+    //dianggap membaca bila halaman terbuka lebih dari 5 detik selain halaman cover depan & daftar isi
     if(hal! > 2 ){
-      _timer = Timer(Duration(seconds: 3),(){
+      _timer = Timer(Duration(seconds: 5),(){
           isHalamanTerbaca.value = isHalamanTerbaca.value+1;
           print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');
       });
