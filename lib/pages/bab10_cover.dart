@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BabSembilanCover extends StatelessWidget {
-  const BabSembilanCover({super.key});
+class BabSepuluhCover extends StatelessWidget {
+  const BabSepuluhCover({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,19 +27,19 @@ class BabSembilanCover extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Image.asset(
-                        'assets/no9.png',
+                        'assets/no10.png',
                         height: 120,
                         width: 120,
                       ),
                       Text(
-                        'Bab Sembilan',
+                        'Bab Sepuluh',
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                       SizedBox(
                         height: 50,
                       ),
                       Text(
-                        'Pergerakan Pasukan',
+                        'Medan Pertempuran',
                         style: GoogleFonts.merienda(
                           textStyle: TextStyle(
                               color: Colors.yellow,
@@ -68,7 +68,7 @@ class BabSembilanCover extends StatelessWidget {
                   height: 150,
                   child: Center(
                     child: Text(
-                      '"Semua pasukan lebih suka tempat tinggi daripada rendah dan tempat yang terkena matahari daripada tempat yang gelap."',
+                      '"Jika pertempuran pasti akan menghasilkan kemenangan, maka Anda harus bertempur."',
                       style: TextStyle(
                           fontSize: 19,
                           color: Colors.white,

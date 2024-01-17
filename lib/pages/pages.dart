@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:tsunzu/pages/bab10_1.dart';
+import 'package:tsunzu/pages/bab10_10.dart';
+import 'package:tsunzu/pages/bab10_2.dart';
+import 'package:tsunzu/pages/bab10_3.dart';
+import 'package:tsunzu/pages/bab10_4.dart';
+import 'package:tsunzu/pages/bab10_5.dart';
+import 'package:tsunzu/pages/bab10_6.dart';
+import 'package:tsunzu/pages/bab10_7.dart';
+import 'package:tsunzu/pages/bab10_9.dart';
+import 'package:tsunzu/pages/bab10_cover.dart';
 import 'package:tsunzu/pages/bab1_4.dart';
 import 'package:tsunzu/pages/bab1_5.dart';
 import 'package:tsunzu/pages/bab2_5.dart';
@@ -70,6 +80,7 @@ import 'package:tsunzu/pages/bab2_2.dart';
 import 'package:tsunzu/pages/bab2_3.dart';
 import 'package:tsunzu/pages/bab2_4.dart';
 
+import 'bab10_8.dart';
 import 'bab9_3.dart';
 import 'bab9_5.dart';
 import 'lastPage.dart';
@@ -147,6 +158,17 @@ Widget bab9_8 = BabSembilan8();
 Widget bab9_9 = BabSembilan9();
 Widget bab9_10 = BabSembilan10();
 Widget bab9_11 = BabSembilan11();
+Widget bab10_cover = BabSepuluhCover();
+Widget bab10_1 = BabSepuluh1();
+Widget bab10_2 = BabSepuluh2();
+Widget bab10_3 = BabSepuluh3();
+Widget bab10_4 = BabSepuluh4();
+Widget bab10_5 = BabSepuluh5();
+Widget bab10_6 = BabSepuluh6();
+Widget bab10_7 = BabSepuluh7();
+Widget bab10_8 = BabSepuluh8();
+Widget bab10_9 = BabSepuluh9();
+Widget bab10_10 = BabSepuluh10();
 
 List<Widget> pages = [
   coverDepan,
@@ -220,5 +242,16 @@ List<Widget> pages = [
   bab9_8,
   bab9_9,
   bab9_10,
-  bab9_11
+  bab9_11,
+  bab10_cover,
+  bab10_1,
+  bab10_2,
+  bab10_3,
+  bab10_4,
+  bab10_5,
+  bab10_6,
+  bab10_7,
+  bab10_8,
+  bab10_9,
+  bab10_10
 ];
