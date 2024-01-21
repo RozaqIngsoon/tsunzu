@@ -80,6 +80,19 @@ class _DrawerItemsState extends State<DrawerItems> {
                 ),
                 const Divider(),
                 ListTile(
+                  title: Text('Halaman glossary'),
+                  subtitle: Text('daftar kata-kata atau istilah khusus'),
+                  trailing: Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.blue,
+                  ),
+                  onTap: () {
+                    controllerPageFlip.currentState?.goToPage(pages.indexOf(daftarIstilah));
+                    Navigator.pop(context);
+                  },
+                ),
+                const Divider(),
+                ListTile(
                   title: Text('Halaman penutup'),
                   trailing: Icon(
                     Icons.arrow_forward_ios,

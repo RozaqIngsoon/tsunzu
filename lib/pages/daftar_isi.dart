@@ -100,6 +100,14 @@ class DaftarIsi extends StatelessWidget {
                         halaman: '${pages.indexOf(bab10_cover)}',
                         lompatke: pages.indexOf(bab10_cover),),
                       isi(
+                        judul: '11. Sembilan Situasi',
+                        halaman: '${pages.indexOf(bab11_cover)}',
+                        lompatke: pages.indexOf(bab11_cover),),
+                      isi(
+                        judul: 'Daftar Istilah',
+                        halaman: '${pages.indexOf(daftarIstilah)}',
+                        lompatke: pages.indexOf(daftarIstilah),),
+                      isi(
                         judul: 'Halaman Penutup',
                         halaman: '${pages.indexOf(pages.last)}',
                         lompatke: pages.indexOf(pages.last),),

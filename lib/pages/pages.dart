@@ -9,6 +9,19 @@ import 'package:tsunzu/pages/bab10_6.dart';
 import 'package:tsunzu/pages/bab10_7.dart';
 import 'package:tsunzu/pages/bab10_9.dart';
 import 'package:tsunzu/pages/bab10_cover.dart';
+import 'package:tsunzu/pages/bab11_1.dart';
+import 'package:tsunzu/pages/bab11_10.dart';
+import 'package:tsunzu/pages/bab11_11.dart';
+import 'package:tsunzu/pages/bab11_12.dart';
+import 'package:tsunzu/pages/bab11_2.dart';
+import 'package:tsunzu/pages/bab11_3.dart';
+import 'package:tsunzu/pages/bab11_4.dart';
+import 'package:tsunzu/pages/bab11_5.dart';
+import 'package:tsunzu/pages/bab11_6.dart';
+import 'package:tsunzu/pages/bab11_7.dart';
+import 'package:tsunzu/pages/bab11_8.dart';
+import 'package:tsunzu/pages/bab11_9.dart';
+import 'package:tsunzu/pages/bab11_cover.dart';
 import 'package:tsunzu/pages/bab1_4.dart';
 import 'package:tsunzu/pages/bab1_5.dart';
 import 'package:tsunzu/pages/bab2_5.dart';
@@ -79,6 +92,7 @@ import 'package:tsunzu/pages/bab2_1.dart';
 import 'package:tsunzu/pages/bab2_2.dart';
 import 'package:tsunzu/pages/bab2_3.dart';
 import 'package:tsunzu/pages/bab2_4.dart';
+import 'package:tsunzu/pages/daftar_istilah.dart';
 
 import 'bab10_8.dart';
 import 'bab9_3.dart';
@@ -87,6 +101,7 @@ import 'lastPage.dart';
 
 var coverDepan = CoverDepan();
 var daftarIsi = DaftarIsi();
+var daftarIstilah = DaftarIstilah();
 var lastPage = LastPage();
 Widget bab1_cover = BabSatuCover();
 Widget bab1_1 = BabSatu1();
@@ -169,6 +184,19 @@ Widget bab10_7 = BabSepuluh7();
 Widget bab10_8 = BabSepuluh8();
 Widget bab10_9 = BabSepuluh9();
 Widget bab10_10 = BabSepuluh10();
+Widget bab11_cover = BabSebelasCover();
+Widget bab11_1 = BabSebelas1();
+Widget bab11_2 = BabSebelas2();
+Widget bab11_3 = BabSebelas3();
+Widget bab11_4 = BabSebelas4();
+Widget bab11_5 = BabSebelas5();
+Widget bab11_6 = BabSebelas6();
+Widget bab11_7 = BabSebelas7();
+Widget bab11_8 = BabSebelas8();
+Widget bab11_9 = BabSebelas9();
+Widget bab11_10 = BabSebelas10();
+Widget bab11_11 = BabSebelas11();
+Widget bab11_12 = BabSebelas12();
 
 List<Widget> pages = [
   coverDepan,
@@ -253,5 +281,14 @@ List<Widget> pages = [
   bab10_7,
   bab10_8,
   bab10_9,
-  bab10_10
+  bab10_10,
+  bab11_cover,
+  bab11_1,
+  bab11_2,
+  bab11_3,
+  bab11_4,
+  bab11_5,
+  bab11_6,
+  bab11_7,bab11_8,bab11_9,bab11_10,bab11_11,bab11_12,
+  daftarIstilah
 ];
