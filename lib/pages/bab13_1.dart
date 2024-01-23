@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabTigaBelas1 extends StatelessWidget {
+  const BabTigaBelas1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab13_1,bab: 'Penggunaan Mata-Mata',context: context)
           ],
         ),
       ),
@@ -39,10 +39,8 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+## Bab 13 : PENGGUNAAN MATA-MATA
+### Mengumpulkan pasukan sebanyak seratus ribu orang dan memerintahkan mereka untuk melakukan pergerakan jauh akan menyebabkan kerugian besar bagi rakyat dan menguras sumber daya negara. Pengeluaran harian akan mencapai seribu ons perak. Akan ada kekacauan di dalam negeri dan di luar negeri, dan orang-orang akan rebah kelelahan di jalan-jalan. Hingga tujuh ratus ribu keluarga akan terhambat dalam pekerjaan mereka.
+### Seseorang yang bertindak demikian bukanlah pemimpin pasukan, tidak ada bantuan yang berguna bagi pemerintahannya, dan bukanlah ahli kemenangan.
+### Dengan demikian, apa yang memungkinkan seorang penguasa bijak dan seorang jenderal yang baik
 ''';

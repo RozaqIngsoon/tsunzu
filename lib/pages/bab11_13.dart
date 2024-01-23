@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabSebelas13 extends StatelessWidget {
+  const BabSebelas13({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab11_13,bab: 'Sembilan Situasi',context: context)
           ],
         ),
       ),
@@ -39,10 +39,10 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### Oleh karena itu, di medan tumpang tindih, saya akan menginspirasi pasukan saya dengan tujuan bersatu. Di medan mudah, saya akan memastikan ada hubungan yang erat antara semua bagian dari pasukan saya.
+### Di medan pertentangan, saya akan mempercepat pasukan belakang saya.
+### Di medan terbuka, saya akan menjaga pertahanan saya dengan cermat. Di medan persimpangan jalan, saya akan mengkonsolidasikan aliansi saya.
+### Di medan serius, saya akan berusaha memastikan aliran pasokan yang berkelanjutan. Di medan sulit, saya akan terus maju di sepanjang jalan.
+### Di medan terkepung, saya akan menghalangi setiap jalan mundur. Di medan putus asa, saya akan memberi tahu para prajurit saya bahwa menyelamatkan nyawa mereka adalah hal yang mustahil.
+
 ''';

@@ -42,11 +42,11 @@ const String teks = '''
 ### pasukan sama, tidak mudah untuk memprovokasi pertempuran, dan berperang akan merugikan Anda.
 ### Ini adalah enam prinsip yang terkait dengan Bumi. Seorang jenderal yang telah mencapai posisi yang bertanggung jawab harus berhati-hati untuk mempelajarinya.
 ### Sekarang, pasukan dapat menghadapi enam bencana berbeda, bukan karena penyebab alami, tetapi karena kesalahan yang menjadi tanggung jawab jenderal. Yaitu: 
-1)	#### Melarikan diri. 
-2)	#### Perlawanan. 
-3)	#### Kecurangan. 
-4)	#### Kehancuran. 
-5)	#### Kekacauan. 
-6)	#### Kekalahan.
+1)	### Melarikan diri. 
+2)	### Perlawanan. 
+3)	### Kecurangan. 
+4)	### Kehancuran. 
+5)	### Kekacauan. 
+6)	### Kekalahan.
 ### Jika suatu pasukan dipaksakan melawan musuh yang berukuran sepuluh kali lipat, hasilnya akan
 ''';

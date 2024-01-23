@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabTigaBelas5 extends StatelessWidget {
+  const BabTigaBelas5({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab13_5,bab: 'Penggunaan Mata-Mata',context: context)
           ],
         ),
       ),
@@ -39,10 +39,9 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### seseorang tidak dapat memastikan kebenaran laporan mereka.
+### Bersikaplah halus! bersikaplah halus! dan gunakan mata-matamu untuk segala jenis bisnis.
+### Jika berita rahasia bocor oleh seorang mata-mata sebelum waktunya, dia harus dihukum mati bersama dengan orang yang menerima rahasia tersebut.
+### Baik itu untuk menghancurkan sebuah pasukan, menyerang sebuah kota, atau membunuh seorang individu, selalu penting untuk memulainya dengan mencari tahu nama-nama pengiring, ajudan, penjaga pintu, dan penjaga pangkalan dari jenderal yang berkuasa. Mata-mata kita harus diberi tugas untuk mencari tahu ini.
+### Mata-mata musuh yang datang untuk mengintai kita harus dicari, disogok dengan suap, diperalat, dan diakomodasi dengan nyaman. Dengan
 ''';

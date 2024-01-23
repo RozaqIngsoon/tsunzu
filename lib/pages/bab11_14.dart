@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabSebelas1 extends StatelessWidget {
-  const BabSebelas1({super.key});
+class BabSebelas14 extends StatelessWidget {
+  const BabSebelas14({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabSebelas1 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab11_1,bab: 'Sembilan Situasi',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab11_14,bab: 'Sembilan Situasi',context: context)
           ],
         ),
       ),
@@ -39,19 +39,9 @@ class BabSebelas1 extends StatelessWidget {
 }
 
 const String teks = '''
-## Bab 11 : SEMBILAN SITUASI
-### Seni perang mengenali sembilan variasi medan pertempuran: 
-1)	### Medan tumpang-tindih.
-2)	### Medan mudah.
-3)	### Medan pertentangan.
-4)	### Medan terbuka.
-5)	### Medan persimpangan jalan.
-6)	### Medan serius.
-7)	### Medan sulit.
-8)	### Medan terkepung.
-9)	### Medan putus asa.
-### Saat seorang pemimpin berperang di wilayahnya sendiri, itu dapat disebut sebagai medan pertempuran yang bersifat tumpang-tindih.
-### Ketika ia telah memasuki wilayah musuh, tetapi belum terlalu jauh, itu dapat dianggap sebagai medan pertempuran yang mudah.
-### Wilayah yang, jika dikuasai, akan
+### Karena sifat alami seorang prajurit adalah untuk memberikan perlawanan keras ketika ia dikelilingi, berjuang keras ketika ia tidak memiliki pilihan, dan taat dengan cepat ketika ia berada dalam bahaya.
+### Kita tidak dapat membentuk aliansi dengan raja-raja tetangga sampai kita akrab dengan maksud mereka. Kita tidak pantas memimpin sebuah pasukan dalam perjalanan kecuali kita terbiasa dengan wajah negara tersebut - gunung dan hutan, jebakan dan tebing, rawa dan lumpurannya. Kita tidak akan mampu mengambil keuntungan dari keadaan alam kecuali kita menggunakan pemandu lokal.
+### Mengabaikan salah satu dari empat atau lima prinsip berikut tidak sesuai bagi seorang raja yang berperang.
+### Ketika seorang raja yang berperang menyerang negara yang kuat, kepandaiannya terlihat dalam
 
 ''';

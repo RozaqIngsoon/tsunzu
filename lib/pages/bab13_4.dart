@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabTigaBelas4 extends StatelessWidget {
+  const BabTigaBelas4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab13_4,bab: 'Penggunaan Mata-Mata',context: context)
           ],
         ),
       ),
@@ -39,10 +39,11 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### dan membiarkan mata-mata kita mengetahuinya dan melaporkannya kepada musuh.
+### MATA-MATA YANG SELAMAT, akhirnya, adalah mereka yang membawa kembali berita dari kamp musuh.
+### Oleh karena itu, tidak ada seorang pun di seluruh pasukan yang memiliki hubungan lebih intim yang harus dipertahankan selain dengan mata-mata. Tidak seorang pun harus diberi penghargaan yang lebih besar. Tidak ada bisnis lain yang boleh menjaga kerahasiaan lebih besar.
+### Mata-mata tidak dapat digunakan dengan baik tanpa kecerdasan intuisi tertentu.
+### Mereka tidak dapat dikelola dengan baik tanpa kebaikan hati dan kejujuran.
+### Tanpa kecerdasan pikiran yang halus,
+
 ''';

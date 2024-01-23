@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabDuaBelas4 extends StatelessWidget {
+  const BabDuaBelas4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab12_4,bab: 'Serangan Dengan Api',context: context)
           ],
         ),
       ),
@@ -39,10 +39,10 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### bantuan untuk serangan memperoleh tambahan kekuatan.
+### Dengan menggunakan air, musuh dapat dihentikan, tetapi tidak dapat dirampas semua hartanya.
+### Sial-lah nasib seseorang yang mencoba memenangkan pertarungannya dan berhasil dalam serangannya tanpa memupuk semangat berusaha; karena hasilnya adalah pemborosan waktu dan stagnasi umum.
+### Maka ada pepatah: Penguasa yang bijaksana merencanakan segalanya dengan baik; jenderal yang baik mengembangkan sumber dayanya
+### Jangan bergerak kecuali jika Anda melihat keuntungan; jangan menggunakan pasukan Anda kecuali jika ada sesuatu yang bisa didapatkan; jangan bertempur kecuali jika posisinya kritis.
+
 ''';

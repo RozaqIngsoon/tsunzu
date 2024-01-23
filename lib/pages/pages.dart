@@ -13,6 +13,11 @@ import 'package:tsunzu/pages/bab11_1.dart';
 import 'package:tsunzu/pages/bab11_10.dart';
 import 'package:tsunzu/pages/bab11_11.dart';
 import 'package:tsunzu/pages/bab11_12.dart';
+import 'package:tsunzu/pages/bab11_14.dart';
+import 'package:tsunzu/pages/bab11_15.dart';
+import 'package:tsunzu/pages/bab11_16.dart';
+import 'package:tsunzu/pages/bab11_17.dart';
+import 'package:tsunzu/pages/bab11_18.dart';
 import 'package:tsunzu/pages/bab11_2.dart';
 import 'package:tsunzu/pages/bab11_3.dart';
 import 'package:tsunzu/pages/bab11_4.dart';
@@ -22,6 +27,18 @@ import 'package:tsunzu/pages/bab11_7.dart';
 import 'package:tsunzu/pages/bab11_8.dart';
 import 'package:tsunzu/pages/bab11_9.dart';
 import 'package:tsunzu/pages/bab11_cover.dart';
+import 'package:tsunzu/pages/bab12_2.dart';
+import 'package:tsunzu/pages/bab12_3.dart';
+import 'package:tsunzu/pages/bab12_4.dart';
+import 'package:tsunzu/pages/bab12_5.dart';
+import 'package:tsunzu/pages/bab12_6.dart';
+import 'package:tsunzu/pages/bab12_cover.dart';
+import 'package:tsunzu/pages/bab13_2.dart';
+import 'package:tsunzu/pages/bab13_3.dart';
+import 'package:tsunzu/pages/bab13_4.dart';
+import 'package:tsunzu/pages/bab13_5.dart';
+import 'package:tsunzu/pages/bab13_6.dart';
+import 'package:tsunzu/pages/bab13_7.dart';
 import 'package:tsunzu/pages/bab1_4.dart';
 import 'package:tsunzu/pages/bab1_5.dart';
 import 'package:tsunzu/pages/bab2_5.dart';
@@ -95,6 +112,10 @@ import 'package:tsunzu/pages/bab2_4.dart';
 import 'package:tsunzu/pages/daftar_istilah.dart';
 
 import 'bab10_8.dart';
+import 'bab11_13.dart';
+import 'bab12_1.dart';
+import 'bab13_1.dart';
+import 'bab13_cover.dart';
 import 'bab9_3.dart';
 import 'bab9_5.dart';
 import 'lastPage.dart';
@@ -197,6 +218,27 @@ Widget bab11_9 = BabSebelas9();
 Widget bab11_10 = BabSebelas10();
 Widget bab11_11 = BabSebelas11();
 Widget bab11_12 = BabSebelas12();
+Widget bab11_13 = BabSebelas13();
+Widget bab11_14 = BabSebelas14();
+Widget bab11_15 = BabSebelas15();
+Widget bab11_16 = BabSebelas16();
+Widget bab11_17 = BabSebelas17();
+Widget bab11_18 = BabSebelas18();
+Widget bab12_cover = BabDuaBelasCover();
+Widget bab12_1 = BabDuaBelas1();
+Widget bab12_2 = BabDuaBelas2();
+Widget bab12_3 = BabDuaBelas3();
+Widget bab12_4 = BabDuaBelas4();
+Widget bab12_5 = BabDuaBelas5();
+Widget bab12_6 = BabDuaBelas6();
+Widget bab13_cover = BabTigaBelasCover();
+Widget bab13_1 = BabTigaBelas1();
+Widget bab13_2 = BabTigaBelas2();
+Widget bab13_3 = BabTigaBelas3();
+Widget bab13_4 = BabTigaBelas4();
+Widget bab13_5 = BabTigaBelas5();
+Widget bab13_6 = BabTigaBelas6();
+Widget bab13_7 = BabTigaBelas7();
 
 List<Widget> pages = [
   coverDepan,
@@ -289,6 +331,8 @@ List<Widget> pages = [
   bab11_4,
   bab11_5,
   bab11_6,
-  bab11_7,bab11_8,bab11_9,bab11_10,bab11_11,bab11_12,
+  bab11_7,bab11_8,bab11_9,bab11_10,bab11_11,bab11_12,bab11_13,bab11_14,bab11_15,bab11_16,bab11_17,bab11_18,
+  bab12_cover,bab12_1,bab12_2,bab12_3,bab12_4,bab12_5,bab12_6,
+  bab13_cover,bab13_1,bab13_2,bab13_3,bab13_4,bab13_5,bab13_6,bab13_7,
   daftarIstilah
 ];

@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabDuaBelas2 extends StatelessWidget {
+  const BabDuaBelas2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab12_2,bab: 'Serangan Dengan Api',context: context)
           ],
         ),
       ),
@@ -39,10 +39,11 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### dalam konstelasi Sieve, Wall, Wing, atau Cross-bar; karena empat ini semua adalah hari-hari angin yang naik.
+### Dalam menyerang dengan api, seseorang harus siap menghadapi lima perkembangan yang mungkin terjadi:
+1)	### Ketika kebakaran terjadi di dalam perkemahan musuh, segera bertindak dengan serangan dari luar.
+2)	### Jika terjadi kebakaran tetapi pasukan musuh tetap tenang, tunggu dan jangan menyerang.
+3)	### Saat kekuatan api mencapai puncaknya, lanjutkan dengan serangan jika memungkinkan; jika tidak, tetaplah di tempat Anda.
+4)	### Jika memungkinkan untuk melancarkan serangan dengan api dari luar, jangan menunggu hingga terjadi api di dalam, melainkan
+
 ''';

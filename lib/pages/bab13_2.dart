@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabTigaBelas2 extends StatelessWidget {
+  const BabTigaBelas2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab13_2,bab: 'Penggunaan Mata-Mata',context: context)
           ],
         ),
       ),
@@ -39,10 +39,14 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### untuk menyerang dan menaklukkan, serta mencapai hal-hal yang di luar jangkauan orang biasa, adalah PENGETAHUAN AWAL.
+### Pengetahuan awal ini tidak bisa diambil dari roh; tidak bisa diperoleh secara induktif dari pengalaman, atau dengan perhitungan deduktif apa pun.
+### Pengetahuan tentang disposisi musuh hanya dapat diperoleh dari orang lain.
+### Oleh karena itu, penggunaan mata-mata, yang terbagi menjadi lima kelas: 
+1) ### Mata-mata lokal; 
+2) ### Mata-mata internal;
+3) ### Mata-mata yang terkonversi; 
+4) ### Mata-mata yang berkorban; 
+5) ### Mata-mata yang selamat.
+### Ketika kelima jenis mata-mata ini semua bekerja, tidak ada yang bisa menemukan sistem rahasia itu. Ini disebut "manipulasi ilahi dari benang-
 ''';

@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabSebelas16 extends StatelessWidget {
+  const BabSebelas16({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab11_16,bab: 'Sembilan Situasi',context: context)
           ],
         ),
       ),
@@ -39,10 +39,10 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### biarkan mereka mengetahui rancangan Anda. Ketika situasinya cerah, tunjukkan itu di hadapan mata mereka; tetapi jangan memberi tahu mereka apa pun ketika situasinya suram.
+### Letakkan pasukan Anda dalam bahaya maut, dan mereka akan bertahan; jatuhkan mereka ke dalam kesulitan yang putus asa, dan mereka akan selamat.
+### Karena justru ketika sebuah pasukan telah terjebak dalam bahaya, itulah saatnya mereka memiliki potensi untuk memberikan pukulan demi kemenangan.
+### Keberhasilan dalam perang dicapai dengan hati-hati menyesuaikan diri kita dengan tujuan musuh.
+### Dengan terus-menerus mengikuti sisi musuh, kita akan berhasil pada akhirnya membunuh panglima tertingginya.
+
 ''';

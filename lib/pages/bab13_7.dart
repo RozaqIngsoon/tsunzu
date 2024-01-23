@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabTigaBelas7 extends StatelessWidget {
+  const BabTigaBelas7({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab13_7,bab: 'Penggunaan Mata-Mata',context: context)
           ],
         ),
       ),
@@ -39,10 +39,7 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### Dahulu, kebangkitan dinasti Yin disebabkan oleh I Chih yang pernah melayani di bawah Dinasti Hsia. Demikian juga, kebangkitan dinasti Chou disebabkan oleh Lu Ya yang pernah melayani di bawah Dinasti Yin.
+###	Oleh karena itu, hanya penguasa yang bijaksana dan jenderal yang cerdas yang akan menggunakan kecerdasan tertinggi dari pasukan untuk tujuan penyusupan dan dengan demikian mereka mencapai hasil yang besar. Mata-mata adalah elemen yang paling penting dalam perang, karena kemampuan pasukan untuk bergerak bergantung pada mereka.
+
 ''';

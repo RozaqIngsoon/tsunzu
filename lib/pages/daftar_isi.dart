@@ -104,6 +104,14 @@ class DaftarIsi extends StatelessWidget {
                         halaman: '${pages.indexOf(bab11_cover)}',
                         lompatke: pages.indexOf(bab11_cover),),
                       isi(
+                        judul: '12. Serangan Dengan Api',
+                        halaman: '${pages.indexOf(bab12_cover)}',
+                        lompatke: pages.indexOf(bab12_cover),),
+                      isi(
+                        judul: '13. Penggunaan Mata-Mata',
+                        halaman: '${pages.indexOf(bab13_cover)}',
+                        lompatke: pages.indexOf(bab13_cover),),
+                      isi(
                         judul: 'Daftar Istilah',
                         halaman: '${pages.indexOf(daftarIstilah)}',
                         lompatke: pages.indexOf(daftarIstilah),),

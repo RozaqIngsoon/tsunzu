@@ -41,12 +41,12 @@ class BabSepuluh1 extends StatelessWidget {
 const String teks = '''
 ## Bab 10 : MEDAN PERTEMPURAN
 ### Kita dapat membedakan enam jenis medan, yaitu: 
-1)	#### Medan yang dapat diakses.
-2)	#### Medan yang rumit.
-3)	#### Medan yang memungkinkan penundaan.
-4)	#### Medan jalur sempit. 
-5)	#### Medan ketinggian curam. 
-6)	#### Posisi yang jauh dari musuh.
+1)	### Medan yang dapat diakses.
+2)	### Medan yang rumit.
+3)	### Medan yang memungkinkan penundaan.
+4)	### Medan jalur sempit. 
+5)	### Medan ketinggian curam. 
+6)	### Posisi yang jauh dari musuh.
 ### Tanah yang dapat dilewati dengan bebas oleh kedua belah pihak disebut “Medan yang dapat diakses”.
 ### Terkait dengan tanah yang memiliki sifat seperti ini, berada di depan musuh dalam menduduki tempat-tempat yang tinggi dan terkena sinar matahari, serta jagalah dengan baik jalur pasokan Anda. Dengan begitu, Anda akan dapat bertempur dengan keunggulan.
 

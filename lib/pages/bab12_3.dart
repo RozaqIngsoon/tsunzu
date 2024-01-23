@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabDuaBelas3 extends StatelessWidget {
+  const BabDuaBelas3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab12_3,bab: 'Serangan Dengan Api',context: context)
           ],
         ),
       ),
@@ -39,10 +39,10 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+4)	### Jika memungkinkan untuk melancarkan serangan dengan api dari luar, jangan menunggu hingga terjadi api di dalam, melainkan lakukan serangan saat momen yang menguntungkan.
+5)	### Saat Anda melancarkan serangan dengan api, arahkan ke arah angin. Jangan menyerang dari sisi yang lain.
+### Angin yang muncul pada siang hari akan berlangsung lama, tetapi angin malam biasanya akan mereda dengan cepat.
+### Dalam setiap pasukan, kelima perkembangan terkait dengan api harus diketahui, gerakan bintang harus dihitung, dan perhatian harus dijaga terhadap hari-hari yang sesuai.
+### Maka mereka yang menggunakan api sebagai bantuan untuk serangan menunjukkan kecerdasan; mereka yang menggunakan air sebagai
+
 ''';

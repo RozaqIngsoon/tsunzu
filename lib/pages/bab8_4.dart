@@ -39,8 +39,8 @@ class BabDelapan4 extends StatelessWidget {
 }
 
 const String teks = '''
-4)	#### kehormatan yang lembut yang sensitif terhadap rasa malu;
-5)	#### kelebihan kepedulian terhadap anak buahnya, yang membuatnya rentan terhadap kekhawatiran dan masalah.
+4)	### kehormatan yang lembut yang sensitif terhadap rasa malu;
+5)	### kelebihan kepedulian terhadap anak buahnya, yang membuatnya rentan terhadap kekhawatiran dan masalah.
 ### Ini adalah lima dosa utama seorang jenderal, yang merusak dalam mengatur perang.
 ### Ketika sebuah pasukan dikalahkan dan pemimpinnya tewas, penyebabnya pasti akan ditemukan di antara kelima dosa berbahaya ini. Jadikanlah mereka sebagai objek meditasi.
 

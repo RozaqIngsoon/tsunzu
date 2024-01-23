@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabTigaBelas3 extends StatelessWidget {
+  const BabTigaBelas3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab13_3,bab: 'Penggunaan Mata-Mata',context: context)
           ],
         ),
       ),
@@ -39,10 +39,10 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### benang." Ini adalah kemampuan yang paling berharga bagi seorang penguasa.
+### Menggunakan MATA-MATA LOKAL berarti mempekerjakan jasa penduduk dari suatu wilayah.
+### Menggunakan MATA-MATA INTERNAL, menggunakan pejabat-pejabat dari pihak musuh.
+### Menggunakan MATA-MATA YANG TERKONVERSI, mendapatkan mata-mata musuh dan menggunakannya untuk kepentingan kita sendiri.
+### Menggunakan MATA-MATA YANG SUDAH DITAKDIRKAN, melakukan beberapa hal secara terbuka untuk tujuan tipuan, dan membiarkan mata-mata kita mengetahuinya dan melaporkannya kepada musuh.
+### Menggunakan MATA-MATA YANG BERKORBAN, melakukan beberapa hal secara terbuka untuk tujuan tipuan,
 ''';

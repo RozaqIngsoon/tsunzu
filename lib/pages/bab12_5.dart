@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabDuaBelas5 extends StatelessWidget {
+  const BabDuaBelas5({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab12_5,bab: 'Serangan Dengan Api',context: context)
           ],
         ),
       ),
@@ -39,10 +39,10 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### Tidak seorang penguasa pun seharusnya mengirim pasukan ke medan perang hanya untuk memuaskan kemarahan pribadinya; tidak seorang jenderal pun seharusnya memerangi sebuah pertempuran hanya karena kekesalannya.
+### Jika itu menguntungkan bagi Anda, lakukan langkah maju; jika tidak, tetaplah di tempat Anda berada.
+### Kemarahan bisa berubah menjadi kebahagiaan seiring waktu; kekesalan bisa digantikan oleh kepuasan.
+### Namun, sebuah kerajaan yang telah hancur tidak akan bisa bangkit kembali; begitu juga orang yang telah mati tidak dapat dihidupkan kembali.
+### Oleh karena itu, penguasa yang bijaksana adalah orang yang penuh perhaitan, dan jenderal yang baik penuh kewaspadaan. Inilah cara untuk menjaga perdamaian di sebuah
+
 ''';

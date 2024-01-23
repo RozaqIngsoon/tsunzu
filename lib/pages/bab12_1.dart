@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabDuaBelas1 extends StatelessWidget {
+  const BabDuaBelas1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab12_1,bab: 'Serangan Dengan Api',context: context)
           ],
         ),
       ),
@@ -39,10 +39,10 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+## Bab 12 : SERANGAN DENGAN API
+### Ada lima cara untuk menyerang dengan menggunakan api. Cara pertama adalah membakar pasukan di dalam kamp mereka; cara kedua adalah membakar persediaan; cara ketiga adalah membakar konvoi bagasi; cara keempat adalah membakar gudang senjata dan penyimpanan amunisi; cara kelima adalah melemparkan api jatuh di tengah musuh.
+### Untuk melaksanakan serangan dengan api, kita harus memiliki sarana yang tersedia. Bahan untuk membuat api sebaiknya selalu siap digunakan.
+### Ada musim yang tepat untuk melancarkan serangan dengan api, dan hari-hari khusus untuk memulai kebakaran.
+### Musim yang tepat adalah saat cuacanya sangat kering; hari-hari khusus adalah saat bulan berada
+
 ''';

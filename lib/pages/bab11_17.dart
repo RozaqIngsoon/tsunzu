@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabDelapan3 extends StatelessWidget {
-  const BabDelapan3({super.key});
+class BabSebelas17 extends StatelessWidget {
+  const BabSebelas17({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabDelapan3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_3,bab: 'Variasi Taktik',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab11_17,bab: 'Sembilan Situasi',context: context)
           ],
         ),
       ),
@@ -39,10 +39,12 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
-### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+### Ini disebut kemampuan untuk mencapai suatu hal dengan kecerdikan semata.
+### Pada hari Anda mengambil komando, blokir jalur perbatasan, hancurkan catatan resmi, dan hentikan perjalanan para utusan.
+### Berdikarilah di ruang dewan, agar Anda dapat mengendalikan situasi.
+### Jika musuh meninggalkan pintu terbuka, Anda harus segera masuk.
+### Mengalahkan lawan Anda dengan merebut apa yang dia sayangi, dan dengan bijaksana merencanakan waktu kedatangannya di medan perang.
+### Berjalanlah sesuai dengan aturan yang telah ditetapkan, dan sesuaikan diri dengan musuh sampai Anda dapat melancarkan pertempuran yang menentukan.
+### Pada awalnya, tunjukkan sikap malu-
+
 ''';
