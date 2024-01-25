@@ -41,7 +41,7 @@ class BabDelapan1 extends StatelessWidget {
 const String teks = '''
 ## Bab 8 : VARIASI TAKTIK
 ### Dalam perang, seorang jenderal menerima perintahnya dari penguasa, mengumpulkan pasukannya, dan memusatkan pasukannya.
-### Ketika berada di daerah sulit, jangan berkemah. Di daerah yang memiliki persimpangan jalan utama, berkolaborasilah dengan sekutu-sekutu Anda. Jangan berlama-lama di posisi yang terlalu terpencil dan berbahaya. Di situasi yang sulit, Anda harus menggunakan tipu daya. Di posisi yang putus asa, Anda harus bertempur.
+### Ketika berada di daerah sulit, jangan berkemah. Di daerah yang memiliki persimpangan jalan utama, berkolaborasilah dengan sekutu-sekutu kamu. Jangan berlama-lama di posisi yang terlalu terpencil dan berbahaya. Di situasi yang sulit, kamu harus menggunakan tipu daya. Di posisi yang putus asa, kamu harus bertempur.
 ### Ada jalan yang tidak boleh diikuti, pasukan yang tidak boleh diserang, kota yang tidak boleh dikepung, posisi yang tidak boleh diperdebatkan, perintah dari penguasa yang tidak harus ditaati.
 ### Jenderal yang benar-benar memahami keuntungan yang menyertai variasi 
 ''';

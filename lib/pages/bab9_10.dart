@@ -40,7 +40,7 @@ class BabSembilan10 extends StatelessWidget {
 
 const String teks = '''
 ### langkah-langkah berjaga-jaga dan meremehkan lawan-lawan mereka pasti akan ditangkap oleh mereka.
-### Jika para prajurit dihukum sebelum mereka memiliki rasa keterikatan dengan Anda, mereka tidak akan tunduk; dan, jika mereka tidak tunduk, maka mereka akan menjadi tidak berguna. Namun, jika ketika para prajurit sudah memiliki keterikatan dengan Anda, hukuman-hukuman tidak diberlakukan, mereka juga akan menjadi tidak berguna.
+### Jika para prajurit dihukum sebelum mereka memiliki rasa keterikatan dengan kamu, mereka tidak akan tunduk; dan, jika mereka tidak tunduk, maka mereka akan menjadi tidak berguna. Namun, jika ketika para prajurit sudah memiliki keterikatan dengan kamu, hukuman-hukuman tidak diberlakukan, mereka juga akan menjadi tidak berguna.
 ### Oleh karena itu, prajurit harus diperlakukan dengan kemanusiaan pada awalnya, tetapi tetap dalam kendali melalui disiplin yang ketat. Ini adalah jalan pasti menuju kemenangan.
 ### PP.	Jika dalam melatih prajurit, perintah-perintah secara konsisten ditegakkan, tentara akan memiliki disiplin yang baik; jika tidak,
 

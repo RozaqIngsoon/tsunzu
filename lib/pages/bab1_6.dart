@@ -6,8 +6,8 @@ import 'package:tsunzu/shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 import 'pages.dart';
 
-class BabEnam8 extends StatelessWidget {
-  const BabEnam8({super.key});
+class BabSatu6 extends StatelessWidget {
+  const BabSatu6({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class BabEnam8 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab6_8,bab: 'Titik Lemah & Kuat',context: context)
+            NoHalaman(pages: pages,itemOfPages:bab1_6,bab: 'Perencanaan',context: context)
           ],
         ),
       ),
@@ -39,11 +39,7 @@ class BabEnam8 extends StatelessWidget {
 }
 
 const String teks = '''
-### Jangan mengulangi taktik yang telah memberi kamu satu kemenangan, tetapi biarkan metode kamu diatur oleh berbagai macam situasi yang tak terbatas.
-### Taktik militer ibarat air; karena air dalam aliran alaminya menjauhi tempat tinggi dan bergerak cepat ke bawah.
-### Jadi dalam perang, cara yang tepat adalah menghindari yang kuat dan menyerang yang lemah.
-### Air membentuk jalannya sesuai dengan alam tanah tempatnya mengalir; seorang prajurit meraih kemenangannya sesuai dengan musuh yang dihadapinya.
-### Oleh karena itu, sama seperti air tidak memiliki bentuk yang tetap, demikian pula dalam peperangan tidak ada kondisi yang tetap.
-### Mereka yang dapat mengubah taktik
+### menciptakan kejutan yang baik.
+### Taktik militer yang menuju kemenangan sebaiknya tidak diungkapkan sebelumnya. Jenderal yang berhasil dalam pertempuran melakukan banyak perhitungan di markas tempat pertempuran berlangsung. Di sisi lain, jenderal yang kalah dalam pertempuran hanya melakukan sedikit perhitungan sebelumnya. Oleh karena itu, banyak perhitungan cenderung membawa kemenangan, sementara sedikit perhitungan atau bahkan tanpa perhitungan dapat menyebabkan kekalahan.
 
 ''';

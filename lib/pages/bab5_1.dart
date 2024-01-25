@@ -41,8 +41,8 @@ class BabLima1 extends StatelessWidget {
 const String teks = '''
 ## Bab 5 : ENERGI
 ### Kontrol atas pasukan besar memiliki prinsip yang sama dengan mengendalikan sedikit orang: itu hanya masalah membagi jumlah mereka.
-### Berperang dengan pasukan besar di bawah komando Anda sama sekali tidak berbeda dengan berperang dengan pasukan kecil: itu hanya masalah menetapkan tanda dan sinyal.
-### Untuk memastikan bahwa seluruh pasukan Anda dapat menahan serangan musuh dan tetap tegar - ini dilakukan dengan manuver langsung dan tidak langsung.
-### Agar dampak pasukan Anda bisa seperti batu penggiling yang menghantam telur - ini dicapai melalui ilmu tentang titik lemah dan titik kuat.
+### Berperang dengan pasukan besar di bawah komando kamu sama sekali tidak berbeda dengan berperang dengan pasukan kecil: itu hanya masalah menetapkan tanda dan sinyal.
+### Untuk memastikan bahwa seluruh pasukan kamu dapat menahan serangan musuh dan tetap tegar - ini dilakukan dengan manuver langsung dan tidak langsung.
+### Agar dampak pasukan kamu bisa seperti batu penggiling yang menghantam telur - ini dicapai melalui ilmu tentang titik lemah dan titik kuat.
 ### Dalam semua pertempuran, metode
 ''';

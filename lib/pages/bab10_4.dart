@@ -39,7 +39,7 @@ class BabSepuluh4 extends StatelessWidget {
 }
 
 const String teks = '''
-### pasukan sama, tidak mudah untuk memprovokasi pertempuran, dan berperang akan merugikan Anda.
+### pasukan sama, tidak mudah untuk memprovokasi pertempuran, dan berperang akan merugikan kamu.
 ### Ini adalah enam prinsip yang terkait dengan Bumi. Seorang jenderal yang telah mencapai posisi yang bertanggung jawab harus berhati-hati untuk mempelajarinya.
 ### Sekarang, pasukan dapat menghadapi enam bencana berbeda, bukan karena penyebab alami, tetapi karena kesalahan yang menjadi tanggung jawab jenderal. Yaitu: 
 1)	### Melarikan diri. 

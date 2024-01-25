@@ -42,6 +42,6 @@ const String teks = '''
 ### Kualitas keputusan adalah seperti serangan yang tepat waktu dari seekor falcon yang memungkinkannya untuk menyerang dan menghancurkan mangsanya.
 ### Oleh karena itu, pejuang yang baik akan menakutkan dalam serangannya, dan cepat dalam pengambilan keputusannya.
 ### Energi bisa dibandingkan dengan membengkokkan busur panah; keputusan, dengan melepaskan pelatuknya.
-### Di tengah kerusuhan dan kegemparan pertempuran, mungkin terlihat kekacauan namun sebenarnya tidak ada kekacauan sama sekali; di tengah kebingungan dan kekacauan, formasi Anda mungkin tanpa kepala atau ekor, namun itu akan tahan terhadap kekalahan.
+### Di tengah kerusuhan dan kegemparan pertempuran, mungkin terlihat kekacauan namun sebenarnya tidak ada kekacauan sama sekali; di tengah kebingungan dan kekacauan, formasi kamu mungkin tanpa kepala atau ekor, namun itu akan tahan terhadap kekalahan.
 ### Kekacauan yang disimulasikan mengasumsikan disiplin yang
 ''';

@@ -40,7 +40,7 @@ class BabSembilan8 extends StatelessWidget {
 
 const String teks = '''
 ### pindah, ada potensi pemberontakan. Jika para perwira marah, itu berarti para prajuritnya lelah.
-###	Ketika sebuah pasukan memberi makan kuda-kudanya dengan biji-bijian dan membunuh ternaknya untuk makanan, dan ketika para prajurit tidak menggantung panci-potnya di atas api perkemahan, menunjukkan bahwa mereka tidak akan kembali ke tenda mereka, Anda dapat tahu bahwa mereka bertekad untuk bertempur sampai mati.
+###	Ketika sebuah pasukan memberi makan kuda-kudanya dengan biji-bijian dan membunuh ternaknya untuk makanan, dan ketika para prajurit tidak menggantung panci-potnya di atas api perkemahan, menunjukkan bahwa mereka tidak akan kembali ke tenda mereka, kamu dapat tahu bahwa mereka bertekad untuk bertempur sampai mati.
 ###	Pemandangan orang-orang yang berbisik-bisik bersama dalam kelompok kecil atau berbicara dengan suara pelan menunjukkan ketidaksetujuan di antara para prajurit biasa.
 ###	Penghargaan yang terlalu sering menandakan bahwa musuh sudah habis sumber dayanya; terlalu banyak hukuman mengkhawatirkan kondisi
 

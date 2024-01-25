@@ -41,6 +41,6 @@ class BabSepuluh7 extends StatelessWidget {
 const String teks = '''
 ### bagi seorang jenderal yang hebat.
 ### Seseorang yang mengetahui hal-hal ini dan dalam pertempuran menerapkan pengetahuannya, akan memenangkan pertempurannya. Seseorang yang tidak mengetahuinya, atau tidak mengamalkannya, pasti akan kalah.
-### Jika pertempuran pasti akan menghasilkan kemenangan, maka Anda harus bertempur, meskipun penguasa melarangnya; jika pertempuran tidak akan menghasilkan kemenangan, maka Anda tidak boleh bertempur, bahkan jika penguasa memerintahkannya.
+### Jika pertempuran pasti akan menghasilkan kemenangan, maka kamu harus bertempur, meskipun penguasa melarangnya; jika pertempuran tidak akan menghasilkan kemenangan, maka kamu tidak boleh bertempur, bahkan jika penguasa memerintahkannya.
 ### Jenderal yang maju tanpa merindukan ketenaran dan mundur tanpa takut akan kehormatan yang tercemar, yang hanya memikirkan untuk melindungi negaranya dan memberikan pelayanan yang baik bagi penguasanya, adalah permata kerajaan.
 ''';

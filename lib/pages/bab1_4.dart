@@ -39,6 +39,7 @@ class BabSatu4 extends StatelessWidget {
 }
 
 const String teks = '''
-### baik dalam pemberian imbalan maupun hukuman?
-### Berdasarkan pada sejauh mana keadaan menguntungkan, seseorang sebaiknya memodifikasi rencananya. Semua perang didasarkan pada tipuan. Oleh karena itu, saat kita mampu menyerang, kita harus tampak tidak mampu; saat menggunakan kekuatan kita, kita harus tampak tidak aktif; saat kita berada dekat, kita harus membuat musuh percaya bahwa kita jauh; saat kita jauh, kita harus membuatnya percaya bahwa kita dekat. Tawarkan umpan untuk memikat musuh. Tertipu, dan hancurkan dia. Jika dia merasa aman di semua titik, bersiaplah untuk menghadapinya. Jika dia memiliki kekuatan yang lebih unggul, hindari dia. Jika lawan Anda memiliki sifat yang mudah marah, usahakan untuk mengiritasinya. Berpura-pura lemah,  
+### g).	Di dalam pasukan manakah terdapat konsistensi yang lebih besar baik dalam pemberian imbalan maupun hukuman?
+### Pertanyaan-pertanyaan ini memberikan kerangka untuk menilai dan membandingkan pemimpin, jenderal, keuntungan strategis, disiplin, kekuatan pasukan, pelatihan, dan konsistensi di antara dua belah pihak.
+### Untuk berhasil dalam perang, seseorang sebaiknya menyesuaikan rencananya berdasarkan keuntungan yang dapat diperoleh. Perang sering melibatkan tipu daya. Oleh karena itu, saat kita memiliki kesempatan menyerang, sebaiknya kita membuat diri terlihat tidak terlalu kuat; ketika menggunakan kekuatan, kita sebaiknya terlihat tidak terlalu aktif. Jika kita berada dekat, kita seharusnya membuat musuh percaya
 ''';

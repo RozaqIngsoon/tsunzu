@@ -43,7 +43,7 @@ const String teks = '''
 ### Dalam menyerang dengan api, seseorang harus siap menghadapi lima perkembangan yang mungkin terjadi:
 1)	### Ketika kebakaran terjadi di dalam perkemahan musuh, segera bertindak dengan serangan dari luar.
 2)	### Jika terjadi kebakaran tetapi pasukan musuh tetap tenang, tunggu dan jangan menyerang.
-3)	### Saat kekuatan api mencapai puncaknya, lanjutkan dengan serangan jika memungkinkan; jika tidak, tetaplah di tempat Anda.
+3)	### Saat kekuatan api mencapai puncaknya, lanjutkan dengan serangan jika memungkinkan; jika tidak, tetaplah di tempat kamu.
 4)	### Jika memungkinkan untuk melancarkan serangan dengan api dari luar, jangan menunggu hingga terjadi api di dalam, melainkan
 
 ''';

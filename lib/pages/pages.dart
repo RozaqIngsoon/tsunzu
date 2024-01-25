@@ -41,6 +41,7 @@ import 'package:tsunzu/pages/bab13_6.dart';
 import 'package:tsunzu/pages/bab13_7.dart';
 import 'package:tsunzu/pages/bab1_4.dart';
 import 'package:tsunzu/pages/bab1_5.dart';
+import 'package:tsunzu/pages/bab1_6.dart';
 import 'package:tsunzu/pages/bab2_5.dart';
 import 'package:tsunzu/pages/bab2_6.dart';
 import 'package:tsunzu/pages/bab3_5.dart';
@@ -130,6 +131,7 @@ Widget bab1_2 = BabSatu2();
 Widget bab1_3 = BabSatu3();
 Widget bab1_4 = BabSatu4();
 Widget bab1_5 = BabSatu5();
+Widget bab1_6 = BabSatu6();
 Widget bab2_cover = BabDuaCover();
 Widget bab2_1 = BabDua1();
 Widget bab2_2 = BabDua2();
@@ -249,6 +251,7 @@ List<Widget> pages = [
   bab1_3,
   bab1_4,
   bab1_5,
+  bab1_6,
   bab2_cover,
   bab2_1,
   bab2_2,

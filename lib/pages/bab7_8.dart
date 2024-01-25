@@ -44,6 +44,6 @@ const String teks = '''
 ### Ini adalah aksioma militer untuk tidak maju ke atas gunung melawan musuh, atau melawannya ketika dia turun dari gunung.
 ### Jangan mengejar musuh yang pura-pura melarikan diri; jangan menyerang tentara yang semangatnya tinggi.
 ### Jangan menelan umpan yang ditawarkan oleh musuh. Jangan mengganggu tentara yang sedang kembali ke rumah.
-### Saat Anda menyelubungi sebuah pasukan, tinggalkanlah jalan keluar
+### Saat kamu menyelubungi sebuah pasukan, tinggalkanlah jalan keluar
 
 ''';

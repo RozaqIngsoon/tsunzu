@@ -40,7 +40,7 @@ class BabDuaBelas3 extends StatelessWidget {
 
 const String teks = '''
 4)	### Jika memungkinkan untuk melancarkan serangan dengan api dari luar, jangan menunggu hingga terjadi api di dalam, melainkan lakukan serangan saat momen yang menguntungkan.
-5)	### Saat Anda melancarkan serangan dengan api, arahkan ke arah angin. Jangan menyerang dari sisi yang lain.
+5)	### Saat kamu melancarkan serangan dengan api, arahkan ke arah angin. Jangan menyerang dari sisi yang lain.
 ### Angin yang muncul pada siang hari akan berlangsung lama, tetapi angin malam biasanya akan mereda dengan cepat.
 ### Dalam setiap pasukan, kelima perkembangan terkait dengan api harus diketahui, gerakan bintang harus dihitung, dan perhatian harus dijaga terhadap hari-hari yang sesuai.
 ### Maka mereka yang menggunakan api sebagai bantuan untuk serangan menunjukkan kecerdasan; mereka yang menggunakan air sebagai

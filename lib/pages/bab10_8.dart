@@ -39,8 +39,8 @@ class BabSepuluh8 extends StatelessWidget {
 }
 
 const String teks = '''
-### Perlakukan tentara Anda seperti anak-anak Anda, dan mereka akan mengikuti Anda ke lembah terdalam; pandanglah mereka sebagai putra-putra Anda yang tercinta, dan mereka akan tetap setia kepada Anda bahkan hingga kematian.
-### Namun, jika Anda bersikap lunak tetapi tidak mampu membuat otoritas Anda dihormati; baik hati tetapi tidak mampu menegakkan perintah Anda; dan juga tidak mampu meredakan kerusuhan: maka tentara Anda harus diibaratkan seperti anak-anak manja; mereka tidak berguna untuk tujuan praktis apa pun.
+### Perlakukan tentara kamu seperti anak-anak kamu, dan mereka akan mengikuti kamu ke lembah terdalam; pandanglah mereka sebagai putra-putra kamu yang tercinta, dan mereka akan tetap setia kepada kamu bahkan hingga kematian.
+### Namun, jika kamu bersikap lunak tetapi tidak mampu membuat otoritas kamu dihormati; baik hati tetapi tidak mampu menegakkan perintah kamu; dan juga tidak mampu meredakan kerusuhan: maka tentara kamu harus diibaratkan seperti anak-anak manja; mereka tidak berguna untuk tujuan praktis apa pun.
 ### Jika kita tahu bahwa pasukan kita siap untuk menyerang, tetapi kita tidak menyadari bahwa musuh tidak dapat diserang, kita baru mencapai setengah perjalanan menuju kemenangan.
 ### Jika kita tahu bahwa musuh dapat
 ''';

@@ -41,7 +41,7 @@ class BabSebelas15 extends StatelessWidget {
 const String teks = '''
 ### mencegah konsentrasi pasukan musuh. Dia menakut-nakuti lawannya, dan sekutu-sekutunya dicegah untuk bergabung melawannya.
 ### Oleh karena itu, ia tidak berusaha untuk bersekutu dengan siapa saja, dan juga tidak menguatkan kekuatan negara-negara lain. Ia menjalankan rencana-rencananya sendiri dengan merahasiakannya, sehingga membuat lawan-lawannya merasa takut. Dengan demikian, ia mampu merebut kota-kota mereka dan menggulingkan kerajaan-kerajaan mereka.
-### Berikan penghargaan tanpa memperhatikan aturan, berikan perintah tanpa memperhatikan pengaturan sebelumnya; dan Anda akan dapat mengendalikan seluruh pasukan seolah-olah Anda hanya berurusan dengan satu orang saja.
-### Hadapkan prajurit Anda dengan perbuatan itu sendiri; jangan pernah
+### Berikan penghargaan tanpa memperhatikan aturan, berikan perintah tanpa memperhatikan pengaturan sebelumnya; dan kamu akan dapat mengendalikan seluruh pasukan seolah-olah kamu hanya berurusan dengan satu orang saja.
+### Hadapkan prajurit kamu dengan perbuatan itu sendiri; jangan pernah
 
 ''';

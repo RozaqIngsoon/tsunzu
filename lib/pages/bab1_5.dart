@@ -39,7 +39,6 @@ class BabSatu5 extends StatelessWidget {
 }
 
 const String teks = '''
-### agar dia menjadi sombong. Jika dia sedang bersantai, jangan beri dia istirahat. Jika pasukannya bersatu, pisahkan mereka. Serang dia di tempat yang tidak siap, muncul di tempat yang tidak diharapkan. 
-### Taktik militer ini, yang mengarah pada kemenangan, tidak boleh diungkapkan sebelumnya. Sekarang, jenderal yang memenangkan pertempuran melakukan banyak perhitungan di tenda tempat pertempuran berlangsung. Jenderal yang kalah dalam pertempuran hanya melakukan sedikit perhitungan sebelumnya. Dengan demikian, banyak perhitungan mengarah pada kemenangan, dan sedikit perhitungan mengarah pada kekalahan; apalagi tidak ada perhitungan sama sekali.
+### bahwa kita jauh; jika kita berada jauh, kita sebaiknya membuat musuh percaya bahwa kita dekat. Menawarkan umpan untuk memancing musuh dapat menjadi taktik yang baik. Jika kita berhasil menipu musuh, maka kita dapat menghancurkannya. Jika musuh merasa aman di semua titik, kita harus bersiap-siap untuk menghadapinya. Jika musuh memiliki kekuatan yang lebih besar, sebaiknya dihindari. Jika lawan kita mudah marah, sebaiknya diusahakan untuk tidak memprovokasinya. Berpura-pura lemah dapat membuat lawan kita menjadi sombong. Jika dia sedang santai, sebaiknya jangan memberinya kesempatan untuk istirahat. Jika pasukan musuh bersatu, taktik memisahkan mereka bisa menjadi strategi yang efektif. Menyerang di tempat yang tidak siap dan muncul di tempat yang tidak diharapkan dapat
 
 ''';

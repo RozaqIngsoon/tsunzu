@@ -68,7 +68,7 @@ class BabSepuluhCover extends StatelessWidget {
                   height: 150,
                   child: Center(
                     child: Text(
-                      '"Jika pertempuran pasti akan menghasilkan kemenangan, maka Anda harus bertempur."',
+                      '"Jika pertempuran pasti akan menghasilkan kemenangan, maka kamu harus bertempur."',
                       style: TextStyle(
                           fontSize: 19,
                           color: Colors.white,

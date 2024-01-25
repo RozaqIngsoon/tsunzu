@@ -43,6 +43,6 @@ const String teks = '''
 ### Dengan menggunakan air, musuh dapat dihentikan, tetapi tidak dapat dirampas semua hartanya.
 ### Sial-lah nasib seseorang yang mencoba memenangkan pertarungannya dan berhasil dalam serangannya tanpa memupuk semangat berusaha; karena hasilnya adalah pemborosan waktu dan stagnasi umum.
 ### Maka ada pepatah: Penguasa yang bijaksana merencanakan segalanya dengan baik; jenderal yang baik mengembangkan sumber dayanya
-### Jangan bergerak kecuali jika Anda melihat keuntungan; jangan menggunakan pasukan Anda kecuali jika ada sesuatu yang bisa didapatkan; jangan bertempur kecuali jika posisinya kritis.
+### Jangan bergerak kecuali jika kamu melihat keuntungan; jangan menggunakan pasukan kamu kecuali jika ada sesuatu yang bisa didapatkan; jangan bertempur kecuali jika posisinya kritis.
 
 ''';

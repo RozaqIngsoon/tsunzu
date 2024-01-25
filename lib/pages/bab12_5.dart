@@ -40,7 +40,7 @@ class BabDuaBelas5 extends StatelessWidget {
 
 const String teks = '''
 ### Tidak seorang penguasa pun seharusnya mengirim pasukan ke medan perang hanya untuk memuaskan kemarahan pribadinya; tidak seorang jenderal pun seharusnya memerangi sebuah pertempuran hanya karena kekesalannya.
-### Jika itu menguntungkan bagi Anda, lakukan langkah maju; jika tidak, tetaplah di tempat Anda berada.
+### Jika itu menguntungkan bagi kamu, lakukan langkah maju; jika tidak, tetaplah di tempat kamu berada.
 ### Kemarahan bisa berubah menjadi kebahagiaan seiring waktu; kekesalan bisa digantikan oleh kepuasan.
 ### Namun, sebuah kerajaan yang telah hancur tidak akan bisa bangkit kembali; begitu juga orang yang telah mati tidak dapat dihidupkan kembali.
 ### Oleh karena itu, penguasa yang bijaksana adalah orang yang penuh perhaitan, dan jenderal yang baik penuh kewaspadaan. Inilah cara untuk menjaga perdamaian di sebuah

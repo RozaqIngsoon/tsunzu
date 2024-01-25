@@ -40,8 +40,8 @@ class BabTujuh3 extends StatelessWidget {
 
 const String teks = '''
 ### akan jatuh ke tangan musuh.
-### Para prajurit yang lebih kuat akan berada di depan, yang lelah akan tertinggal, dan dengan rencana ini hanya satu persepuluh dari pasukan Anda yang akan mencapai tujuan mereka.
-### Jika Anda bergerak sejauh lima puluh LI untuk mengatasi musuh, Anda akan kehilangan pemimpin divisi pertama Anda, dan hanya setengah pasukan Anda yang akan mencapai tujuan tersebut.
-### Jika Anda bergerak sejauh tiga puluh LI dengan tujuan yang sama, dua pertiga pasukan Anda akan tiba.
+### Para prajurit yang lebih kuat akan berada di depan, yang lelah akan tertinggal, dan dengan rencana ini hanya satu persepuluh dari pasukan kamu yang akan mencapai tujuan mereka.
+### Jika kamu bergerak sejauh lima puluh LI untuk mengatasi musuh, kamu akan kehilangan pemimpin divisi pertama kamu, dan hanya setengah pasukan kamu yang akan mencapai tujuan tersebut.
+### Jika kamu bergerak sejauh tiga puluh LI dengan tujuan yang sama, dua pertiga pasukan kamu akan tiba.
 ### Maka dapat kita simpulkan bahwa sebuah pasukan tanpa perbekalan adalah pasukan yang hilang; tanpa persediaan makanan adalah pasukan yang hilang; tanpa basis pasokan adalah pasukan yang hilang.
 ''';

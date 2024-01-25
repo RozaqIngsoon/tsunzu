@@ -40,9 +40,9 @@ class BabSembilan3 extends StatelessWidget {
 
 const String teks = '''
 ### tempat yang gelap.
-### Jika Anda merawat pasukan dengan baik dan berkemah di tanah yang keras, maka pasukan akan terhindar dari penyakit apa pun, dan ini akan membawa kemenangan.
-### Saat Anda sampai di sebuah bukit atau tebing, kuasai sisi yang terkena sinar matahari, dengan kemiringan ke belakang sebelah kanan Anda. Dengan demikian, Anda akan sekaligus bertindak untuk keuntungan para prajurit Anda dan memanfaatkan keunggulan alami dari tanah tersebut.
-### Ketika, akibat hujan deras di daerah hulu, sungai yang ingin Anda lintasi mengalami peluberan dan berbusa, Anda harus menunggu hingga air surut.
+### Jika kamu merawat pasukan dengan baik dan berkemah di tanah yang keras, maka pasukan akan terhindar dari penyakit apa pun, dan ini akan membawa kemenangan.
+### Saat kamu sampai di sebuah bukit atau tebing, kuasai sisi yang terkena sinar matahari, dengan kemiringan ke belakang sebelah kanan kamu. Dengan demikian, kamu akan sekaligus bertindak untuk keuntungan para prajurit kamu dan memanfaatkan keunggulan alami dari tanah tersebut.
+### Ketika, akibat hujan deras di daerah hulu, sungai yang ingin kamu lintasi mengalami peluberan dan berbusa, kamu harus menunggu hingga air surut.
 ### Daerah yang memiliki tebing curam dengan aliran deras di antara mereka, lubang alami yang dalam, tempat-tempat sempit, semak-semak yang
 
 ''';

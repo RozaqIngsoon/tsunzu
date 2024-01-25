@@ -40,9 +40,9 @@ class BabTujuh5 extends StatelessWidget {
 
 const String teks = '''
 ### bertindak seperti api, dalam keteguhan seperti gunung.
-### Biarkan rencana Anda gelap dan tak terlihat seperti malam, dan saat Anda bergerak, jatuh seperti petir.
-### Ketika Anda merampok pedesaan, bagilah rampasan di antara para prajurit Anda; ketika Anda merebut wilayah baru, bagilah menjadi alokasi untuk kepentingan pasukan.
-### Renungkan dan pertimbangkan dengan baik sebelum Anda melakukan langkah.
+### Biarkan rencana kamu gelap dan tak terlihat seperti malam, dan saat kamu bergerak, jatuh seperti petir.
+### Ketika kamu merampok pedesaan, bagilah rampasan di antara para prajurit kamu; ketika kamu merebut wilayah baru, bagilah menjadi alokasi untuk kepentingan pasukan.
+### Renungkan dan pertimbangkan dengan baik sebelum kamu melakukan langkah.
 ### Dia akan menaklukkan yang telah mempelajari tipu daya pengalihan. Itulah seni manuver.
 ### Buku Manajemen Angkatan Bersenjata mengatakan: Di medan perang, kata-kata yang diucapkan tidak cukup jauh untuk didengar: maka buatlah alat-alat seperti gong dan drum. Dan objek-objek biasa tidak
 ''';

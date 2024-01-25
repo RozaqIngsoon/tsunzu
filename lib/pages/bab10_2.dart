@@ -40,7 +40,7 @@ class BabSepuluh2 extends StatelessWidget {
 
 const String teks = '''
 ### Tanah yang dapat ditinggalkan namun sulit untuk direbut kembali disebut “Medan yang rumit”.
-### Dari posisi seperti ini, jika musuh tidak siap, Anda dapat maju dan mengalahkannya. Tetapi jika musuh sudah siap untuk kedatangan Anda, dan Anda gagal mengalahkannya, maka, karena tidak mungkin untuk mundur, bencana akan terjadi.
+### Dari posisi seperti ini, jika musuh tidak siap, kamu dapat maju dan mengalahkannya. Tetapi jika musuh sudah siap untuk kedatangan kamu, dan kamu gagal mengalahkannya, maka, karena tidak mungkin untuk mundur, bencana akan terjadi.
 ### Ketika posisi tidak akan ada pihak yang akan mendapatkan keuntungan dengan melakukan gerakan pertama, disebut sebagai “Medan yang memungkinkan penundaan”.
 ### Dalam posisi seperti ini, meskipun musuh menawarkan umpan yang menarik, akan bijaksana untuk tidak bergerak maju, tetapi lebih baik mundur, sehingga menggoda musuh pada gilirannya; kemudian, ketika sebagian pasukannya keluar, kita dapat melancarkan serangan kita
 

@@ -42,6 +42,6 @@ const String teks = '''
 ### dapat terlihat dengan cukup jelas: maka buatlah bendera dan panji-panji.
 ### Gong dan drum, bendera dan panji-panji adalah alat-alat yang digunakan agar perhatian telinga dan mata pasukan dapat difokuskan pada satu titik tertentu.
 ### Sehingga pasukan menjadi satu tubuh bersatu, yang membuat mustahil bagi yang berani maju sendirian atau yang pengecut mundur sendirian. Inilah seni mengendalikan massa besar orang.
-### Dalam pertempuran malam, gunakanlah api sinyal dan gendang dengan intensitas yang tinggi, dan dalam pertempuran siang, manfaatkanlah bendera dan panji sebagai cara untuk memengaruhi pendengaran dan penglihatan pasukan Anda.
+### Dalam pertempuran malam, gunakanlah api sinyal dan gendang dengan intensitas yang tinggi, dan dalam pertempuran siang, manfaatkanlah bendera dan panji sebagai cara untuk memengaruhi pendengaran dan penglihatan pasukan kamu.
 ### Seluruh pasukan bisa kehilangan semangatnya; seorang panglima
 ''';

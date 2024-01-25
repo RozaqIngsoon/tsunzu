@@ -41,6 +41,6 @@ class BabLima3 extends StatelessWidget {
 const String teks = '''
 ### Tidak lebih dari lima rasa utama (asam, pedas, asin, manis, pahit), namun kombinasi dari rasa-rasa ini menghasilkan lebih banyak citarasa daripada yang pernah bisa dicicipi.
 ### Dalam pertempuran, tidak ada lebih dari dua metode serangan - langsung dan tidak langsung; namun kedua metode ini dalam kombinasi melahirkan serangkaian manuver yang tak terbatas.
-### Metode langsung dan tidak langsung saling mengarahkan satu sama lain bergantian. Ini seperti bergerak dalam lingkaran - Anda tidak pernah mencapai akhir. Siapa yang bisa menghabiskan kemungkinan kombinasinya?
+### Metode langsung dan tidak langsung saling mengarahkan satu sama lain bergantian. Ini seperti bergerak dalam lingkaran - kamu tidak pernah mencapai akhir. Siapa yang bisa menghabiskan kemungkinan kombinasinya?
 ### Serangan pasukan adalah seperti laju arus deras yang bahkan akan menggulung batu-batu dalam alirannya.
 ''';

@@ -43,6 +43,6 @@ const String teks = '''
 ### Berdiri dalam posisi defensif menunjukkan kekurangan kekuatan; menyerang menunjukkan kelebihan kekuatan.
 ### Jenderal yang mahir dalam pertahanan bersembunyi di tempat-tempat paling tersembunyi di dalam bumi; yang mahir dalam serangan muncul dari puncak tertinggi langit. Dengan demikian, di satu sisi kita memiliki kemampuan untuk melindungi diri; di sisi lain, kemenangan yang lengkap.
 ### Hanya melihat kemenangan saat itu sudah jelas bagi orang biasa bukanlah puncak keunggulan.
-### Juga bukanlah puncak keunggulan jika Anda berperang dan menang, lalu seluruh Kekaisaran mengatakan, 
+### Juga bukanlah puncak keunggulan jika kamu berperang dan menang, lalu seluruh Kekaisaran mengatakan, 
 
 ''';

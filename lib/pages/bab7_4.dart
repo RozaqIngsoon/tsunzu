@@ -42,9 +42,9 @@ const String teks = '''
 ### Kita tidak dapat membentuk aliansi sampai kita mengenal rencana-rencana tetangga kita.
 ### Kita tidak pantas memimpin pasukan dalam perjalanan kecuali kita akrab dengan kondisi medan - gunung dan hutan, jurang dan tebing-tebingnya, rawa dan lumpurnya.
 ### Kita tidak akan dapat memanfaatkan keuntungan alam secara optimal kecuali kita menggunakan pemandu lokal.
-### Dalam perang, berlatihlah menyembunyikan niat Anda, dan Anda akan berhasil.
-### Apakah akan mengkonsentrasikan atau membagi pasukan Anda harus diputuskan berdasarkan keadaan yang ada.
-### Biarkan kecepatan Anda seperti angin, dan kekompakan seperti hutan.
+### Dalam perang, berlatihlah menyembunyikan niat kamu, dan kamu akan berhasil.
+### Apakah akan mengkonsentrasikan atau membagi pasukan kamu harus diputuskan berdasarkan keadaan yang ada.
+### Biarkan kecepatan kamu seperti angin, dan kekompakan seperti hutan.
 ### Dalam perampokan dan penjarahan,
 
 ''';

@@ -41,7 +41,7 @@ class BabEnam7 extends StatelessWidget {
 const String teks = '''
 ### Meskipun musuh lebih kuat dalam jumlah, kita dapat mencegahnya untuk berperang. Merencanakan agar dapat mengetahui rencananya dan kemungkinan keberhasilannya.
 ### Bangkitkan dia, dan pelajari prinsip kegiatannya atau ketidakaktifannya.
-### Dalam membuat taktik, puncak tertinggi yang bisa Anda capai adalah menyembunyikannya; sembunyikan disposisi Anda, dan Anda akan aman dari mata-mata yang paling licik, dari rencana yang paling bijak.
+### Dalam membuat taktik, puncak tertinggi yang bisa kamu capai adalah menyembunyikannya; sembunyikan disposisi kamu, dan kamu akan aman dari mata-mata yang paling licik, dari rencana yang paling bijak.
 ### Bagaimana kemenangan dapat dihasilkan dari taktik musuh mereka sendiri - itulah yang tidak bisa dimengerti oleh banyak orang.
 ### Semua orang dapat melihat taktik dengan mana saya menaklukkan, tetapi yang tidak bisa dilihat oleh siapa pun adalah strategi dari mana kemenangan berkembang.
 

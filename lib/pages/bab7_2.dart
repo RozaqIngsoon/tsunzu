@@ -41,8 +41,8 @@ class BabTujuh2 extends StatelessWidget {
 const String teks = '''
 ### menunjukkan pengetahuan akan kelicikan MANUVER DEVIASI.
 ### Manuver dengan pasukan adalah menguntungkan; dengan kerumunan yang tidak terdisiplinasi, sangat berbahaya.
-### Jika Anda mengirim pasukan lengkap untuk bergerak dengan tujuan meraih keuntungan, kemungkinannya adalah Anda akan terlambat. Di sisi lain, mengirimkan kelompok bergerak cepat untuk tujuan tersebut melibatkan pengorbanan terhadap persediaan dan bebannya.
-### Jadi, jika Anda memerintahkan pasukan Anda untuk menggulung mantel mereka, melakukan mars paksa tanpa berhenti siang dan malam, menempuh jarak dua kali lipat dari yang biasanya dalam satu perjalanan, menempuh seratus LI untuk memperoleh keuntungan, maka para pemimpin dari ketiga divisi Anda
+### Jika kamu mengirim pasukan lengkap untuk bergerak dengan tujuan meraih keuntungan, kemungkinannya adalah kamu akan terlambat. Di sisi lain, mengirimkan kelompok bergerak cepat untuk tujuan tersebut melibatkan pengorbanan terhadap persediaan dan bebannya.
+### Jadi, jika kamu memerintahkan pasukan kamu untuk menggulung mantel mereka, melakukan mars paksa tanpa berhenti siang dan malam, menempuh jarak dua kali lipat dari yang biasanya dalam satu perjalanan, menempuh seratus LI untuk memperoleh keuntungan, maka para pemimpin dari ketiga divisi kamu
 
 
 ''';

@@ -68,7 +68,7 @@ class BabSebelasCover extends StatelessWidget {
                   height: 150,
                   child: Center(
                     child: Text(
-                      '"Lakukan serbuan di wilayah yang subur untuk memasok pasukan Anda dengan makanan."',
+                      '"Lakukan serbuan di wilayah yang subur untuk memasok pasukan kamu dengan makanan."',
                       style: TextStyle(
                           fontSize: 19,
                           color: Colors.white,

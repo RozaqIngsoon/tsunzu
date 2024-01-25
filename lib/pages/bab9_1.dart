@@ -42,6 +42,6 @@ const String teks = '''
 ## Bab 9 : PERGERAKAN PASUKAN
 ### Sekarang kita sampai pada pertanyaan tentang perkemahan tentara dan pengamatan tanda-tanda musuh. 
 ### Lewati cepat-cepat gunung dan tetap di sekitar lembah-lembah. Bermarkaslah di tempat tinggi, menghadap matahari. Jangan mendaki puncak gunung untuk bertempur. Itulah beberapa hal tentang perang di pegunungan.
-### Setelah menyeberangi sungai, Anda sebaiknya menjauh dari sungai tersebut. Ketika pasukan penyerang menyeberangi sungai dalam pergerakannya, jangan maju untuk menemui mereka di tengah aliran sungai. Lebih baik biarkan setengah pasukan mereka menyeberang, lalu baru Anda melakukan serangan
-### Tempatkan kapal Anda lebih tinggi dari kapal musuh dan menghadap
+### Setelah menyeberangi sungai, kamu sebaiknya menjauh dari sungai tersebut. Ketika pasukan penyerang menyeberangi sungai dalam pergerakannya, jangan maju untuk menemui mereka di tengah aliran sungai. Lebih baik biarkan setengah pasukan mereka menyeberang, lalu baru kamu melakukan serangan
+### Tempatkan kapal kamu lebih tinggi dari kapal musuh dan menghadap
 ''';

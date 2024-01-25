@@ -41,7 +41,7 @@ class BabSembilan4 extends StatelessWidget {
 const String teks = '''
 ### berantakan, rawa-rawa, dan celah-celah harus segera ditinggalkan dan tidak mendekat.
 ### Sementara kita menjauhi tempat-tempat seperti itu, kita seharusnya membuat musuh mendekatinya; ketika kita berhadapan dengan mereka, kita harus membiarkan musuh memilikinya di belakangnya.
-### Jika di sekitar perkemahan Anda terdapat daerah berbukit, kolam yang dikelilingi oleh rumput air, cekungan  berisi alang-alang, atau hutan dengan semak belukar yang lebat, mereka harus dengan hati-hati dicari dan diperiksa; karena ini adalah tempat-tempat di mana orang-orang bersembunyi atau mata-mata licik mungkin bersembunyi.
+### Jika di sekitar perkemahan kamu terdapat daerah berbukit, kolam yang dikelilingi oleh rumput air, cekungan  berisi alang-alang, atau hutan dengan semak belukar yang lebat, mereka harus dengan hati-hati dicari dan diperiksa; karena ini adalah tempat-tempat di mana orang-orang bersembunyi atau mata-mata licik mungkin bersembunyi.
 ### Ketika musuh berada dalam jarak dekat dan tetap diam, ia mengandalkan kekuatan alami posisinya.
 
 ''';

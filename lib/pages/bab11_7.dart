@@ -42,6 +42,6 @@ const String teks = '''
 ### akan setia; tanpa perintah, mereka dapat dipercaya.
 ### Larang pengambilan pertanda, dan hilangkan keraguan yang bersifat superstitius*. Kemudian, sampai kematian datang, tidak perlu takut akan bencana apa pun.
 ### Jika prajurit-prajurit kita tidak terbebani dengan uang, itu bukan karena mereka tidak suka akan kekayaan; jika hidup mereka tidak terlalu panjang, itu bukan karena mereka tidak menginginkan umur yang panjang.
-### Pada hari mereka diperintahkan untuk perang, prajurit-prajurit Anda mungkin menangis, baik yang duduk dengan membasahi pakaiannya, maupun yang berbaring dengan air mata mengalir di pipi mereka. Tapi jika mereka sekali-kali ditempatkan pada posisi sulit, mereka akan menunjukkan keberanian seorang Chu atau Kuei.
+### Pada hari mereka diperintahkan untuk perang, prajurit-prajurit kamu mungkin menangis, baik yang duduk dengan membasahi pakaiannya, maupun yang berbaring dengan air mata mengalir di pipi mereka. Tapi jika mereka sekali-kali ditempatkan pada posisi sulit, mereka akan menunjukkan keberanian seorang Chu atau Kuei.
 
 ''';

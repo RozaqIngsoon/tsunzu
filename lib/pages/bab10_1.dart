@@ -48,6 +48,6 @@ const String teks = '''
 5)	### Medan ketinggian curam. 
 6)	### Posisi yang jauh dari musuh.
 ### Tanah yang dapat dilewati dengan bebas oleh kedua belah pihak disebut “Medan yang dapat diakses”.
-### Terkait dengan tanah yang memiliki sifat seperti ini, berada di depan musuh dalam menduduki tempat-tempat yang tinggi dan terkena sinar matahari, serta jagalah dengan baik jalur pasokan Anda. Dengan begitu, Anda akan dapat bertempur dengan keunggulan.
+### Terkait dengan tanah yang memiliki sifat seperti ini, berada di depan musuh dalam menduduki tempat-tempat yang tinggi dan terkena sinar matahari, serta jagalah dengan baik jalur pasokan kamu. Dengan begitu, kamu akan dapat bertempur dengan keunggulan.
 
 ''';

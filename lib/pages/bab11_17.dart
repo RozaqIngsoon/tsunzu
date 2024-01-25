@@ -40,11 +40,11 @@ class BabSebelas17 extends StatelessWidget {
 
 const String teks = '''
 ### Ini disebut kemampuan untuk mencapai suatu hal dengan kecerdikan semata.
-### Pada hari Anda mengambil komando, blokir jalur perbatasan, hancurkan catatan resmi, dan hentikan perjalanan para utusan.
-### Berdikarilah di ruang dewan, agar Anda dapat mengendalikan situasi.
-### Jika musuh meninggalkan pintu terbuka, Anda harus segera masuk.
-### Mengalahkan lawan Anda dengan merebut apa yang dia sayangi, dan dengan bijaksana merencanakan waktu kedatangannya di medan perang.
-### Berjalanlah sesuai dengan aturan yang telah ditetapkan, dan sesuaikan diri dengan musuh sampai Anda dapat melancarkan pertempuran yang menentukan.
+### Pada hari kamu mengambil komando, blokir jalur perbatasan, hancurkan catatan resmi, dan hentikan perjalanan para utusan.
+### Berdikarilah di ruang dewan, agar kamu dapat mengendalikan situasi.
+### Jika musuh meninggalkan pintu terbuka, kamu harus segera masuk.
+### Mengalahkan lawan kamu dengan merebut apa yang dia sayangi, dan dengan bijaksana merencanakan waktu kedatangannya di medan perang.
+### Berjalanlah sesuai dengan aturan yang telah ditetapkan, dan sesuaikan diri dengan musuh sampai kamu dapat melancarkan pertempuran yang menentukan.
 ### Pada awalnya, tunjukkan sikap malu-
 
 ''';

@@ -40,10 +40,10 @@ class BabSepuluh3 extends StatelessWidget {
 
 const String teks = '''
 ### dengan keuntungan.
-### Terkait dengan ”Medan jalur sempit”, jika Anda dapat mendudukinya lebih dulu, jaga dengan kuat dan tunggu kedatangan musuh.
-### Jika pasukan musuh lebih dulu menduduki ”Medan jalur sempit” dan dijaga dengan kuat, jangan mengejar mereka. Namun, jika medan itu dijaga dengan lemah, Anda bisa mengejarnya.
-### Mengenai “Medan ketinggian curam”, jika Anda lebih dulu daripada lawan Anda, Anda harus menduduki tempat yang lebih tinggi dan terkena matahari, dan menunggu dia datang.
-### Jika musuh telah mendudukinya sebelum Anda, jangan mengikutinya, tetapi mundurlah dan coba memancingnya menjauh.
-### Jika Anda berada pada jarak yang jauh dari musuh, dan kekuatan kedua
+### Terkait dengan ”Medan jalur sempit”, jika kamu dapat mendudukinya lebih dulu, jaga dengan kuat dan tunggu kedatangan musuh.
+### Jika pasukan musuh lebih dulu menduduki ”Medan jalur sempit” dan dijaga dengan kuat, jangan mengejar mereka. Namun, jika medan itu dijaga dengan lemah, kamu bisa mengejarnya.
+### Mengenai “Medan ketinggian curam”, jika kamu lebih dulu daripada lawan kamu, kamu harus menduduki tempat yang lebih tinggi dan terkena matahari, dan menunggu dia datang.
+### Jika musuh telah mendudukinya sebelum kamu, jangan mengikutinya, tetapi mundurlah dan coba memancingnya menjauh.
+### Jika kamu berada pada jarak yang jauh dari musuh, dan kekuatan kedua
 
 ''';
