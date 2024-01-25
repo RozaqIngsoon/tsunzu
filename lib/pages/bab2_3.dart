@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,10 @@ class BabDua3 extends StatelessWidget {
 }
 
 const String teks = '''
-### dapat memahami cara mengatasi yang menguntungkan.
-### Seorang jendral yang terampil tidak akan mengumpulkan pasukan kedua, begitu pula kendaraan pasokannya tidak akan dimuat lebih dari dua kali.
+### yang menguntungkan.
+### Seorang jenderal yang terampil tidak akan mengumpulkan pasukan kedua, begitu juga kendaraan pasokannya tidak akan dimuat lebih dari dua kali.
 ### Bawalah perlengkapan perang dari rumah, tetapi carilah makanan dari musuh. Dengan demikian, pasukan akan memiliki cukup makanan untuk kebutuhannya.
 ### Kekurangan kas negara menyebabkan pasukan dipertahankan dengan kontribusi dari jarak jauh. Memberikan kontribusi untuk mempertahankan pasukan dari jarak jauh menyebabkan rakyat menjadi miskin.
 ### Di sisi lain, kedekatan suatu pasukan menyebabkan harga-harga naik; dan harga yang tinggi menyebabkan harta benda masyarakat menjadi terkuras
-### Ketika harta benda mereka terkuras, 
+### Ketika harta benda mereka terkuras, para petani akan menderita akibat 
 ''';

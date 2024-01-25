@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,10 @@ class BabDua2 extends StatelessWidget {
 }
 
 const String teks = '''
-### Selanjutnya, jika kampanye berlangsung lama, sumber daya negara tidak akan sebanding dengan beban yang ditanggung.
-### Sekarang, ketika senjata kamu tumpul, semangat kamu meredup, kekuatan kamu habis, dan harta kamu telah dikeluarkan, pemimpin lain akan muncul untuk memanfaatkan situasi terdesak kamu. Pada saat itu, tidak ada seorang pun, seberapa bijak pun, yang akan dapat menghindari konsekuensi yang harus terjadi.
-### Demikian pula, meskipun kita pernah mendengar tentang kecerobohan dalam perang, kecerdikan tidak pernah terlihat terkait dengan penundaan yang lama.
+### sumber daya negara tidak akan sebanding dengan beban yang harus ditanggung.
+### Sekarang, ketika senjatamu sudah tumpul, semangatmu meredup, kekuatanmu habis, dan hartamu telah dikeluarkan, pemimpin lain akan muncul untuk memanfaatkan situasi terdesakmu. Pada saat itu, tidak ada seorang pun, seberapa bijak pun, yang akan dapat menghindari konsekuensi yang harus terjadi.
+### Demikian pula, meskipun kita pernah mendengar tentang kecerobohan dalam perang, kecerdikan tidak pernah terkait dengan penundaan yang lama.
 ### Tidak ada contoh sebuah negara yang mendapat manfaat dari perang yang berkepanjangan.
-### Hanya seseorang yang sepenuhnya mengenal kejahatan perang yang 
+### Hanya seseorang yang sepenuhnya mengenal kejahatan perang yang dapat memahami cara mengatasi
 
 ''';

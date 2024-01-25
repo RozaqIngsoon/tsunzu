@@ -41,6 +41,8 @@ class DaftarIstilah extends StatelessWidget {
 const String teks = '''
 ## GLOSSARY
 ---
+### * Picul
+#### Picul merujuk pada satuan berat yang digunakan di Tiongkok tradisional. Sebuah picul setara dengan sekitar 133.33 pound atau sekitar 60.48 kilogram. Picul sering digunakan untuk mengukur berat barang dagangan, seperti beras atau rempah-rempah, dalam konteks sejarah perdagangan Tiongkok.
 ### * Superstitious
 #### Superstitious adalah istilah yang digunakan untuk menggambarkan keyakinan atau sikap terhadap sesuatu yang tidak memiliki dasar ilmiah atau rasional, tetapi masih dipegang teguh oleh sebagian orang karena tradisi, kepercayaan turun-temurun, atau kebiasaan. Orang yang bersifat superstitious cenderung mempercayai bahwa tindakan atau kejadian kecil dapat memiliki pengaruh besar terhadap keberuntungan atau nasib mereka, tanpa adanya bukti yang kuat atau dasar ilmiah yang mendukung keyakinan tersebut.
 #### Contoh dari superstitious adalah ketakutan terhadap angka tertentu, melewati di bawah tangga, atau takut akan kucing hitam. Meskipun tidak ada bukti ilmiah yang mendukung bahwa hal-hal tersebut benar-benar membawa keberuntungan atau malapetaka, beberapa orang masih memegang keyakinan ini dan menghindari tindakan atau objek yang dianggap membawa sial.
