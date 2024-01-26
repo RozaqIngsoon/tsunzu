@@ -38,10 +38,10 @@ class BabTiga4 extends StatelessWidget {
 
 const String teks = '''
 ### melarikan diri dari musuh.
-### Oleh karena itu, meskipun pertempuran yang keras dapat dilakukan oleh pasukan kecil, pada akhirnya pasukan yang lebih besar akan dapat menaklukkan pasukan tersebut.
-### Sekarang jenderal adalah benteng pertahanan Negara; jika benteng pertahanan tersebut lengkap di semua titik, Negara akan kuat; jika benteng pertahanan tersebut cacat, Negara akan lemah.
-### Ada tiga cara di mana seorang pemimpin dapat membawa bencana kepada pasukannya :
-1) ### Dengan memerintahkan pasukan untuk maju atau mundur, tanpa menyadari bahwa mereka tidak dapat mengikuti perintah tersebut. Ini disebut menghambat pasukan.
-2) ### Dengan mencoba mengatur pasukan seperti mengurus kerajaan, tanpa memahami kondisi yang berlaku dalam
+### Oleh karena itu, meskipun pasukan kecil dapat melakukan pertempuran yang keras, pada akhirnya, pasukan yang lebih besar akan dapat menaklukkan pasukan tersebut.
+### Jenderal adalah benteng pertahanan suatu negara; jika benteng pertahanan tersebut lengkap di semua titik, negara akan kuat; jika benteng pertahanan tersebut cacat, negara akan lemah.
+### Ada tiga cara di mana seorang pemimpin dapat menyebabkan bencana kepada pasukannya :
+1) ### Dengan memberi perintah kepada pasukan untuk maju atau mundur, terkadang tanpa menyadari bahwa mereka tidak dapat mengikuti perintah tersebut, hal ini disebut menghambat pasukan.
+2) ### Dengan mencoba mengatur pasukan seperti mengurus kerajaan,
 
 ''';
