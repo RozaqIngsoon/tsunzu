@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,8 +37,7 @@ class BabEmpat5 extends StatelessWidget {
 }
 
 const String teks = '''
-### Pengukuran ada karena Bumi; Penilaian jumlah ada karena Pengukuran; Perhitungan ada karena Penilaian jumlah; Penyeimbangan peluang ada karena Perhitungan; dan Kemenangan ada karena Penyeimbangan peluang.
-### Pasukan yang menang melawan pasukan yang kalah, ibarat berat satu pound ditempatkan di timbangan melawan satu butir biji.
-### Serangan pasukan penakluk seperti pecahnya air yang terkumpul ke dalam jurang sedalam seribu depa.
+### Pasukan yang menang melawan pasukan yang kalah, seperti memberi beban satu pound di satu sisi timbangan yang berhadapan dengan satu butir biji.
+### Serangan pasukan penakluk seperti air yang membanjiri ke dalam jurang yang sangat dalam.
 
 ''';

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,9 +37,9 @@ class BabEmpat4 extends StatelessWidget {
 }
 
 const String teks = '''
-### Oleh karena itu, pejuang yang terampil menempatkan dirinya dalam posisi yang membuat kekalahan tidak mungkin, dan tidak melewatkan momen untuk mengalahkan musuh.
-### Oleh karena itu, dalam perang, seorang ahli strategi yang menang hanya mencari pertempuran setelah kemenangan telah diraih, sedangkan dia yang ditakdirkan untuk kalah pertama kali bertempur dan kemudian mencari kemenangan.
-### Pemimpin yang ulung membina hukum moral, dan mematuhi metode dan disiplin dengan tegas; dengan demikian, dalam kekuasaannya mengendalikan kesuksesan.
-### Dalam hal metode militer, kita memiliki, pertama, Pengukuran; kedua, Penilaian jumlah; ketiga, Perhitungan; keempat, Penyeimbangan peluang; kelima, Kemenangan.
+### ditakdirkan untuk mengalami kekalahan pertama-tama dia berperang dan kemudian berusaha meraih kemenangan.
+### Pemimpin yang ulung membentuk aturan moral, dan ketat dalam menerapkan metode dan disiplin; dengan demikian, dia dapat mengendalikan kesuksesan dalam kepemimpinannya.
+### Dalam taktik militer, kita memiliki langkah pertama, yaitu pengukuran; langkah kedua, penilaian jumlah; langkah ketiga, perhitungan; langkah keempat, penyeimbangan peluang; dan langkah kelima, pencapaian kemenangan.
+### Pengukuran ada karena bumi; penilaian jumlah ada karena pengukuran; perhitungan ada karena penilaian jumlah; penyeimbangan peluang ada karena perhitungan; dan kemenangan ada karena penyeimbangan peluang.
 
 ''';

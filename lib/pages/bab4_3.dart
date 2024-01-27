@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,9 @@ class BabEmpat3 extends StatelessWidget {
 }
 
 const String teks = '''
-### "Bagus sekali!”
-### Mengangkat sehelai rambut bukanlah tanda kekuatan besar; melihat matahari dan bulan bukanlah tanda penglihatan tajam; mendengar suara guntur bukanlah tanda kepekaan telinga.
-### Apa yang disebut orang-orang tua sebagai pejuang yang cerdas adalah mereka yang tidak hanya menang, tetapi juga unggul dalam kemenangan dengan mudah.
-### Oleh karena itu, kemenangannya tidak memberinya reputasi kebijaksanaan atau pengakuan atas keberanian.
+### Apa yang disebut orang-orang tua sebagai pejuang yang cerdas adalah mereka yang tidak hanya menang, tetapi juga berhasil meraih kemenangan dengan mudah.
+### Maka, kemenangannya tidak memberinya reputasi kebijaksanaan atau pengakuan atas keberanian.
 ### Dia memenangkan pertempurannya dengan tidak membuat kesalahan. Tidak membuat kesalahan adalah yang membentuk kepastian kemenangan, karena itu berarti mengalahkan musuh yang sudah kalah.
-
+### Seorang pejuang yang mahir akan menghindari situasi yang dapat menyebabkan kekalahan dan selalu memanfaatkan peluang untuk mengalahkan musuh.
+### Oleh karena itu, dalam perang, seorang ahli strategi yang berprestasi mencari pertempuran setelah mencapai kemenangan, sementara yang
 ''';

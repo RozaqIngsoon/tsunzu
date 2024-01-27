@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -40,10 +38,10 @@ class BabEmpat1 extends StatelessWidget {
 
 const String teks = '''
 ## Bab 4 : TAKTIK
-### Prajurit-prajurit ulung di masa lalu pertama-tama menempatkan diri mereka di luar kemungkinan kekalahan, kemudian menunggu kesempatan untuk mengalahkan musuh.
-### Untuk melindungi diri dari kekalahan ada dalam kendali kita sendiri, tetapi kesempatan untuk mengalahkan musuh diberikan oleh musuh itu sendiri.
-### Oleh karena itu, prajurit yang baik mampu melindungi dirinya dari kekalahan, tetapi tidak dapat memastikan untuk mengalahkan musuh.
-### Maka ada pepatah: Seseorang mungkin TAHU bagaimana cara menaklukkan tanpa mampu MELAKUKANNYA.
-### Keamanan dari kekalahan
-
+### Prajurit hebat di masa lalu pertama-tama menghindari kemungkinan kekalahan, kemudian menunggu peluang untuk mengalahkan musuh.
+### Untuk melindungi diri dari kekalahan, itu ada dalam kendali kita sendiri, tetapi kesempatan untuk mengalahkan musuh diberikan oleh musuh itu sendiri.
+### Oleh karena itu, prajurit yang baik dapat melindungi dirinya dari kekalahan, tetapi tidak dapat menjamin kemenangan atas musuh.
+### Maka ada pepatah: Seseorang mungkin MENGETAHUI cara menaklukkan tanpa mampu MELAKUKANNYA.
+### Keamanan dari kekalahan berarti menggunakan taktik pertahanan, sementara kemampuan untuk mengalahkan musuh berarti mengambil inisiatif menyerang.
+### Berdiri dalam posisi defensif
 ''';

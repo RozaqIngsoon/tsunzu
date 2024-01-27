@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,10 @@ class BabEmpat2 extends StatelessWidget {
 }
 
 const String teks = '''
-### mengimplikasikan taktik defensif; kemampuan untuk mengalahkan musuh berarti mengambil inisiatif menyerang.
-### Berdiri dalam posisi defensif menunjukkan kekurangan kekuatan; menyerang menunjukkan kelebihan kekuatan.
+### menunjukkan kelemahan; menyerang menunjukkan keunggulan kekuatan.
 ### Jenderal yang mahir dalam pertahanan bersembunyi di tempat-tempat paling tersembunyi di dalam bumi; yang mahir dalam serangan muncul dari puncak tertinggi langit. Dengan demikian, di satu sisi kita memiliki kemampuan untuk melindungi diri; di sisi lain, kemenangan yang lengkap.
 ### Hanya melihat kemenangan saat itu sudah jelas bagi orang biasa bukanlah puncak keunggulan.
-### Juga bukanlah puncak keunggulan jika kamu berperang dan menang, lalu seluruh Kekaisaran mengatakan, 
+### Juga bukan puncak keunggulan jika kamu berperang dan menang, lalu seluruh Kekaisaran mengatakan, "Bagus sekali!”
+### Mengangkat sehelai rambut bukanlah tanda kekuatan besar; melihat matahari dan bulan bukanlah tanda penglihatan tajam; mendengar suara guntur bukanlah tanda kepekaan telinga.
 
 ''';
