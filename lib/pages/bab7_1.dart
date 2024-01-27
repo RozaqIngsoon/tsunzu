@@ -23,7 +23,7 @@ class BabTujuh1 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(child: Container(
-              padding: EdgeInsets.only(top: 30,left: 8,right: 8,bottom: 8),
+              padding: EdgeInsets.only(top: 25),
               color: Colors.white.withOpacity(0.5),
               child: MarkDownku(
                 teksData: teks,

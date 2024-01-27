@@ -23,7 +23,7 @@ class BabDua4 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(child: Container(
-              padding: EdgeInsets.only(top: 30,left: 8,right: 8,bottom: 8),
+              padding: EdgeInsets.only(top: 25),
               color: Colors.white.withOpacity(0.5),
               child: MarkDownku(
                 teksData: teks,
@@ -39,8 +39,8 @@ class BabDua4 extends StatelessWidget {
 }
 
 const String teks = '''
-### pungutan berat. Dengan hilangnya harta benda dan kelelahan kekuatan ini, rumah-rumah rakyat akan terlantar, dan tiga per sepuluh pendapatan mereka akan habis; sementara biaya pemerintah untuk kendaraan yang rusak, kuda yang sudah usang, baju besi dan helm, busur dan anak panah, tombak dan perisai, mantel pelindung, sapi tarik dan kendaraan berat, akan mencapai empat per sepuluh dari total pendapatannya.
+### rumah-rumah rakyat akan terlantar, dan tiga per sepuluh pendapatan mereka akan habis; sementara biaya pemerintah untuk kendaraan yang rusak, kuda yang sudah usang, baju besi dan helm, busur dan anak panah, tombak dan perisai, mantel pelindung, sapi tarik dan kendaraan berat, akan mencapai empat per sepuluh dari total pendapatannya.
 ### Oleh karena itu, seorang jenderal yang bijaksana selalu berusaha mencari makanan dari musuh. Satu kendaraan penuh persediaan musuh setara dengan dua puluh persediaan miliknya sendiri, begitu juga dengan satu picul* pakan musuh yang setara dengan dua puluh dari persediaannya sendiri.
-### Untuk dapat membunuh musuh, para prajurit kita harus dihasut menjadi marah; agar ada keuntungan dari
+### Untuk dapat membunuh musuh, para prajurit kita harus dihasut menjadi marah; agar ada keuntungan dari mengalahkan musuh, mereka harus mendapatkan imbalan. Oleh karena itu, dalam pertempuran kendaraan, ketika
 
 ''';

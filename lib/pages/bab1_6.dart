@@ -23,7 +23,7 @@ class BabSatu6 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(child: Container(
-              padding: EdgeInsets.only(top: 30,left: 8,right: 8,bottom: 8),
+              padding: EdgeInsets.only(top: 25),
               color: Colors.white.withOpacity(0.5),
               child: MarkDownku(
                 teksData: teks,
@@ -39,7 +39,7 @@ class BabSatu6 extends StatelessWidget {
 }
 
 const String teks = '''
-### menciptakan kejutan yang baik.
-### Taktik militer yang menuju kemenangan sebaiknya tidak diungkapkan sebelumnya. Jenderal yang berhasil dalam pertempuran melakukan banyak perhitungan di markas tempat pertempuran berlangsung. Di sisi lain, jenderal yang kalah dalam pertempuran hanya melakukan sedikit perhitungan sebelumnya. Oleh karena itu, banyak perhitungan cenderung membawa kemenangan, sementara sedikit perhitungan atau bahkan tanpa perhitungan dapat menyebabkan kekalahan.
+
+### sebelumnya. Oleh karena itu, banyak perhitungan cenderung membawa kemenangan, sementara sedikit perhitungan atau bahkan tanpa perhitungan dapat menyebabkan kekalahan.
 
 ''';

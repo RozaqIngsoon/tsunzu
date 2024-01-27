@@ -23,7 +23,7 @@ class BabSatu2 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(child: Container(
-              padding: EdgeInsets.only(top: 30,left: 8,right: 8,bottom: 8),
+              padding: EdgeInsets.only(top: 25),
               color: Colors.white.withOpacity(0.5),
               child: MarkDownku(
                 teksData: teks,
@@ -44,5 +44,5 @@ const String teks = '''
 ### Bumi mencakup segala jarak, yang besar dan kecil; membawa bahaya dan keamanan, termasuk tanah terbuka dan celah sempit; serta memberikan peluang hidup dan kematian.
 ### Komandan melambangkan kebijaksanaan, ketulusan, kebaikan hati, keberanian, dan ketegasan.
 ### Dengan metode dan disiplin dimaksudkan pengaturan tentara dalam subdivisi yang sesuai, penentuan tingkatan pangkat di antara para perwira, pemeliharaan jalan-jalan agar pasokan dapat mencapai tentara, dan pengendalian pengeluaran militer.
-### Lima prinsip ini harus menjadi 
+### Lima prinsip ini harus menjadi pengetahuan dasar setiap jenderal; siapa yang mengenalinya akan meraih 
 ''';

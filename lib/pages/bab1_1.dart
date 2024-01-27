@@ -52,5 +52,5 @@ const String teks = '''
 3) ### Bumi.
 4) ### Komandan.
 5) ### Metode dan disiplin.
-### Hukum moral menyebabkan pasukan sepenuhnya bersatu dengan pemimpin mereka, sehingga mereka akan
+### Hukum moral menyebabkan pasukan sepenuhnya bersatu dengan pemimpin mereka, sehingga mereka akan 
 ''';

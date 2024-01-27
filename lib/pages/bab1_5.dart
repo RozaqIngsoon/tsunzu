@@ -23,7 +23,7 @@ class BabSatu5 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(child: Container(
-              padding: EdgeInsets.only(top: 30,left: 8,right: 8,bottom: 8),
+              padding: EdgeInsets.only(top: 25),
               color: Colors.white.withOpacity(0.5),
               child: MarkDownku(
                 teksData: teks,
@@ -39,6 +39,7 @@ class BabSatu5 extends StatelessWidget {
 }
 
 const String teks = '''
-### bahwa kita jauh; jika kita berada jauh, kita sebaiknya membuat musuh percaya bahwa kita dekat. Menawarkan umpan untuk memancing musuh dapat menjadi taktik yang baik. Jika kita berhasil menipu musuh, maka kita dapat menghancurkannya. Jika musuh merasa aman di semua titik, kita harus bersiap-siap untuk menghadapinya. Jika musuh memiliki kekuatan yang lebih besar, sebaiknya dihindari. Jika lawan kita mudah marah, sebaiknya diusahakan untuk tidak memprovokasinya. Berpura-pura lemah dapat membuat lawan kita menjadi sombong. Jika dia sedang santai, sebaiknya jangan memberinya kesempatan untuk istirahat. Jika pasukan musuh bersatu, taktik memisahkan mereka bisa menjadi strategi yang efektif. Menyerang di tempat yang tidak siap dan muncul di tempat yang tidak diharapkan dapat
+### aman di semua titik, kita harus bersiap-siap untuk menghadapinya. Jika musuh memiliki kekuatan yang lebih besar, sebaiknya dihindari. Jika lawan kita mudah marah, sebaiknya diusahakan untuk tidak memprovokasinya. Berpura-pura lemah dapat membuat lawan kita menjadi sombong. Jika dia sedang santai, sebaiknya jangan memberinya kesempatan untuk istirahat. Jika pasukan musuh bersatu, taktik memisahkan mereka bisa menjadi strategi yang efektif. Menyerang di tempat yang tidak siap dan muncul di tempat yang tidak diharapkan dapat menciptakan kejutan yang baik.
+### Taktik militer yang menuju kemenangan sebaiknya tidak diungkapkan sebelumnya. Jenderal yang berhasil dalam pertempuran melakukan banyak perhitungan di markas tempat pertempuran berlangsung. Di sisi lain, jenderal yang kalah dalam pertempuran hanya melakukan sedikit perhitungan
 
 ''';
