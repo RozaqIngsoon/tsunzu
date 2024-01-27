@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,9 +37,8 @@ class BabLima4 extends StatelessWidget {
 }
 
 const String teks = '''
-### Kualitas keputusan adalah seperti serangan yang tepat waktu dari seekor falcon yang memungkinkannya untuk menyerang dan menghancurkan mangsanya.
-### Oleh karena itu, pejuang yang baik akan menakutkan dalam serangannya, dan cepat dalam pengambilan keputusannya.
 ### Energi bisa dibandingkan dengan membengkokkan busur panah; keputusan, dengan melepaskan pelatuknya.
-### Di tengah kerusuhan dan kegemparan pertempuran, mungkin terlihat kekacauan namun sebenarnya tidak ada kekacauan sama sekali; di tengah kebingungan dan kekacauan, formasi kamu mungkin tanpa kepala atau ekor, namun itu akan tahan terhadap kekalahan.
-### Kekacauan yang disimulasikan mengasumsikan disiplin yang
+### Di tengah kerusuhan dan kegemparan pertempuran, meskipun mungkin terlihat kacau, sebenarnya tidak ada kekacauan sama sekali. Di tengah kebingungan dan kekacauan, formasimu mungkin terlihat tanpa kepala atau ekor, namun itu akan tetap tahan terhadap kekalahan.
+### Ketika kita membuat kekacauan yang disimulasikan, kita mengasumsikan adanya disiplin yang sempurna; ketika kita menunjukkan ketakutan yang disimulasikan, kita mengasumsikan adanya keberanian; dan ketika kita menampakkan kelemahan yang disimulasikan, kita sebenarnya sedang menunjukkan kekuatan.
+### Menyembunyikan ketertiban di balik tirai kekacauan hanyalah masalah membagi-bagi; menyembunyikan keberanian di balik tampilan ketakutan mengasumsikan adanya energi yang terpendam; menyamarkan kekuatan dengan kelemahan dapat dicapai melalui taktik disposisi*.
 ''';

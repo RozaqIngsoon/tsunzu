@@ -41,6 +41,10 @@ class DaftarIstilah extends StatelessWidget {
 const String teks = '''
 ## GLOSSARY
 ---
+### * Disposisi 
+#### Dalam strategi militer, disposisi mencakup pemilihan dan penempatan pertahanan, penggunaan medan, dan penyesuaian taktis berdasarkan pergerakan musuh. Pemahaman yang baik tentang disposisi memungkinkan seorang komandan untuk merencanakan dan mengkoordinasikan serangan atau pertahanan dengan lebih baik. Disposisi melibatkan pengorganisasian dan penempatan pasukan di lapangan perang, termasuk posisi infanteri, kavaleri, artileri, serta elemen-elemen pendukung seperti logistik dan komunikasi.
+### * Falcon 
+#### Burung falcon (Alap-alap) merujuk pada sekelompok burung pemangsa dalam keluarga Falconidae. Falcon terkenal karena kecepatan dan keterampilan berburu mereka. Beberapa spesies falcon digunakan dalam olahraga berburu dan disebut sebagai burung pemangsa yang terlatih.
 ### * Picul
 #### Picul merujuk pada satuan berat yang digunakan di Tiongkok tradisional. Sebuah picul setara dengan sekitar 133.33 pound atau sekitar 60.48 kilogram. Picul sering digunakan untuk mengukur berat barang dagangan, seperti beras atau rempah-rempah, dalam konteks sejarah perdagangan Tiongkok.
 ### * Superstitious

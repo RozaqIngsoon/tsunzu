@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,8 +37,10 @@ class BabLima3 extends StatelessWidget {
 }
 
 const String teks = '''
-### Tidak lebih dari lima rasa utama (asam, pedas, asin, manis, pahit), namun kombinasi dari rasa-rasa ini menghasilkan lebih banyak citarasa daripada yang pernah bisa dicicipi.
-### Dalam pertempuran, tidak ada lebih dari dua metode serangan - langsung dan tidak langsung; namun kedua metode ini dalam kombinasi melahirkan serangkaian manuver yang tak terbatas.
+### beragam cita rasa yang tak terbatas.
+### Dalam pertempuran, hanya ada dua metode serangan: langsung dan tidak langsung. Namun, kombinasi keduanya menciptakan beragam manuver yang tak terbatas.
 ### Metode langsung dan tidak langsung saling mengarahkan satu sama lain bergantian. Ini seperti bergerak dalam lingkaran - kamu tidak pernah mencapai akhir. Siapa yang bisa menghabiskan kemungkinan kombinasinya?
-### Serangan pasukan adalah seperti laju arus deras yang bahkan akan menggulung batu-batu dalam alirannya.
+### Serangan pasukan ibarat arus deras yang mampu menggulung batu-batu di jalurnya.
+### Kualitas keputusan seperti serangan tepat waktu seekor falcon* yang memungkinkannya menyerang dan menghancurkan mangsanya.
+### Oleh karena itu, pejuang yang baik akan menakutkan dalam serangannya dan cepat dalam pengambilan keputusan.
 ''';
