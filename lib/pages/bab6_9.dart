@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,6 +37,6 @@ class BabEnam9 extends StatelessWidget {
 }
 
 const String teks = '''
-### mereka sesuai dengan lawannya dan dengan demikian berhasil meraih kemenangan dapat disebut sebagai seorang komandan yang terlahir dengan kemampuan tersebut.
+### taktik mereka dengan lawan dan berhasil meraih kemenangan dapat dianggap sebagai pemimpin yang memiliki kemampuan bawaan untuk hal tersebut.
 ### Lima elemen (air, api, kayu, logam, tanah) tidak selalu sama kuatnya; empat musim bergantian satu sama lain. Ada hari-hari pendek dan panjang; bulan memiliki periode surut dan pasang.
 ''';

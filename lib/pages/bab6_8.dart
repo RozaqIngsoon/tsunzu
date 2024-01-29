@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,11 +37,12 @@ class BabEnam8 extends StatelessWidget {
 }
 
 const String teks = '''
-### Jangan mengulangi taktik yang telah memberi kamu satu kemenangan, tetapi biarkan metode kamu diatur oleh berbagai macam situasi yang tak terbatas.
+### oleh siapa pun adalah rencana besar dari mana kemenangan itu muncul.
+### Jangan mengulangi taktik yang telah memberimu satu kemenangan, tetapi biarkan metodemu disesuaikan dengan berbagai situasi yang tak terbatas.
 ### Taktik militer ibarat air; karena air dalam aliran alaminya menjauhi tempat tinggi dan bergerak cepat ke bawah.
 ### Jadi dalam perang, cara yang tepat adalah menghindari yang kuat dan menyerang yang lemah.
-### Air membentuk jalannya sesuai dengan alam tanah tempatnya mengalir; seorang prajurit meraih kemenangannya sesuai dengan musuh yang dihadapinya.
-### Oleh karena itu, sama seperti air tidak memiliki bentuk yang tetap, demikian pula dalam peperangan tidak ada kondisi yang tetap.
-### Mereka yang dapat mengubah taktik
+### Air mengikuti jalur alaminya tergantung pada kondisi tanah yang dilaluinya; demikian juga, seorang prajurit mencapai kemenangannya sesuai dengan musuh yang dihadapinya.
+### Maka, seperti air yang tidak memiliki bentuk yang tetap, begitu juga dalam peperangan tidak ada kondisi yang tetap.
+### Orang-orang yang dapat menyesuaikan 
 
 ''';

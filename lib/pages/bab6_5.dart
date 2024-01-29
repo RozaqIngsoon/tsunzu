@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,8 +37,7 @@ class BabEnam5 extends StatelessWidget {
 }
 
 const String teks = '''
-### berperang tidak boleh diketahui; karena jika demikian, musuh akan harus bersiap-siap melawan kemungkinan serangan di beberapa titik berbeda; dan kekuatan-kekuatannya tersebar ke banyak arah, jumlah yang akan kita hadapi di setiap titik akan menjadi sedikit.
-### Karena jika musuh memperkuat depannya, dia akan melemahkan belakangnya; jika dia memperkuat belakangnya, dia akan melemahkan depannya; jika dia memperkuat kiri, dia akan melemahkan kanannya; jika dia memperkuat kanannya, dia akan melemahkan kirinya. Jika dia mengirimkan bala bantuan di mana-mana, dia akan lemah di mana-mana.
-### Kekurangan jumlah berasal dari harus bersiap-siap menghadapi kemungkinan serangan; kekuatan jumlah berasal dari memaksa lawan kita untuk melakukan persiapan
-
+### Dan jika kita mampu menyerang pasukan yang lebih lemah dengan pasukan yang lebih kuat seperti ini, lawan-lawan kita akan dalam keadaan sulit.
+### Lokasi tempat kita berencana untuk berperang sebaiknya tidak diketahui musuh. Sehingga, mereka akan bersiap-siap menghadapi kemungkinan serangan dari beberapa titik berbeda. Dengan demikian, kekuatan musuh akan tersebar di banyak arah, dan jumlah mereka di setiap titik akan menjadi sedikit.
+### Karena jika musuh memperkuat depannya, dia akan melemahkan belakangnya; jika dia memperkuat belakangnya, dia akan melemahkan depannya; jika dia memperkuat kiri, dia akan melemahkan kanannya; jika dia memperkuat kanannya, dia akan melemahkan kirinya. Jika dia mengirimkan bala bantuan di mana-
 ''';

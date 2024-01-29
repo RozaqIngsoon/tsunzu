@@ -43,6 +43,6 @@ const String teks = '''
 ### Siapa pun yang pertama kali berada di medan perang dan menunggu kedatangan musuh, akan segar untuk pertempuran; siapa pun yang kedua berada di medan perang dan harus segera berlari ke pertempuran akan tiba dengan kelelahan.
 ### Oleh karena itu, pejuang yang cerdik menerapkan kehendaknya pada musuh, tetapi tidak membiarkan kehendak musuh diberlakukan padanya.
 ### Dengan menawarkan keuntungan kepada musuh, dia dapat membuat musuh mendekat dengan sendirinya; atau, dengan menimbulkan kerusakan, dia dapat membuatnya tidak mungkin bagi musuh untuk mendekat.
-### Jika musuhnya sedang bersantai, dia dapat mengganggunya; jika dipasok dengan cukup makanan, dia dapat melaparkannya; jika berkemah dengan
+### Jika musuhnya sedang bersantai, dia dapat mengganggunya; jika dipasok dengan cukup makanan, dia dapat melaparkannya; jika berkemah dengan tenang, dia dapat memaksa musuhnya 
 
 ''';

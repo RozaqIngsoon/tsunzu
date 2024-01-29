@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,9 +37,8 @@ class BabEnam4 extends StatelessWidget {
 }
 
 const String teks = '''
-### digambar di tanah. Yang perlu kita lakukan adalah melemparkan sesuatu yang aneh dan tak dapat dijelaskan di jalannya.
-### Dengan mengetahui disposisi musuh dan tetap tidak terlihat, kita dapat menjaga kekuatan kita terkonsentrasi, sementara kekuatan musuh harus terbagi.
-### Kita dapat membentuk satu tubuh yang bersatu, sementara musuh harus terbagi menjadi beberapa bagian. Oleh karena itu, akan ada keseluruhan yang berhadapan dengan bagian-bagian terpisah dari keseluruhan, yang berarti kita akan banyak melawan sedikit musuh.
-### Dan jika kita mampu menyerang pasukan yang lebih lemah dengan pasukan yang lebih kuat seperti ini, lawan-lawan kita akan dalam keadaan sulit.
-### Tempat di mana kita bermaksud untuk 
+### Ini merupakan contoh untuk menciptakan ilusi atau kebingungan di jalur musuh. Tindakan ini dimaksudkan untuk membingungkan dan memecah fokus musuh, sehingga mereka terdistraksi dan tidak bersiap untuk pertempuran. Garis perkemahan yang hanya digambar di tanah mewakili kesan palsu atau ilusi yang dapat menciptakan ketidakpastian di benak musuh. 
+### Dengan mengetahui disposisi* musuh dan tetap tidak terlihat, kita dapat menjaga kekuatan kita terkonsentrasi, sementara kekuatan musuh harus terbagi.
+### Kita dapat bersatu membentuk satu tubuh, sementara musuh terpaksa terbagi menjadi beberapa bagian. Dengan demikian, kita yang utuh akan menghadapi bagian-bagian terpisah dari musuh, membuat pertarungan kita lebih banyak melawan sedikit musuh.
+ 
 ''';

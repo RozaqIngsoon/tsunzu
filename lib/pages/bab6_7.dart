@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,10 @@ class BabEnam7 extends StatelessWidget {
 }
 
 const String teks = '''
-### Meskipun musuh lebih kuat dalam jumlah, kita dapat mencegahnya untuk berperang. Merencanakan agar dapat mengetahui rencananya dan kemungkinan keberhasilannya.
-### Bangkitkan dia, dan pelajari prinsip kegiatannya atau ketidakaktifannya.
-### Dalam membuat taktik, puncak tertinggi yang bisa kamu capai adalah menyembunyikannya; sembunyikan disposisi kamu, dan kamu akan aman dari mata-mata yang paling licik, dari rencana yang paling bijak.
-### Bagaimana kemenangan dapat dihasilkan dari taktik musuh mereka sendiri - itulah yang tidak bisa dimengerti oleh banyak orang.
-### Semua orang dapat melihat taktik dengan mana saya menaklukkan, tetapi yang tidak bisa dilihat oleh siapa pun adalah strategi dari mana kemenangan berkembang.
+### jumlah daripada milik kita, itu tidak akan memberi mereka keuntungan dalam hal kemenangan. Saya katakan bahwa kemenangan bisa dicapai.
+### Meskipun musuh memiliki kekuatan lebih banyak, kita dapat menghindari pertempuran. Rencanakan untuk mengetahui rencananya dan potensi keberhasilannya. Bangkitkan musuh, dan pelajari prinsip aksi atau ketidakaktifannya.
+### Dalam merancang taktik, puncak efektivitas adalah menjaga agar taktik tersebut tetap rahasia; jaga kerahasiaan disposisimu*, dan kamu akan terlindungi dari mata-mata musuh yang cerdik dan rencananya yang licik.
+### Bagaimana kemenangan dapat dihasilkan dari taktik musuh - itulah yang jarang bisa dimengerti oleh banyak orang.
+### Semua orang dapat melihat cara saya menaklukkan, tetapi yang tidak terlihat
 
 ''';

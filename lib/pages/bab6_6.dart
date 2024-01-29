@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,9 +37,10 @@ class BabEnam6 extends StatelessWidget {
 }
 
 const String teks = '''
-### perang melawan kita.
-### Mengetahui tempat dan waktu pertempuran yang akan datang, kita dapat berkonsentrasi dari jarak terjauh untuk berperang.
-### Tetapi jika baik waktu maupun tempatnya tidak diketahui, maka sayap kiri akan tidak berdaya untuk membantu sayap kanan, sayap kanan juga tidak berdaya untuk membantu sayap kiri, depan tidak bisa membantu belakang, atau belakang untuk mendukung depan. Lebih-lebih lagi jika bagian-bagian terjauh dari pasukan terpisah oleh jarak kurang dari seratus LI, dan bahkan yang terdekat terpisah oleh beberapa LI!
-### Meskipun menurut perkiraan saya, tentara Yueh lebih banyak dalam jumlah daripada milik kita, itu tidak akan memberi mereka keuntungan dalam hal kemenangan. Saya katakan bahwa kemenangan bisa dicapai.
+### mana, dia akan lemah di mana-mana.
+### Kekurangan jumlah muncul ketika kita harus bersiap-siap menghadapi kemungkinan serangan, sementara kekuatan jumlah datang dari memaksa lawan kita untuk melakukan persiapan perang melawan kita.
+### Dengan mengetahui tempat dan waktu pertempuran yang akan datang, kita dapat fokus dan bersiap dari jarak terjauh untuk berperang.
+### Tetapi jika baik waktu maupun tempatnya tidak diketahui, maka bagian-bagian pasukan tidak dapat saling membantu. Sayap kiri tidak bisa membantu sayap kanan, sayap kanan juga tidak bisa membantu sayap kiri, depan tidak dapat membantu belakang, atau belakang untuk mendukung depan. Terlebih lagi, jika bagian-bagian pasukan terpisah oleh jarak yang jauh
+### Meskipun menurut perkiraan saya, tentara Yueh* lebih banyak dalam
 
 ''';
