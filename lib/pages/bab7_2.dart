@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,9 @@ class BabTujuh2 extends StatelessWidget {
 }
 
 const String teks = '''
-### menunjukkan pengetahuan akan kelicikan MANUVER DEVIASI.
-### Manuver dengan pasukan adalah menguntungkan; dengan kerumunan yang tidak terdisiplinasi, sangat berbahaya.
-### Jika kamu mengirim pasukan lengkap untuk bergerak dengan tujuan meraih keuntungan, kemungkinannya adalah kamu akan terlambat. Di sisi lain, mengirimkan kelompok bergerak cepat untuk tujuan tersebut melibatkan pengorbanan terhadap persediaan dan bebannya.
-### Jadi, jika kamu memerintahkan pasukan kamu untuk menggulung mantel mereka, melakukan mars paksa tanpa berhenti siang dan malam, menempuh jarak dua kali lipat dari yang biasanya dalam satu perjalanan, menempuh seratus LI untuk memperoleh keuntungan, maka para pemimpin dari ketiga divisi kamu
-
-
+### Ini menunjukkan pemahaman tentang keahlian deviasi*.
+### Bermanuver dengan pasukan memang menguntungkan; dengan orang banyak yang tidak disiplin, paling berbahaya.
+### Jika kamu mengirimkan pasukan penuh untuk bergerak dengan tujuan meraih keuntungan, kemungkinannya adalah kamu akan terlambat. Sebaliknya, mengirim kelompok bergerak cepat untuk mencapai tujuan tersebut melibatkan pengorbanan pada persediaan dan beban mereka.
+### Jadi, jika kamu memerintahkan pasukanmu untuk menggulung mantel mereka, memaksanya berbaris tanpa berhenti siang dan malam, menempuh jarak dua kali lipat dari yang biasanya dalam satu perjalanan, menempuh seratus LI* untuk memperoleh keuntungan, maka pemimpin dari divisi ketigamu akan jatuh ke tangan musuh.
+### Para prajurit yang lebih kuat akan 
 ''';

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -40,9 +38,8 @@ class BabTujuh1 extends StatelessWidget {
 
 const String teks = '''
 ## Bab 7 : MANUVER
-### Dalam perang, seorang jenderal menerima perintahnya dari penguasa (sovereign) atau kepala negara.
-### Setelah mengumpulkan pasukan dan mengkonsentrasikan kekuatannya, ia harus mencocokkan dan menyelaraskan berbagai elemen tersebut sebelum mendirikan perkemahan.
-### Setelah itu, datanglah manuver taktis, yang tak ada yang lebih sulit. Kesulitan dalam manuver taktis terletak pada kemampuan untuk mengubah jalur yang berkelok menjadi yang lurus, dan mengubah kemalangan menjadi keuntungan.
-### Oleh karena itu, untuk mengambil rute yang panjang dan berkelok-kelok, setelah memancing musuh keluar dari jalur, dan meskipun memulai perjalanan setelahnya, berhasil mencapai tujuan sebelumnya,
-
+### Dalam perang, seorang jenderal menerima perintahnya dari penguasa atau kepala negara.
+### Setelah mengumpulkan pasukan dan menyatukan kekuatannya, langkah berikutnya adalah menyelaraskan dan menyatukan berbagai elemen sebelum mendirikan perkemahan.
+### Setelah itu, kita masuk ke dalam manuver taktis, yang merupakan hal yang cukup sulit. Kesulitan dalam manuver taktis terletak pada kemampuan untuk merubah jalur yang berkelok menjadi lurus, serta mengubah keadaan yang kurang menguntungkan menjadi keuntungan.
+### Maka, jika mengambil rute yang panjang dan berkelok-kelok, pancinglah musuh keluar dari jalur utama. Dengan melakukannya, meskipun memulai perjalanan setelahnya, kita dapat mencapai tujuan lebih cepat. 
 ''';

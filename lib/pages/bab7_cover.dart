@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BabTujuhCover extends StatelessWidget {
@@ -68,7 +67,7 @@ class BabTujuhCover extends StatelessWidget {
                   height: 150,
                   child: Center(
                     child: Text(
-                      '"Kemampuan untuk mengubah jalur yang berkelok menjadi yang lurus, dan mengubah kemalangan menjadi keuntungan."',
+                      '"Kemampuan untuk mengubah jalur yang berkelok menjadi lurus, dan mengubah kemalangan menjadi keuntungan."',
                       style: TextStyle(
                           fontSize: 19,
                           color: Colors.white,
