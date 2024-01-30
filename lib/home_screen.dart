@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ))
             : PageFlipWidget(
                 key: controllerPageFlip,
-                initialIndex: kontrol.bookmarkNo.value==1000?0:kontrol.bookmarkNo.value,
+                initialIndex: kontrol.bookmarkNo.value,
                 lastPage: LastPage(),
                 children: pages,
               ),

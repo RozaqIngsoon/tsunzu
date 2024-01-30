@@ -13,21 +13,24 @@ class Kontroller extends GetxController {
   String bookmark = 'PAGE_BOOKMARK'; //key di sharepreference
   String hitungBaca = 'PAGE_TERBACA'; //key di sharepreference
   String coverBuku = 'assets/ikon_app.png';
-  var bookmarkNo = 0.obs;
+  var bookmarkNo = 1000.obs;
   late Timer timer;
 
   @override
   void onInit() async {
-    getBookmark();
-    getHitungBaca();
+    await getBookmark();
+     getHitungBaca();
     super.onInit();
   }
 
   getBookmark() async {
+    debugPrint('.........running getBookmark()');
     SharedPreferences prefs = await SharedPreferences.getInstance();
     //Return int
     int intValue = prefs.getInt(bookmark) ?? 0;
     bookmarkNo.value = intValue;
+    debugPrint('.........bookmarkNo.value : ${bookmarkNo.value}');
+
   }
 
   Future<void> setBookmark(int hal) async {
