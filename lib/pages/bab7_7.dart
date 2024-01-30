@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,9 +37,10 @@ class BabTujuh7 extends StatelessWidget {
 }
 
 const String teks = '''
-### perang bisa kehilangan ketenangannya.
-### Semangat seorang prajurit paling tinggi di pagi hari; di tengah hari semangatnya mulai meredup; dan saat petang, pikirannya hanya terfokus untuk kembali ke perkemahan.
-### Seorang jenderal yang cerdas, oleh karena itu, menghindari menghadapi sebuah pasukan ketika semangatnya masih tinggi, tetapi menyerangnya saat pasukan itu merasa malas dan cenderung untuk kembali. Inilah seni memahami perasaan pasukan.
+### perasaan pasukan.
 ### Menunggu dengan disiplin dan tenang untuk melihat kemunculan kekacauan dan kegemparan di antara musuh: itulah seni menjaga ketenangan diri.
-### Berada dekat dengan tujuan sementara musuh masih jauh darinya, menunggu dengan tenang sementara musuh sedang berjuang dan
+### Berada dekat dengan tujuan sementara musuh masih jauh, menunggu dengan tenang ketika musuh masih berjuang dan berusaha, merasa kenyang sementara musuh kelaparan: itulah seni menjaga kekuatan.
+### Tidak menghentikan musuh yang benderanya dalam keadaan sempurna, tidak menyerang pasukan yang disusun dengan tenang dan penuh keyakinan: itulah seni memahami keadaan.
+### Menyerang musuh di atas gunung atau menyerangnya ketika turun dari gunung adalah tindakan militer yang tidak disarankan.
+### Hindari mengejar musuh yang berpura-pura melarikan diri; jangan menyerang pasukan yang penuh semangat.
 ''';
