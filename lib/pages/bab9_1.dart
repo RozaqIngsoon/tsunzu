@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -40,8 +38,8 @@ class BabSembilan1 extends StatelessWidget {
 
 const String teks = '''
 ## Bab 9 : PERGERAKAN PASUKAN
-### Sekarang kita sampai pada pertanyaan tentang perkemahan tentara dan pengamatan tanda-tanda musuh. 
-### Lewati cepat-cepat gunung dan tetap di sekitar lembah-lembah. Bermarkaslah di tempat tinggi, menghadap matahari. Jangan mendaki puncak gunung untuk bertempur. Itulah beberapa hal tentang perang di pegunungan.
-### Setelah menyeberangi sungai, kamu sebaiknya menjauh dari sungai tersebut. Ketika pasukan penyerang menyeberangi sungai dalam pergerakannya, jangan maju untuk menemui mereka di tengah aliran sungai. Lebih baik biarkan setengah pasukan mereka menyeberang, lalu baru kamu melakukan serangan
-### Tempatkan kapal kamu lebih tinggi dari kapal musuh dan menghadap
+### Sekarang kita akan membahas tentang perkemahan tentara dan cara mengamati tanda-tanda musuh.
+### Lewati gunung dengan cepat dan tetap di sekitar lembah-lembah. Bermarkaslah di tempat tinggi, menghadap matahari. Jangan mendaki puncak gunung untuk bertempur. Itulah beberapa hal tentang perang di pegunungan.
+### Setelah menyeberangi sungai, sebaiknya menjauh dari sungai tersebut. Jika pasukan penyerang sedang menyeberangi sungai, hindari maju menemui mereka di tengah aliran sungai. Lebih baik biarkan setengah pasukan mereka menyeberang, baru kemudian kamu melakukan serangan.
+### Tempatkan kapal kamu lebih tinggi dari kapal musuh dan menghadap matahari. Jangan bergerak ke arah aliran sungai untuk bertemu musuh. Demikian taktik
 ''';

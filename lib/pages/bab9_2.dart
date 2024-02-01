@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,7 +37,7 @@ class BabSembilan2 extends StatelessWidget {
 }
 
 const String teks = '''
-### matahari. Jangan bergerak ke arah aliran sungai untuk bertemu musuh. Demikian taktik perang di daerah sungai.
+### perang di daerah sungai.
 ### Ketika menyeberangi rawa-rawa garam, satu-satunya perhatian kamu harus segera melewatinya, tanpa penundaan.
 ### Jika terpaksa berperang di rawa garam, kamu harus memiliki air dan rumput di dekat kamu, dan pasang punggung kamu ke rumpun pohon. Itu saja untuk operasi di rawa garam.
 ### Di daerah kering dan datar, pilih posisi yang mudah diakses dengan tanah yang naik ke sebelah kanan dan di belakang kamu, sehingga bahaya berada di depan, dan keselamatan berada di belakang. Itu saja untuk berperang di daerah datar.
