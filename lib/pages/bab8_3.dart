@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,11 @@ class BabDelapan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### menghancurkan mereka; dan ganggu mereka, dan pertahankan mereka terus-menerus terlibat; tawarkan rayuan yang menggoda, dan buat mereka bergerak cepat ke titik tertentu.
-### Seni perang mengajarkan kita untuk tidak mengandalkan kemungkinan musuh tidak datang, tetapi pada kesiapan kita untuk menerima serangan mereka; bukan pada peluang mereka tidak menyerang, tetapi lebih pada kenyataan bahwa kita telah membuat posisi kita tidak dapat diserang.
+### Seni perang mengajarkan kita untuk tidak bergantung pada kemungkinan musuh tidak datang, melainkan pada kesiapan kita untuk menghadapi serangan mereka. Ini bukan tentang harapan bahwa mereka tidak akan menyerang, tetapi lebih pada fakta bahwa kita telah membuat posisi kita sulit untuk diserang.
 ### Ada lima kesalahan berbahaya yang dapat memengaruhi seorang jenderal:
-1)	### kekejaman, yang mengarah pada kehancuran;
-2)	### pengecut, yang mengarah pada penangkapan;
-3)	### kemarahan yang tergesa-gesa, yang bisa diprovokasi oleh penghinaan;
+1)	### Kekejaman, yang mengarah pada kehancuran;
+2)	### Pengecut, yang mengarah pada penangkapan;
+3)	### Mudah marah, yang bisa dipicu oleh penghinaan;
+4)	### Kehormatan yang lembut yang sensitif terhadap rasa malu;
+5)	### Kelebihan kepedulian terhadap anak buahnya, yang membuatnya rentan terhadap kekhawatiran dan masalah.
 ''';

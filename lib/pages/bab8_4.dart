@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,7 @@ class BabDelapan4 extends StatelessWidget {
 }
 
 const String teks = '''
-4)	### kehormatan yang lembut yang sensitif terhadap rasa malu;
-5)	### kelebihan kepedulian terhadap anak buahnya, yang membuatnya rentan terhadap kekhawatiran dan masalah.
-### Ini adalah lima dosa utama seorang jenderal, yang merusak dalam mengatur perang.
-### Ketika sebuah pasukan dikalahkan dan pemimpinnya tewas, penyebabnya pasti akan ditemukan di antara kelima dosa berbahaya ini. Jadikanlah mereka sebagai objek meditasi.
-
+### ini adalah lima kesalahan utama seorang jenderal yang dapat merugikan dalam mengatur perang.
+### Ketika sebuah pasukan mengalami kekalahan dan pemimpinnya tewas, penyebabnya pasti dapat ditemukan di antara kelima kesalahan berbahaya ini. Mari kita jadikan mereka sebagai bahan refleksi.
 
 ''';
