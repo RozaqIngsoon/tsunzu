@@ -37,10 +37,10 @@ class BabSembilan2 extends StatelessWidget {
 }
 
 const String teks = '''
-### perang di daerah sungai.
-### Ketika menyeberangi rawa-rawa garam, satu-satunya perhatian kamu harus segera melewatinya, tanpa penundaan.
-### Jika terpaksa berperang di rawa garam, kamu harus memiliki air dan rumput di dekat kamu, dan pasang punggung kamu ke rumpun pohon. Itu saja untuk operasi di rawa garam.
-### Di daerah kering dan datar, pilih posisi yang mudah diakses dengan tanah yang naik ke sebelah kanan dan di belakang kamu, sehingga bahaya berada di depan, dan keselamatan berada di belakang. Itu saja untuk berperang di daerah datar.
-### Semua pasukan lebih suka tempat tinggi daripada rendah dan tempat yang terkena matahari daripada
+### 
+### Ketika menyeberangi rawa-rawa garam, fokuslah untuk melewatinya dengan segera, tanpa menunda.
+### Jika terpaksa berperang di rawa garam, pastikan kamu memiliki air dan rumput di sekitarmu, dan posisimu memunggungi rumpun pohon. Itulah yang perlu diperhatikan dalam operasi di rawa garam.
+### Di daerah kering dan datar, pilih posisi yang mudah diakses dengan tanah yang naik ke sebelah kanan dan di belakangmu, sehingga bahaya berada di depan dan keselamatan berada di belakang. Itulah yang perlu diperhatikan saat berperang di daerah datar.
+### Semua pasukan lebih memilih posisi yang tinggi dibanding rendah, dan tempat yang terkena sinar matahari daripada yang gelap.
 
 ''';

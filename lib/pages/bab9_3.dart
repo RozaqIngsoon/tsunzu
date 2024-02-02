@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,10 @@ class BabSembilan3 extends StatelessWidget {
 }
 
 const String teks = '''
-### tempat yang gelap.
-### Jika kamu merawat pasukan dengan baik dan berkemah di tanah yang keras, maka pasukan akan terhindar dari penyakit apa pun, dan ini akan membawa kemenangan.
-### Saat kamu sampai di sebuah bukit atau tebing, kuasai sisi yang terkena sinar matahari, dengan kemiringan ke belakang sebelah kanan kamu. Dengan demikian, kamu akan sekaligus bertindak untuk keuntungan para prajurit kamu dan memanfaatkan keunggulan alami dari tanah tersebut.
+### 
+### Jika kamu merawat pasukan dengan baik dan berkemah di tanah yang keras, maka pasukan akan terhindar dari penyakit, dan ini akan membawa kemenangan.
+### Saat kamu sampai di sebuah bukit atau tebing, kuasai sisi yang terkena sinar matahari, dengan kemiringan ke belakang sebelah kananmu. Dengan cara ini, kamu akan memberikan keuntungan bagi para prajuritmu dan sekaligus memanfaatkan keunggulan alami dari tanah tersebut.
 ### Ketika, akibat hujan deras di daerah hulu, sungai yang ingin kamu lintasi mengalami peluberan dan berbusa, kamu harus menunggu hingga air surut.
-### Daerah yang memiliki tebing curam dengan aliran deras di antara mereka, lubang alami yang dalam, tempat-tempat sempit, semak-semak yang
+### Daerah yang memiliki tebing curam dengan aliran deras di antara mereka, lubang alami yang dalam, tempat-tempat sempit, semak-semak yang berantakan, rawa-rawa, dan celah-celah harus segera ditinggalkan dan tidak mendekat.
 
 ''';
