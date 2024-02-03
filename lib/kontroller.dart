@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tsunzu/home_screen.dart';
 
-import 'pages/pages.dart';
 
 class Kontroller extends GetxController {
   Color backgroundGelap = Color(0xff1d2031);
@@ -20,7 +20,14 @@ class Kontroller extends GetxController {
   void onInit() async {
     await getBookmark();
      getHitungBaca();
+    loadAdIntersitial();
     super.onInit();
+  }
+
+  @override
+  void dispose() {
+    interstitialAd?.dispose();
+    super.dispose();
   }
 
   getBookmark() async {
@@ -64,9 +71,54 @@ class Kontroller extends GetxController {
       //iklan ditampilkan bila telah membaca 3 halaman
       if (_timer!=null && isHalamanTerbaca.value >1 && isHalamanTerbaca.value%3 == 0) {
         print('...........iklan di tampilkan setelah membaca 3 halaman');
-        //   interstitialAd!.show();
+        interstitialAd!.show();
       }
     }
 
   }
+
+  //intersitial admob
+  InterstitialAd? interstitialAd;
+  final adUnitId = 'ca-app-pub-6472725668607841/5684754091';
+  void loadAdIntersitial() {
+    InterstitialAd.load(
+        adUnitId: adUnitId,
+        request: const AdRequest(),
+        adLoadCallback: InterstitialAdLoadCallback(
+          // Called when an ad is successfully received.
+          onAdLoaded: (ad) {
+            ad.fullScreenContentCallback = FullScreenContentCallback(
+              // Called when the ad showed the full screen content.
+                onAdShowedFullScreenContent: (ad) {},
+                // Called when an impression occurs on the ad.
+                onAdImpression: (ad) {},
+                // Called when the ad failed to show full screen content.
+                onAdFailedToShowFullScreenContent: (ad, err) {
+                  // Dispose the ad here to free resources.
+                  // debugPrint('..............ad gagal tampil');
+                  ad.dispose();
+                  loadAdIntersitial();
+                },
+                // Called when the ad dismissed full screen content.
+                onAdDismissedFullScreenContent: (ad) {
+                  // Dispose the ad here to free resources.
+                  // debugPrint('..............ad di tutup');
+                  ad.dispose();
+                  loadAdIntersitial();
+                },
+                // Called when a click is recorded for an ad.
+                onAdClicked: (ad) {});
+
+            debugPrint('$ad loaded.');
+            // Keep a reference to the ad so you can show it later.
+            interstitialAd = ad;
+          },
+          // Called when an ad request failed.
+          onAdFailedToLoad: (LoadAdError error) {
+            debugPrint('InterstitialAd failed to load: $error');
+          },
+        ));
+  }
+
+  ///end
 }

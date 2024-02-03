@@ -42,6 +42,7 @@ dependencies:
   image_gallery_saver: ^2.0.3
   share_plus: ^6.3.4
   shared_preferences: ^2.2.2
+  google_mobile_ads: ^4.0.0
 
 dev_dependencies:
   flutter_test:
