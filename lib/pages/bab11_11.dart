@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -42,6 +40,6 @@ const String teks = '''
 ### Pada saat-saat kritis, pemimpin sebuah pasukan bertindak seperti orang yang telah naik ke ketinggian dan kemudian menendang tangga di belakangnya. Dia membawa pasukannya jauh ke wilayah musuh sebelum dia mengungkapkan niatnya.
 ### Dia membakar perahu-perahunya dan memecahkan panci-potnya; seperti seorang gembala yang menggiring kawanan domba, dia mengarahkan pasukannya ke sana ke mari, dan tak seorang pun tahu ke mana dia akan pergi.
 ### Untuk mengumpulkan pasukannya dan membawanya ke dalam bahaya: inilah yang dapat disebut sebagai tugas seorang jenderal.
-### Tindakan yang berbeda yang sesuai untuk sembilan jenis medan; kebijaksanaan dalam taktik agresif atau defensif; dan hukum dasar sifat manusia: inilah hal-hal pasti yang
+### Tindakan yang berbeda yang sesuai untuk sembilan jenis situasi, kebijaksanaan dalam taktik agresif atau defensif; dan hukum dasar sifat manusia: inilah hal-hal pasti yang harus dipelajari.
 
 ''';

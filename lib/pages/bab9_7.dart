@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,12 +37,12 @@ class BabSembilan7 extends StatelessWidget {
 }
 
 const String teks = '''
-### Ketika beberapa orang terlihat maju dan beberapa mundur, itu adalah tipu daya.
-### Ketika para prajurit berdiri dengan bersandar pada tombak mereka, mereka lemas karena kekurangan makanan.
-### Jika orang-orang yang dikirim untuk mengambil air pertama-tama minum sendiri, maka tentara mengalami kehausan.
-### Jika musuh melihat keuntungan yang dapat diperoleh dan tidak berupaya untuk mengamankannya, maka tentara sudah kelelahan.
-### Jika burung-burung berkumpul di suatu tempat, itu berarti tempat itu tidak terisi. Kericuhan pada malam hari menandakan ketegangan.
-### Jika ada kerusuhan di kamp, otoritas sang jenderal lemah. Jika bendera-bendera dan panji-panji berpindah-
-
+### Jika beberapa orang terlihat maju dan beberapa mundur, itu bisa jadi taktik tipu daya.
+### Ketika para prajurit berdiri dengan bersandar pada tombak mereka, itu mungkin menunjukkan kelemahan akibat kekurangan makanan.
+### Jika orang-orang yang dikirim untuk mengambil air pertama-tama minum sendiri, itu mungkin menunjukkan bahwa tentara mengalami kehausan.
+### Jika mereka melihat peluang keuntungan tetapi tidak berusaha untuk memanfaatkannya, itu mungkin menunjukkan bahwa tentara mereka sudah kelelahan.
+### Jika burung-burung berkumpul di suatu tempat, itu berarti tempat itu tidak terisi. 
+### Kericuhan pada malam hari menandakan ketegangan.
+### Jika ada kerusuhan di kamp, otoritas sang jenderal lemah. Jika bendera-bendera dan panji-panji berpindah-pindah, ada potensi pemberontakan. Jika para perwira marah, itu berarti para prajuritnya lelah.
 
 ''';

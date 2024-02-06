@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,8 +37,7 @@ class BabSepuluh4 extends StatelessWidget {
 }
 
 const String teks = '''
-### pasukan sama, tidak mudah untuk memprovokasi pertempuran, dan berperang akan merugikan kamu.
-### Ini adalah enam prinsip yang terkait dengan Bumi. Seorang jenderal yang telah mencapai posisi yang bertanggung jawab harus berhati-hati untuk mempelajarinya.
+### Ini adalah enam prinsip yang terkait dengan Bumi. Seorang jenderal yang telah mencapai posisi yang bertanggung jawab harus berhati-hati untuk memahaminya.
 ### Sekarang, pasukan dapat menghadapi enam bencana berbeda, bukan karena penyebab alami, tetapi karena kesalahan yang menjadi tanggung jawab jenderal. Yaitu: 
 1)	### Melarikan diri. 
 2)	### Perlawanan. 
@@ -48,5 +45,5 @@ const String teks = '''
 4)	### Kehancuran. 
 5)	### Kekacauan. 
 6)	### Kekalahan.
-### Jika suatu pasukan dipaksakan melawan musuh yang berukuran sepuluh kali lipat, hasilnya akan
+### Jika suatu pasukan dipaksa berhadapan dengan musuh yang berukuran sepuluh kali lipat, hasilnya kemungkinan besar akan berupa pelarian dari pasukan tersebut.
 ''';

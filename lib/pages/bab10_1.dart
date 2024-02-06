@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -46,8 +44,8 @@ const String teks = '''
 3)	### Medan yang memungkinkan penundaan.
 4)	### Medan jalur sempit. 
 5)	### Medan ketinggian curam. 
-6)	### Posisi yang jauh dari musuh.
-### Tanah yang dapat dilewati dengan bebas oleh kedua belah pihak disebut “Medan yang dapat diakses”.
-### Terkait dengan tanah yang memiliki sifat seperti ini, berada di depan musuh dalam menduduki tempat-tempat yang tinggi dan terkena sinar matahari, serta jagalah dengan baik jalur pasokan kamu. Dengan begitu, kamu akan dapat bertempur dengan keunggulan.
+6)	### Medan yang jauh dari musuh.
+### Wilayah yang dapat dilewati dengan bebas oleh kedua belah pihak disebut “Medan yang dapat diakses”.
+### Dalam wilayah yang memiliki karakteristik seperti ini, penting untuk menduduki posisi yang tinggi di depan musuh dan terkena sinar matahari. Selain itu, jagalah jalur pasokanmu dengan baik. Dengan cara ini, kamu akan memiliki keunggulan yang baik dalam pertempuran.
 
 ''';

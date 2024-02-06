@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,10 @@ class BabSebelas3 extends StatelessWidget {
 }
 
 const String teks = '''
-### Wilayah yang hanya dapat dicapai melalui ngarai sempit, dan kamu hanya dapat mundur melalui jalan-jalan berliku, sehingga sejumlah kecil musuh sudah cukup untuk menghancurkan sejumlah besar pasukanmu, disebut sebagai medan terkepung.
-### Medan di mana kita hanya dapat diselamatkan dari kehancuran dengan segera bertempur, disebut sebagai medan putus asa.
-### Pada medan tumpang-tindih, maka jangan bertempur. Pada medan mudah, jangan berhenti. Pada medan pertentangan, jangan menyerang.
-### Pada medan terbuka, sebaiknya tidak mencoba menghalangi jalan musuh. Pada medan persimpangan jalan, disarankan untuk bergabung dengan sekutu-sekutumu.
-### Di medan serius, kumpulkan rampasan. Di medan sulit, terus maju
+### Wilayah yang hanya dapat dicapai melalui ngarai sempit, dan kamu hanya dapat mundur melalui jalan-jalan berliku, sehingga sejumlah kecil musuh sudah cukup untuk menghancurkan sejumlah besar pasukanmu, disebut sebagai situasi terkepung.
+### Situasi di mana kita hanya dapat diselamatkan dari kehancuran dengan segera bertempur, disebut sebagai situasi putus asa.
+### Pada situasi tumpang-tindih, maka jangan bertempur. Pada situasi mudah, jangan berhenti. Pada situasi pertentangan, jangan menyerang.
+### Pada situasi terbuka, sebaiknya tidak mencoba menghalangi jalan musuh. Pada situasi persimpangan jalan, disarankan untuk bergabung dengan sekutu-sekutumu.
+### Di situasi serius, kumpulkan rampasan. Di situasi sulit, terus maju dengan tekun.
 
 ''';

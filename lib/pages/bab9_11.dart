@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,6 +37,6 @@ class BabSembilan11 extends StatelessWidget {
 }
 
 const String teks = '''
-### disiplinnya akan buruk.
-### Jika seorang jenderal menunjukkan keyakinan pada anak buahnya tetapi selalu bersikeras agar perintahnya diikuti, maka keuntungannya akan bersifat saling menguntungkan.
+### 
+### Jika seorang jenderal menunjukkan keyakinan pada anak buahnya tetapi tetap tegas agar perintahnya diikuti, maka hubungan ini akan membawa keuntungan bersama.
 ''';

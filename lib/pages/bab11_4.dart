@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,12 +37,10 @@ class BabSebelas4 extends StatelessWidget {
 }
 
 const String teks = '''
-### dengan tekun.
-### Di medan terkepung, gunakan strategi. Di medan putus asa, berjuang.
-### Para pemimpin ulung pada masa lalu dikenal karena keahlian mereka dalam menyusup antara garis depan dan belakang musuh. Mereka mencegah kerja sama antara divisi besar dan kecil, menghalangi pasukan terbaik untuk menyelamatkan yang buruk, dan para perwira untuk mengumpulkan kembali pasukan mereka.
+### Di situasi terkepung, gunakan strategi. Di situasi putus asa, berjuang.
+### Para pemimpin ulung pada masa lalu dikenal karena keahlian mereka dalam menyusup antara garis depan dan belakang musuh. Mereka mencegah kerja sama antara divisi besar dan kecil, menghalangi pasukan terbaik untuk menyelamatkan yang buruk, dan menghambat perwira untuk mengumpulkan kembali pasukan mereka.
 ### Ketika pasukan musuh bersatu, mereka berhasil menciptakan kekacauan di tengah-tengah mereka.
 ### Ketika itu menguntungkan bagi mereka, mereka maju; tetapi ketika sebaliknya, mereka berhenti.
-### Jika ditanya bagaimana menghadapi pasukan besar musuh yang tersusun rapi dan siap menyerang, saya akan mengatakan: "Mulailah dengan
-
+### Jika ditanya bagaimana menghadapi pasukan besar musuh yang tersusun rapi dan siap menyerang, saya akan mengatakan: "Mulailah dengan merebut sesuatu yang sangat berharga bagi lawanmu; maka dia akan patuh pada keinginanmu."
 
 ''';

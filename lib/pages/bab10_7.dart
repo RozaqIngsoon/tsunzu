@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,8 +37,7 @@ class BabSepuluh7 extends StatelessWidget {
 }
 
 const String teks = '''
-### bagi seorang jenderal yang hebat.
-### Seseorang yang mengetahui hal-hal ini dan dalam pertempuran menerapkan pengetahuannya, akan memenangkan pertempurannya. Seseorang yang tidak mengetahuinya, atau tidak mengamalkannya, pasti akan kalah.
-### Jika pertempuran pasti akan menghasilkan kemenangan, maka kamu harus bertempur, meskipun penguasa melarangnya; jika pertempuran tidak akan menghasilkan kemenangan, maka kamu tidak boleh bertempur, bahkan jika penguasa memerintahkannya.
-### Jenderal yang maju tanpa merindukan ketenaran dan mundur tanpa takut akan kehormatan yang tercemar, yang hanya memikirkan untuk melindungi negaranya dan memberikan pelayanan yang baik bagi penguasanya, adalah permata kerajaan.
+### Seseorang yang mengetahui hal-hal ini dan menerapkan pengetahuannya dalam pertempuran akan memiliki peluang lebih besar untuk memenangkan pertempuran. Sebaliknya, seseorang yang tidak mengetahuinya atau tidak mengamalkannya kemungkinan besar akan kalah dalam pertempuran.
+### Jika pertempuran pasti akan menghasilkan kemenangan, maka kamu sebaiknya bertempur, meskipun penguasa melarangnya; namun, jika pertempuran tidak akan menghasilkan kemenangan, kamu seharusnya tidak bertempur, bahkan jika penguasa memerintahkannya.
+### Jenderal yang maju tanpa merindukan ketenaran dan mundur tanpa takut akan kehormatan yang tercemar, yang hanya memikirkan untuk melindungi negaranya dan memberikan pelayanan yang baik bagi penguasanya, adalah permata bagi kerajaan.
 ''';

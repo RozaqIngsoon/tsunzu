@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,9 +37,9 @@ class BabSembilan10 extends StatelessWidget {
 }
 
 const String teks = '''
-### langkah-langkah berjaga-jaga dan meremehkan lawan-lawan mereka pasti akan ditangkap oleh mereka.
-### Jika para prajurit dihukum sebelum mereka memiliki rasa keterikatan dengan kamu, mereka tidak akan tunduk; dan, jika mereka tidak tunduk, maka mereka akan menjadi tidak berguna. Namun, jika ketika para prajurit sudah memiliki keterikatan dengan kamu, hukuman-hukuman tidak diberlakukan, mereka juga akan menjadi tidak berguna.
-### Oleh karena itu, prajurit harus diperlakukan dengan kemanusiaan pada awalnya, tetapi tetap dalam kendali melalui disiplin yang ketat. Ini adalah jalan pasti menuju kemenangan.
-### PP.	Jika dalam melatih prajurit, perintah-perintah secara konsisten ditegakkan, tentara akan memiliki disiplin yang baik; jika tidak,
+### 
+### Jika para prajurit dihukum sebelum mereka merasa terikat denganmu, mereka mungkin tidak akan patuh; dan, jika mereka tidak patuh, mereka akan menjadi tidak berguna. Sebaliknya, jika para prajurit sudah memiliki keterikatan denganmu dan tidak dikenakan hukuman, mereka juga dapat menjadi tidak efektif.
+### Oleh karena itu, penting untuk memperlakukan prajurit dengan kemanusiaan dari awal, tetapi tetap menjaga kendali melalui penerapan disiplin yang ketat. Pendekatan ini merupakan jalan yang pasti menuju kemenangan.
+### Dalam melatih prajurit, penting untuk konsisten dalam menegakkan perintah-perintah. Jika ini dilakukan, tentara akan memiliki tingkat disiplin yang baik. Sebaliknya, jika tidak konsisten, tingkat disiplin dapat menjadi buruk.
 
 ''';

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,9 @@ class BabSebelas13 extends StatelessWidget {
 }
 
 const String teks = '''
-### Oleh karena itu, di medan tumpang tindih, saya akan menginspirasi pasukan saya dengan tujuan bersatu. Di medan mudah, saya akan memastikan ada hubungan yang erat antara semua bagian dari pasukan saya.
-### Di medan pertentangan, saya akan mempercepat pasukan belakang saya.
-### Di medan terbuka, saya akan menjaga pertahanan saya dengan cermat. Di medan persimpangan jalan, saya akan mengkonsolidasikan aliansi saya.
-### Di medan serius, saya akan berusaha memastikan aliran pasokan yang berkelanjutan. Di medan sulit, saya akan terus maju di sepanjang jalan.
-### Di medan terkepung, saya akan menghalangi setiap jalan mundur. Di medan putus asa, saya akan memberi tahu para prajurit saya bahwa menyelamatkan nyawa mereka adalah hal yang mustahil.
+### Oleh karena itu, dalam situasi tumpang tindih, inspirasikan pasukan dengan tujuan bersatu. Di situasi yang mudah, pastikan terdapat hubungan yang erat antara semua bagian dari pasukan.
+### Di situasi pertentangan, percepat pasukan. Di situasi terbuka, jaga pertahanan dengan cermat. Di situasi persimpangan jalan, konsolidasikan aliansi.
+### Di situasi serius, pastikan aliran pasokan yang berkelanjutan. Di situasi sulit, terus maju di sepanjang jalan.
+### Di situasi terkepung, halangi setiap jalan mundur. Di situasi putus asa, beri tahu para prajurit bahwa menyelamatkan nyawa mereka adalah hal yang mustahil.
 
 ''';

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -40,18 +38,18 @@ class BabSebelas1 extends StatelessWidget {
 
 const String teks = '''
 ## Bab 11 : SEMBILAN SITUASI
-### Seni perang mengenali sembilan variasi medan pertempuran: 
-1)	### Medan tumpang-tindih.
-2)	### Medan mudah.
-3)	### Medan pertentangan.
-4)	### Medan terbuka.
-5)	### Medan persimpangan jalan.
-6)	### Medan serius.
-7)	### Medan sulit.
-8)	### Medan terkepung.
-9)	### Medan putus asa.
-### Saat seorang pemimpin berperang di wilayahnya sendiri, itu dapat disebut sebagai medan pertempuran yang bersifat tumpang-tindih.
-### Ketika ia telah memasuki wilayah musuh, tetapi belum terlalu jauh, itu dapat dianggap sebagai medan pertempuran yang mudah.
-### Wilayah yang, jika dikuasai, akan
+### Seni perang mengenali sembilan variasi situasi pertempuran: 
+1)	### Situasi tumpang-tindih.
+2)	### Situasi mudah.
+3)	### Situasi pertentangan.
+4)	### Situasi terbuka.
+5)	### Situasi persimpangan jalan.
+6)	### Situasi kritis atau serius.
+7)	### Situasi sulit.
+8)	### Situasi terkepung.
+9)	### Situasi putus asa.
+### Saat seorang pemimpin berperang di wilayahnya sendiri, itu dapat disebut sebagai situasi pertempuran yang bersifat tumpang-tindih.
+### Ketika ia telah memasuki wilayah musuh, tetapi belum terlalu jauh, itu dapat dianggap sebagai situasi pertempuran yang mudah.
+### Wilayah yang, jika dikuasai, akan memberikan keuntungan besar kepada salah satu pihak disebut sebagai situasi pertentangan.
 
 ''';

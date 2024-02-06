@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,7 +37,7 @@ class BabSebelas16 extends StatelessWidget {
 }
 
 const String teks = '''
-### biarkan mereka mengetahui rancangan kamu. Ketika situasinya cerah, tunjukkan itu di hadapan mata mereka; tetapi jangan memberi tahu mereka apa pun ketika situasinya suram.
+### Hadapkan prajuritmu dengan perbuatan itu sendiri; jangan pernah biarkan mereka mengetahui rancanganmu. Ketika situasinya cerah, tunjukkan itu di hadapan mata mereka; tetapi jangan memberi tahu mereka apa pun ketika situasinya suram.
 ### Letakkan pasukan kamu dalam bahaya maut, dan mereka akan bertahan; jatuhkan mereka ke dalam kesulitan yang putus asa, dan mereka akan selamat.
 ### Karena justru ketika sebuah pasukan telah terjebak dalam bahaya, itulah saatnya mereka memiliki potensi untuk memberikan pukulan demi kemenangan.
 ### Keberhasilan dalam perang dicapai dengan hati-hati menyesuaikan diri kita dengan tujuan musuh.

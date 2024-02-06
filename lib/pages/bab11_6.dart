@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,9 @@ class BabSebelas6 extends StatelessWidget {
 }
 
 const String teks = '''
-### terduga.
-### Masukkan pasukanmu ke posisi-posisi di mana tidak ada jalan keluar, dan mereka akan lebih memilih kematian daripada melarikan diri. Jika mereka bersedia menghadapi kematian, tidak ada yang tidak dapat mereka capai. Para perwira dan prajurit sama-sama akan memberikan kekuatan mereka yang terbaik.
+### Tempatkan pasukanmu di posisi di mana peluang untuk melarikan diri sangat sulit, sehingga mereka akan lebih memilih menghadapi kematian. Jika mereka bersedia menghadapi risiko tersebut, tidak ada yang tidak dapat dicapai. Para perwira dan prajurit akan bersatu untuk memberikan yang terbaik dari kekuatan mereka.
 ### Para prajurit, ketika berada dalam keadaan putus asa, kehilangan rasa takut. Jika tidak ada tempat perlindungan, mereka akan bertahan. Jika berada di wilayah musuh, mereka akan menunjukkan ketegaran. Jika tidak ada jalan lain, mereka akan bertempur dengan gigih.
-### Dengan demikian, tanpa menunggu untuk diatur, para prajurit akan selalu waspada; tanpa menunggu untuk diminta, mereka akan menjalankan kehendakmu; tanpa batasan mereka
+### Dengan demikian, tanpa menunggu untuk diatur, para prajurit akan selalu waspada; tanpa menunggu untuk diminta, mereka akan menjalankan kehendakmu; tanpa batasan mereka akan setia; tanpa perintah, mereka dapat dipercaya.
 
 
 ''';

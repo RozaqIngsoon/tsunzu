@@ -39,8 +39,8 @@ class BabSembilan6 extends StatelessWidget {
 const String teks = '''
 ### dikirim untuk mengumpulkan kayu bakar. Beberapa awan debu yang bergerak bolak-balik menandakan bahwa pasukan sedang berkemah.
 ### Kata-kata yang rendah hati dan peningkatan persiapan adalah tanda bahwa musuh akan maju. Bahasa yang kasar dan tindakan maju seolah-olah untuk menyerang adalah tanda bahwa dia akan mundur.
-### Ketika kereta ringan keluar terlebih dahulu dan mengambil posisi di sayap, itu adalah tanda bahwa musuh sedang membentuk formasi pertempuran.
+### Ketika kendaraan ringan keluar terlebih dahulu dan mengambil posisi di sayap, itu adalah tanda bahwa musuh sedang membentuk formasi pertempuran.
 ### Tawaran perdamaian yang tidak disertai dengan perjanjian bersumpah menunjukkan adanya rencana jahat.
-### Ketika terjadi banyak kegiatan berlarian dan para prajurit mulai membentuk barisan, itu adalah tanda bahwa saat-saat kritis telah tiba.
+### Jika terjadi banyak kegiatan berlarian dan para prajurit mulai membentuk barisan, itu menandakan bahwa saat-saat kritis telah tiba.
 
 ''';

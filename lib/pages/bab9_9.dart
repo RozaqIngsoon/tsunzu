@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,9 +37,9 @@ class BabSembilan9 extends StatelessWidget {
 }
 
 const String teks = '''
-### yang sangat sulit.
-###	Ketika utusan dikirim dengan pujian di bibir mereka, itu merupakan tanda bahwa musuh menginginkan gencatan senjata.
+### 
+###	Ketika utusan dikirim dengan kata-kata pujian, itu merupakan tanda bahwa musuh menginginkan gencatan senjata.
 ###	Jika pasukan musuh marah bergerak maju dan tetap menghadap pasukan kita untuk waktu yang lama tanpa terlibat dalam pertempuran atau pergi, situasi seperti ini memerlukan kewaspadaan dan kehati-hatian yang besar.
-###	Jika jumlah pasukan kita tidak lebih banyak daripada musuh, itu sudah cukup; itu hanya berarti bahwa serangan langsung tidak dapat dilakukan. Yang bisa kita lakukan hanyalah mengumpulkan semua kekuatan yang tersedia, mengawasi musuh dengan cermat, dan mendapatkan bantuan pasukan tambahan.
-### Mereka yang tidak memikirkan
+###	Jika jumlah pasukan kita lebih sedikit daripada pasukan musuh, ini berarti kita tidak bisa melakukan serangan langsung. Satu-satunya opsi yang kita miliki adalah mengumpulkan semua kekuatan yang kita punya, mengamati musuh dengan hati-hati, dan mencari bantuan pasukan tambahan.
+### Mereka yang tidak memikirkan langkah untuk berjaga-jaga dan meremehkan lawan-lawannya pasti akan ditangkap oleh lawannya.
 ''';

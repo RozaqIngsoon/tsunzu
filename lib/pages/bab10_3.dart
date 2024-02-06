@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,11 +37,10 @@ class BabSepuluh3 extends StatelessWidget {
 }
 
 const String teks = '''
-### dengan keuntungan.
 ### Terkait dengan ”Medan jalur sempit”, jika kamu dapat mendudukinya lebih dulu, jaga dengan kuat dan tunggu kedatangan musuh.
-### Jika pasukan musuh lebih dulu menduduki ”Medan jalur sempit” dan dijaga dengan kuat, jangan mengejar mereka. Namun, jika medan itu dijaga dengan lemah, kamu bisa mengejarnya.
-### Mengenai “Medan ketinggian curam”, jika kamu lebih dulu daripada lawan kamu, kamu harus menduduki tempat yang lebih tinggi dan terkena matahari, dan menunggu dia datang.
-### Jika musuh telah mendudukinya sebelum kamu, jangan mengikutinya, tetapi mundurlah dan coba memancingnya menjauh.
-### Jika kamu berada pada jarak yang jauh dari musuh, dan kekuatan kedua
+### Jika pasukan musuh lebih dulu menduduki "Medan jalur sempit" dan dijaga dengan kuat, sebaiknya hindari menyerang mereka. Namun, jika medan itu dijaga dengan lemah, kamu dapat mempertimbangkan untuk melancarkan serangan.
+### Mengenai “Medan ketinggian curam”, jika kamu mendahului lawanmu, kamu harus menduduki tempat yang lebih tinggi dan terkena matahari, dan menunggunya datang.
+### Jika musuh telah menduduki medan tersebut sebelum kamu, sebaiknya tidak mengikutinya secara langsung, melainkan mundur dan mencoba memancingnya menjauh.
+### Jika kamu berada pada jarak yang jauh dari musuh, dan kekuatan kedua pasukan seimbang, tidak mudah untuk memprovokasi pertempuran, dan berperang akan merugikanmu.
 
 ''';
