@@ -39,6 +39,6 @@ class BabSebelas18 extends StatelessWidget {
 }
 
 const String teks = '''
-### malu seperti seorang gadis, sampai musuh memberikan kesempatan; setelah itu tirulah kecepatan seekor kelinci yang sedang berlari, dan saat itu sudah terlambat bagi musuh untuk melawan kamu.
+### 
 
 ''';
