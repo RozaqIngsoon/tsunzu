@@ -38,9 +38,9 @@ class BabDuaBelas1 extends StatelessWidget {
 
 const String teks = '''
 ## Bab 12 : SERANGAN DENGAN API
-### Ada lima cara untuk menyerang dengan menggunakan api. Cara pertama adalah membakar pasukan di dalam kamp mereka; cara kedua adalah membakar persediaan; cara ketiga adalah membakar konvoi bagasi; cara keempat adalah membakar gudang senjata dan penyimpanan amunisi; cara kelima adalah melemparkan api jatuh di tengah musuh.
+### Terdapat lima metode untuk menyerang dengan menggunakan api. Metode pertama adalah membakar pasukan di kamp mereka; metode kedua adalah dengan membakar persediaan; metode ketiga adalah dengan membakar kereta barang; metode keempat adalah dengan membakar gudang senjata dan tempat penyimpanan amunisi; metode kelima adalah dengan melemparkan api di tengah-tengah musuh.
 ### Untuk melaksanakan serangan dengan api, kita harus memiliki sarana yang tersedia. Bahan untuk membuat api sebaiknya selalu siap digunakan.
 ### Ada musim yang tepat untuk melancarkan serangan dengan api, dan hari-hari khusus untuk memulai kebakaran.
-### Musim yang tepat adalah saat cuacanya sangat kering; hari-hari khusus adalah saat bulan berada
+### Musim yang tepat adalah saat cuacanya sangat kering. Hari-hari yang optimal adalah ketika bulan berada dalam konstelasi Sieve, Wall, Wing, atau Cross-bar; karena keempatnya merupakan hari-hari di mana angin bertiup dengan kencang.
 
 ''';
