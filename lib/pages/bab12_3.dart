@@ -39,7 +39,6 @@ class BabDuaBelas3 extends StatelessWidget {
 const String teks = '''
 
 ### Angin yang muncul pada siang hari akan berlangsung lama, tetapi angin malam biasanya akan mereda dengan cepat.
-### Dalam setiap pasukan, kelima perkembangan terkait dengan api harus diketahui, gerakan bintang harus dihitung, dan perhatian harus dijaga terhadap hari-hari yang sesuai.
-### Maka mereka yang menggunakan api sebagai bantuan untuk serangan menunjukkan kecerdasan; mereka yang menggunakan air sebagai
-
+### Dalam setiap pasukan, penting untuk mengetahui kelima kemungkinan perkembangan terkait dengan penggunaan api, menghitung gerakan bintang, dan tetap waspada terhadap hari-hari yang sesuai.
+### Jadi, orang-orang yang menggunakan api dalam serangan menunjukkan kecerdasan, sementara mereka yang mengandalkan air untuk serangan mendapatkan kekuatan tambahan.
 ''';

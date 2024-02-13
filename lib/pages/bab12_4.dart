@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,10 +37,9 @@ class BabDuaBelas4 extends StatelessWidget {
 }
 
 const String teks = '''
-### bantuan untuk serangan memperoleh tambahan kekuatan.
 ### Dengan menggunakan air, musuh dapat dihentikan, tetapi tidak dapat dirampas semua hartanya.
-### Sial-lah nasib seseorang yang mencoba memenangkan pertarungannya dan berhasil dalam serangannya tanpa memupuk semangat berusaha; karena hasilnya adalah pemborosan waktu dan stagnasi umum.
+### Sayang sekali bagi seseorang yang mencoba menang dalam pertarungannya dan berhasil dalam serangannya tanpa semangat berusaha; karena itu hanya akan membuang waktu dan membuat kemajuan terhenti.
 ### Maka ada pepatah: Penguasa yang bijaksana merencanakan segalanya dengan baik; jenderal yang baik mengembangkan sumber dayanya
-### Jangan bergerak kecuali jika kamu melihat keuntungan; jangan menggunakan pasukan kamu kecuali jika ada sesuatu yang bisa didapatkan; jangan bertempur kecuali jika posisinya kritis.
+### Jangan bergerak kecuali jika kamu melihat keuntungan; jangan menggunakan pasukanmu kecuali jika ada sesuatu yang bisa didapatkan; jangan bertempur kecuali jika posisinya kritis.
 
 ''';

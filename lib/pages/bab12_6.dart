@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,6 +37,6 @@ class BabDuaBelas6 extends StatelessWidget {
 }
 
 const String teks = '''
-### negara dan mempertahankan integritas pasukan.
+### 
 
 ''';

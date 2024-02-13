@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -39,7 +37,7 @@ class BabTigaBelas3 extends StatelessWidget {
 }
 
 const String teks = '''
-### benang." Ini adalah kemampuan yang paling berharga bagi seorang penguasa.
+### 
 ### Menggunakan MATA-MATA LOKAL berarti mempekerjakan jasa penduduk dari suatu wilayah.
 ### Menggunakan MATA-MATA INTERNAL, menggunakan pejabat-pejabat dari pihak musuh.
 ### Menggunakan MATA-MATA YANG TERKONVERSI, mendapatkan mata-mata musuh dan menggunakannya untuk kepentingan kita sendiri.
