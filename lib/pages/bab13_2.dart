@@ -43,8 +43,8 @@ const String teks = '''
 ### Oleh karena itu, penggunaan mata-mata, yang terbagi menjadi lima kelas: 
 1) ### Mata-mata lokal; 
 2) ### Mata-mata internal;
-3) ### Mata-mata yang terkonversi; 
+3) ### Mata-mata yang berpaling; 
 4) ### Mata-mata yang berkorban; 
 5) ### Mata-mata yang selamat.
-### Ketika kelima jenis mata-mata ini semua bekerja, tidak ada yang bisa menemukan sistem rahasia itu. Ini disebut "manipulasi ilahi dari benang-benang." Ini adalah kemampuan yang paling berharga bagi seorang penguasa.
+### Ketika kelima jenis mata-mata ini beroperasi, tidak ada yang dapat menemukan sistem rahasia itu. Ini disebut sebagai "manipulasi ilahi dari benang-benang." Kemampuan ini merupakan aset paling berharga bagi seorang pemimpin.
 ''';

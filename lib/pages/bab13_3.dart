@@ -40,7 +40,6 @@ const String teks = '''
 ### 
 ### Menggunakan MATA-MATA LOKAL berarti mempekerjakan jasa penduduk dari suatu wilayah.
 ### Menggunakan MATA-MATA INTERNAL, menggunakan pejabat-pejabat dari pihak musuh.
-### Menggunakan MATA-MATA YANG TERKONVERSI, mendapatkan mata-mata musuh dan menggunakannya untuk kepentingan kita sendiri.
-### Menggunakan MATA-MATA YANG SUDAH DITAKDIRKAN, melakukan beberapa hal secara terbuka untuk tujuan tipuan, dan membiarkan mata-mata kita mengetahuinya dan melaporkannya kepada musuh.
-### Menggunakan MATA-MATA YANG BERKORBAN, melakukan beberapa hal secara terbuka untuk tujuan tipuan,
+### Menggunakan MATA-MATA YANG BERPALING, mendapatkan mata-mata musuh dan menggunakannya untuk kepentingan kita sendiri.
+### Menggunakan MATA-MATA YANG BERKORBAN, melakukan beberapa hal secara terbuka untuk tujuan tipuan, dan membiarkan mata-mata kita mengetahuinya dan melaporkannya kepada musuh.
 ''';

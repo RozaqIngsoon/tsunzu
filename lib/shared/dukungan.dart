@@ -57,7 +57,7 @@ class _DukunganState extends State<Dukungan> {
                       ),
                       Divider(thickness: 1,),
                       Text(
-                        'Hai sobat, support ingsoon untuk terus berkarya membuat app yang bermanfaat ya...',
+                        'Hai sobat, support ingsoon ya...\nDonasi lewat qris bisa menggunakan semua e-wallet & e-banking',
                         style: TextStyle( color: Colors.white),textAlign: TextAlign.left,
                       ),
                       Align(
