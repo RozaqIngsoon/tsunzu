@@ -50,6 +50,6 @@ const String teks = '''
 9)	### Situasi putus asa.
 ### Saat seorang pemimpin berperang di wilayahnya sendiri, itu dapat disebut sebagai situasi pertempuran yang bersifat tumpang-tindih.
 ### Ketika ia telah memasuki wilayah musuh, tetapi belum terlalu jauh, itu dapat dianggap sebagai situasi pertempuran yang mudah.
-### Wilayah yang, jika dikuasai, akan memberikan keuntungan besar kepada salah satu pihak disebut sebagai situasi pertentangan.
+### Wilayah yang, jika dikuasai, akan 
 
 ''';

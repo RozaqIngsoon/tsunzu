@@ -36,7 +36,7 @@ class Kontroller extends GetxController {
     //Return int
     int intValue = prefs.getInt(bookmark) ?? 0;
     bookmarkNo.value = intValue;
-    debugPrint('.........bookmarkNo.value : ${bookmarkNo.value}');
+    // debugPrint('.........bookmarkNo.value : ${bookmarkNo.value}');
 
   }
 
@@ -65,12 +65,12 @@ class Kontroller extends GetxController {
     if(hal! > 2 ){
       _timer = Timer(Duration(seconds: 5),(){
           isHalamanTerbaca.value = isHalamanTerbaca.value+1;
-          print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');
+          // print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');
           setHitungBaca(isHalamanTerbaca.value);
       });
       //iklan ditampilkan bila telah membaca 3 halaman
       if (_timer!=null && isHalamanTerbaca.value >1 && isHalamanTerbaca.value%3 == 0) {
-        print('...........iklan di tampilkan setelah membaca 3 halaman');
+        // print('...........iklan di tampilkan setelah membaca 3 halaman');
         interstitialAd!.show();
       }
     }

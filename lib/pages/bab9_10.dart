@@ -37,9 +37,8 @@ class BabSembilan10 extends StatelessWidget {
 }
 
 const String teks = '''
-### 
-### Jika para prajurit dihukum sebelum mereka merasa terikat denganmu, mereka mungkin tidak akan patuh; dan, jika mereka tidak patuh, mereka akan menjadi tidak berguna. Sebaliknya, jika para prajurit sudah memiliki keterikatan denganmu dan tidak dikenakan hukuman, mereka juga dapat menjadi tidak efektif.
+### denganmu dan tidak dikenakan hukuman, mereka juga dapat menjadi tidak efektif.
 ### Oleh karena itu, penting untuk memperlakukan prajurit dengan kemanusiaan dari awal, tetapi tetap menjaga kendali melalui penerapan disiplin yang ketat. Pendekatan ini merupakan jalan yang pasti menuju kemenangan.
 ### Dalam melatih prajurit, penting untuk konsisten dalam menegakkan perintah-perintah. Jika ini dilakukan, tentara akan memiliki tingkat disiplin yang baik. Sebaliknya, jika tidak konsisten, tingkat disiplin dapat menjadi buruk.
-
+### Jika seorang jenderal menunjukkan keyakinan pada anak buahnya tetapi tetap tegas agar perintahnya diikuti, maka hubungan ini akan membawa keuntungan bersama.
 ''';

@@ -37,10 +37,9 @@ class BabSembilan5 extends StatelessWidget {
 }
 
 const String teks = '''
-### Ketika musuh menjaga jarak dan mencoba memprovokasi pertempuran, dia mengharapkan pihak lain maju.
-### Jika tempat perkemahan musuh mudah diakses, dia sedang memberikan umpan.
 ### Gerakan di antara pepohonan hutan menunjukkan musuh sedang maju. Munculnya sejumlah layar di tengah rumput tebal berarti musuh ingin membuat kita curiga.
 ### Munculnya burung-burung yang beterbangan merupakan tanda adanya penyergapan. Hewan-hewan yang terkejut menunjukkan bahwa serangan tiba-tiba akan datang.
 ### Jika ada debu yang membubung tinggi, itu tandanya kereta sedang melaju; bila debunya sedikit, tetapi tersebar di area yang luas, itu pertanda pendekatan infanteri.  Ketika debu bercabang ke berbagai arah, itu menunjukkan bahwa pasukan telah
-
+### dikirim untuk mengumpulkan kayu bakar. Beberapa awan debu yang bergerak bolak-balik menandakan bahwa pasukan sedang berkemah.
+### Kata-kata yang rendah hati dan peningkatan persiapan adalah tanda
 ''';

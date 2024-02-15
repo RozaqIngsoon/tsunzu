@@ -57,7 +57,7 @@ class _DukunganState extends State<Dukungan> {
                       ),
                       Divider(thickness: 1,),
                       Text(
-                        'Hai sobat, support ingsoon ya...\nDonasi lewat qris bisa menggunakan semua e-wallet & e-banking',
+                        'Hai sobat, support ingsoon ya...\nDonasi lewat qris bisa menggunakan semua e-wallet & m-banking.',
                         style: TextStyle( color: Colors.white),textAlign: TextAlign.left,
                       ),
                       Align(
@@ -117,7 +117,7 @@ class _DukunganState extends State<Dukungan> {
                       ),
                       ListTile(
                         subtitle: Text(
-                            'Kemudian scan qr "qris ingsoon" yang sudah ada di galeri hp menggunakan e-wallet / mobile banking kesayangan kamu.',
+                            'Kemudian scan qr "qris ingsoon" yang sudah ada di galeri hp menggunakan e-wallet / m-banking kesayangan kamu.',
                             style: TextStyle(color: Colors.white)),
                       ),
                       SizedBox(
@@ -130,7 +130,7 @@ class _DukunganState extends State<Dukungan> {
                           style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                         subtitle: Text(
-                            'Scan qris dibawah ini menggunakan e-wallet / mobile banking dari hp lain',
+                            'Scan qris dibawah ini menggunakan e-wallet / m-banking dari hp lain',
                             style: TextStyle(color: Colors.white)),
                       ),
                       Image(

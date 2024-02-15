@@ -37,6 +37,7 @@ class BabSebelas5 extends StatelessWidget {
 }
 
 const String teks = '''
+### lawanmu; maka dia akan patuh pada keinginanmu."
 ### Ketangkasan adalah inti dari perang: manfaatkan ketidaksiapan musuh, buatlah jalur-jalur tak terduga, dan seranglah titik-titik yang tak terjaga.
 ### Prinsip-prinsip yang harus diperhatikan oleh pasukan yang melakukan invasi adalah: Semakin dalam kamu menembus suatu negara, semakin besar solidaritas pasukanmu, dan dengan demikian musuh tidak akan dapat mengalahkanmu.
 ### Lakukan serbuan di wilayah yang subur untuk memasok pasukanmu dengan makanan.
