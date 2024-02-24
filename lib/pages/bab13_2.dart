@@ -37,7 +37,7 @@ class BabTigaBelas2 extends StatelessWidget {
 }
 
 const String teks = '''
-### untuk menyerang dan menaklukkan, serta mencapai hal-hal yang di luar jangkauan orang biasa, adalah PENGETAHUAN AWAL.
+### serta mencapai hal-hal yang di luar jangkauan orang biasa, adalah PENGETAHUAN AWAL.
 ### Pengetahuan awal ini tidak bisa diambil dari roh; tidak bisa diperoleh secara induktif dari pengalaman, atau dengan perhitungan deduktif apa pun.
 ### Pengetahuan tentang disposisi* musuh hanya dapat diperoleh dari orang lain.
 ### Oleh karena itu, penggunaan mata-mata, yang terbagi menjadi lima kelas: 
