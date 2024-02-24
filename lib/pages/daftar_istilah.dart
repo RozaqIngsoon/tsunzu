@@ -45,7 +45,13 @@ const String teks = '''
 #### Dalam strategi militer, disposisi mencakup pemilihan dan penempatan pertahanan, penggunaan medan, dan penyesuaian taktis berdasarkan pergerakan musuh. Pemahaman yang baik tentang disposisi memungkinkan seorang komandan untuk merencanakan dan mengkoordinasikan serangan atau pertahanan dengan lebih baik. Disposisi melibatkan pengorganisasian dan penempatan pasukan di lapangan perang, termasuk posisi infanteri, kavaleri, artileri, serta elemen-elemen pendukung seperti logistik dan komunikasi.
 ### * Falcon 
 #### Burung falcon (Alap-alap) merujuk pada sekelompok burung pemangsa dalam keluarga Falconidae. Falcon terkenal karena kecepatan dan keterampilan berburu mereka. Beberapa spesies falcon digunakan dalam olahraga berburu dan disebut sebagai burung pemangsa yang terlatih.
-*** * Li
+### * Konstelasi Sieve, Wall, Wing, dan Cross-bar di Bulan 
+#### Sieve, Wall, Wing, dan Cross-bar adalah istilah yang digunakan untuk mendeskripsikan beberapa formasi geologi yang menonjol di permukaan Bulan. Berikut penjelasannya:
+1) #### Sieve (saringan) adalah area di permukaan Bulan yang dipenuhi dengan kawah kecil dan berdekatan. Kawah-kawah ini terkesan seperti lubang pada saringan. Sieve sering ditemukan di dataran tinggi Bulan.
+2) #### Wall (tembok) adalah struktur yang panjang dan menjulang di permukaan Bulan. Wall biasanya terbentuk akibat patahan atau retakan di kerak Bulan. Contoh Wall yang terkenal adalah Hadley Rille dan Straight Wall.
+3) #### Wing (sayap) adalah struktur yang menonjol dari permukaan Bulan dan menyerupai sayap. Wing biasanya terbentuk akibat aliran lava yang mendingin dan mengeras. Contoh Wing yang terkenal adalah Promontorium Heraclides.
+4) #### Cross-bar (palang) adalah struktur yang melintang di atas kawah Bulan. Cross-bar biasanya terbentuk akibat material yang runtuh dari tepi kawah. Contoh Cross-bar yang terkenal adalah di kawah Tycho.
+### * Li
 #### Li merupakan satuan jarak. 1 li = 500 meter.
 ### * Picul
 #### Picul merujuk pada satuan berat yang digunakan di Tiongkok tradisional. Sebuah picul setara dengan sekitar 133.33 pound atau sekitar 60.48 kilogram. Picul sering digunakan untuk mengukur berat barang dagangan, seperti beras atau rempah-rempah, dalam konteks sejarah perdagangan Tiongkok.

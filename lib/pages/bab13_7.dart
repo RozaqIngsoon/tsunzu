@@ -37,7 +37,5 @@ class BabTigaBelas7 extends StatelessWidget {
 }
 
 const String teks = '''
-### Dahulu, kebangkitan dinasti Yin disebabkan oleh I Chih yang pernah melayani di bawah Dinasti Hsia. Demikian juga, kebangkitan dinasti Chou disebabkan oleh Lu Ya yang pernah melayani di bawah Dinasti Yin.
-###	Oleh karena itu, hanya penguasa yang bijaksana dan jenderal yang cerdas yang akan menggunakan kecerdasan tertinggi dari pasukan untuk tujuan penyusupan dan dengan demikian mereka mencapai hasil yang besar. Mata-mata adalah elemen yang paling penting dalam perang, karena kemampuan pasukan untuk bergerak bergantung pada mereka.
-
+### tertinggi dari pasukan untuk tujuan penyusupan dan dengan demikian mereka mencapai hasil yang besar. Mata-mata adalah elemen yang paling penting dalam perang, karena kemampuan pasukan untuk bergerak bergantung pada mereka.
 ''';

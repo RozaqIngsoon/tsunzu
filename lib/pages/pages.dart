@@ -16,7 +16,6 @@ import 'package:tsunzu/pages/bab11_14.dart';
 import 'package:tsunzu/pages/bab11_15.dart';
 import 'package:tsunzu/pages/bab11_16.dart';
 import 'package:tsunzu/pages/bab11_17.dart';
-import 'package:tsunzu/pages/bab11_18.dart';
 import 'package:tsunzu/pages/bab11_2.dart';
 import 'package:tsunzu/pages/bab11_3.dart';
 import 'package:tsunzu/pages/bab11_4.dart';
@@ -30,7 +29,6 @@ import 'package:tsunzu/pages/bab12_2.dart';
 import 'package:tsunzu/pages/bab12_3.dart';
 import 'package:tsunzu/pages/bab12_4.dart';
 import 'package:tsunzu/pages/bab12_5.dart';
-import 'package:tsunzu/pages/bab12_6.dart';
 import 'package:tsunzu/pages/bab12_cover.dart';
 import 'package:tsunzu/pages/bab13_2.dart';
 import 'package:tsunzu/pages/bab13_3.dart';
@@ -216,14 +214,12 @@ Widget bab11_14 = BabSebelas14();
 Widget bab11_15 = BabSebelas15();
 Widget bab11_16 = BabSebelas16();
 Widget bab11_17 = BabSebelas17();
-Widget bab11_18 = BabSebelas18();
 Widget bab12_cover = BabDuaBelasCover();
 Widget bab12_1 = BabDuaBelas1();
 Widget bab12_2 = BabDuaBelas2();
 Widget bab12_3 = BabDuaBelas3();
 Widget bab12_4 = BabDuaBelas4();
 Widget bab12_5 = BabDuaBelas5();
-Widget bab12_6 = BabDuaBelas6();
 Widget bab13_cover = BabTigaBelasCover();
 Widget bab13_1 = BabTigaBelas1();
 Widget bab13_2 = BabTigaBelas2();
@@ -321,8 +317,8 @@ List<Widget> pages = [
   bab11_4,
   bab11_5,
   bab11_6,
-  bab11_7,bab11_8,bab11_9,bab11_10,bab11_11,bab11_12,bab11_13,bab11_14,bab11_15,bab11_16,bab11_17,bab11_18,
-  bab12_cover,bab12_1,bab12_2,bab12_3,bab12_4,bab12_5,bab12_6,
+  bab11_7,bab11_8,bab11_9,bab11_10,bab11_11,bab11_12,bab11_13,bab11_14,bab11_15,bab11_16,bab11_17,
+  bab12_cover,bab12_1,bab12_2,bab12_3,bab12_4,bab12_5,
   bab13_cover,bab13_1,bab13_2,bab13_3,bab13_4,bab13_5,bab13_6,bab13_7,
   daftarIstilah
 ];

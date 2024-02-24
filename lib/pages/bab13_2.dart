@@ -46,5 +46,5 @@ const String teks = '''
 3) ### Mata-mata yang berpaling; 
 4) ### Mata-mata yang berkorban; 
 5) ### Mata-mata yang selamat.
-### Ketika kelima jenis mata-mata ini beroperasi, tidak ada yang dapat menemukan sistem rahasia itu. Ini disebut sebagai "manipulasi ilahi dari benang-benang." Kemampuan ini merupakan aset paling berharga bagi seorang pemimpin.
+### Ketika kelima jenis mata-mata ini beroperasi, tidak ada yang dapat menemukan sistem rahasia itu. Ini disebut sebagai "manipulasi ilahi dari benang-benang." Kemampuan ini 
 ''';

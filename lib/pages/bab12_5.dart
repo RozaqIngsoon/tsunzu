@@ -37,7 +37,6 @@ class BabDuaBelas5 extends StatelessWidget {
 }
 
 const String teks = '''
-### Tidak seharusnya seorang pemimpin mengirim pasukannya ke medan perang hanya untuk memuaskan kemarahan pribadinya; begitu juga, seorang jenderal seharusnya tidak memerangi pertempuran hanya karena kekesalannya.
 ### Jika itu menguntungkan bagimu, lakukan langkah maju; jika tidak, tetaplah di tempatmu berada.
 ### Kemarahan bisa berubah menjadi kebahagiaan seiring waktu; kekesalan bisa digantikan oleh kepuasan.
 ### Namun, sebuah kerajaan yang telah hancur tidak akan bisa bangkit kembali; begitu juga orang yang telah mati tidak dapat dihidupkan kembali.
