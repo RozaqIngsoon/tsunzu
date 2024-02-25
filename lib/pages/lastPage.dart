@@ -50,10 +50,11 @@ class LastPage extends StatelessWidget {
                       height: 25,
                     ),
                     Text(
-                      'Dukung ingsoon untuk terus menghadirkan buku-buku klasik yang bermanfaat.',
+                      'Dukung ingsoon untuk terus menghadirkan buku-buku gratismu.',
                       style: TextStyle(color: Colors.yellow, fontSize: 18),
                       textAlign: TextAlign.center,
                     ),
+                    SizedBox(height: 25,),
                     ElevatedButton(
                       onPressed: () {
                         showDialog(
