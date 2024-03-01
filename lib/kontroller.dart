@@ -15,6 +15,7 @@ class Kontroller extends GetxController {
   String coverBuku = 'assets/ikon_app.png';
   var bookmarkNo = 1000.obs;
   late Timer timer;
+  var halSkg = 1.obs;
 
   @override
   void onInit() async {
@@ -59,10 +60,9 @@ class Kontroller extends GetxController {
   }
   tampilkanIklan() {
     _timer?.cancel();
-    var hal = controllerPageFlip.currentState?.pageNumber;
 
     //dianggap membaca bila halaman terbuka lebih dari 5 detik selain halaman cover depan & daftar isi
-    if(hal! > 2 ){
+    if(halSkg > 2 ){
       _timer = Timer(Duration(seconds: 5),(){
           isHalamanTerbaca.value = isHalamanTerbaca.value+1;
           // print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');

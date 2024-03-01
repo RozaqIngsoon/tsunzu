@@ -1,6 +1,6 @@
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tsunzu/home_screen.dart';
 import 'package:tsunzu/kontroller.dart';
 import 'package:tsunzu/shared/menu.dart';
 
@@ -8,6 +8,7 @@ import 'package:tsunzu/shared/menu.dart';
 Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,required String bab,required BuildContext context}){
   final kontrol = Get.find<Kontroller>();
   kontrol.tampilkanIklan();
+  kontrol.halSkg.value = pages.indexOf(itemOfPages);
   return Container(
     height: 50,
     color: Color(0xff1d2031),
@@ -23,7 +24,7 @@ Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,requ
         Obx(
             ()=> InkWell(
             onTap: () {
-              var hal = controllerPageFlip.currentState!.pageNumber;
+              var hal = 1;
               kontrol.setBookmark(hal);
               kontrol.bookmarkNo.value = hal;
             },
@@ -31,14 +32,16 @@ Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,requ
               width: 50,
               height: 50,
               child: Icon(
-                controllerPageFlip.currentState!.pageNumber ==kontrol.bookmarkNo.value? Icons.bookmark:Icons.bookmark_outline, size: 22,
+                kontrol.halSkg.value ==kontrol.bookmarkNo.value? Icons.bookmark:Icons.bookmark_outline, size: 22,
                 color: Colors.yellow,
               ),
             ),
           ),
         ),
         Text(
-          '${pages.indexOf(itemOfPages).toString().length < 2 ? "0${pages.indexOf(itemOfPages)}" : pages.indexOf(itemOfPages)} ',
+          '${ kontrol.halSkg.value.toString().length < 2 ? "0${ kontrol.halSkg.value}" : {
+            kontrol.halSkg.value
+            }} ',
           style: TextStyle(color: Colors.yellow, fontStyle: FontStyle.italic),
         )
       ],
