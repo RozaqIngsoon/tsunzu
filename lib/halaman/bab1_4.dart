@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tsunzu/data.dart';
-import 'package:tsunzu/halaman/bab1_0.dart';
-import 'package:tsunzu/halaman/bab1_2.dart';
-import 'package:tsunzu/halaman/halaman.dart';
+import 'package:tsunzu/halaman/bab1_3.dart';
+import 'package:tsunzu/halaman/bab1_5.dart';
 
 import '../shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
+import 'halaman.dart';
 
-class Bab1_1 extends StatelessWidget {
-  const Bab1_1({super.key});
+class Bab1_4 extends StatelessWidget {
+  const Bab1_4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +18,11 @@ class Bab1_1 extends StatelessWidget {
       onHorizontalDragUpdate: (detail) {
         //ke kiri
         if(detail.delta.direction<=0){
-          Get.to(() =>  Bab1_0(),transition: Transition.leftToRight, duration: Duration(seconds: 1),);
+          Get.to(() =>  Bab1_3(),transition: Transition.leftToRight, duration: Duration(seconds: 1),);
         }
         //ke kanan
         if(detail.delta.direction>0){
-          Get.to(() => Bab1_2(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
+          Get.to(() => Bab1_5(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
         }
       },
       child: Scaffold(
@@ -40,12 +40,12 @@ class Bab1_1 extends StatelessWidget {
                     padding: EdgeInsets.only(top: 30),
                     color: Colors.white.withOpacity(0.5),
                     child: MarkDownku(
-                      teksData: dataSunZu['bab1_1'],
+                      teksData: dataSunZu['bab1_4'],
                     ),
                   )),
               NoHalaman(
                 pages: halaman,
-                itemOfPages: bab1_1,
+                itemOfPages: bab1_4,
                 bab: 'Perencanaan', context: context,
               )
             ],

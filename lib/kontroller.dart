@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:tsunzu/halaman/halaman.dart';
 import 'package:tsunzu/home_screen.dart';
 
 
@@ -13,7 +14,7 @@ class Kontroller extends GetxController {
   String bookmark = 'PAGE_BOOKMARK'; //key di sharepreference
   String hitungBaca = 'PAGE_TERBACA'; //key di sharepreference
   String coverBuku = 'assets/ikon_app.png';
-  var bookmarkNo = 1000.obs;
+  var bookmarkNo = 0.obs;
   late Timer timer;
   var halSkg = 1.obs;
 
@@ -32,12 +33,18 @@ class Kontroller extends GetxController {
   }
 
   getBookmark() async {
-    debugPrint('.........running getBookmark()');
+    // debugPrint('.........running getBookmark()');
     SharedPreferences prefs = await SharedPreferences.getInstance();
     //Return int
     int intValue = prefs.getInt(bookmark) ?? 0;
     bookmarkNo.value = intValue;
-    // debugPrint('.........bookmarkNo.value : ${bookmarkNo.value}');
+    // debugPrint('.........bookmarkNo.value stelah getBookmark : ${bookmarkNo.value}');
+    await Future.delayed(Duration(seconds: 4));
+    if(bookmarkNo.value != 0){
+      Widget _page = halaman[bookmarkNo.value];
+      Get.to(() => _page, transition: Transition.leftToRight,
+        duration: Duration(seconds: 1),);
+    }
 
   }
 
@@ -45,6 +52,7 @@ class Kontroller extends GetxController {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt(bookmark, hal);
   }
+
 //atur iklan
   Timer? _timer;
   var isHalamanTerbaca =0.obs;
@@ -62,7 +70,7 @@ class Kontroller extends GetxController {
     _timer?.cancel();
 
     //dianggap membaca bila halaman terbuka lebih dari 5 detik selain halaman cover depan & daftar isi
-    if(halSkg > 2 ){
+    if(halSkg > 3 ){
       _timer = Timer(Duration(seconds: 5),(){
           isHalamanTerbaca.value = isHalamanTerbaca.value+1;
           // print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');

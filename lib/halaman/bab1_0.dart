@@ -12,11 +12,11 @@ class Bab1_0 extends StatelessWidget {
     return GestureDetector(
       onVerticalDragUpdate: (detail){},
       onHorizontalDragUpdate: (detail) {
-        //back
+        //ke kiri
         if(detail.delta.direction<=0){
           Get.to(() =>  DaftarIsi(),transition: Transition.leftToRight, duration: Duration(seconds: 1),);
         }
-        //next
+        //ke kanan
         if(detail.delta.direction>0){
           Get.to(() => Bab1_1(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
         }

@@ -21,23 +21,28 @@ Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,requ
           style: TextStyle(color: Colors.yellow, fontStyle: FontStyle.italic),
         ),
         menu(context),
-        Obx(
-            ()=> InkWell(
-            onTap: () {
-              var hal = 1;
-              kontrol.setBookmark(hal);
-              kontrol.bookmarkNo.value = hal;
-            },
-            child: Container(
-              width: 50,
-              height: 50,
-              child: Icon(
-                kontrol.halSkg.value ==kontrol.bookmarkNo.value? Icons.bookmark:Icons.bookmark_outline, size: 22,
-                color: Colors.yellow,
-              ),
+        GetBuilder<Kontroller>(
+          builder:
+            (_kontrol)=> InkWell(
+              onTap: () {
+                // debugPrint('..........buat bookmark');
+                var hal = _kontrol.halSkg.value;
+                _kontrol.setBookmark(hal);
+                _kontrol.bookmarkNo.value = hal;
+                _kontrol.update();
+                // debugPrint('..........kontrol.bookmarkNo.value : ${_kontrol.bookmarkNo.value}');
+              },
+              child:  Container(
+                  width: 50,
+                  height: 50,
+                  child: Icon(
+                    _kontrol.halSkg.value == _kontrol.bookmarkNo.value? Icons.bookmark:Icons.bookmark_outline, size: 22,
+                    color: Colors.yellow,
+                  ),
+                ),
             ),
-          ),
         ),
+
         Text(
           '${ kontrol.halSkg.value.toString().length < 2 ? "0${ kontrol.halSkg.value}" : {
             kontrol.halSkg.value

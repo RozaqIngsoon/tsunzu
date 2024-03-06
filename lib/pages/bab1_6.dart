@@ -39,7 +39,6 @@ class BabSatu6 extends StatelessWidget {
 }
 
 const String teks = '''
-
 ### sebelumnya. Oleh karena itu, banyak perhitungan cenderung membawa kemenangan, sementara sedikit perhitungan atau bahkan tanpa perhitungan dapat menyebabkan kekalahan.
 
 ''';

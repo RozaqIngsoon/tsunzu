@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:page_flip/page_flip.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tsunzu/home_screen.dart';
+import 'package:tsunzu/halaman/lastPage.dart';
 import 'package:tsunzu/kontroller.dart';
-import 'package:tsunzu/pages/pages.dart';
-import '../pages/lastPage.dart';
+import 'package:tsunzu/pages/daftar_istilah.dart';
+import '../halaman/daftar_isi.dart';
+import '../halaman/halaman.dart';
 import 'dukungan.dart';
 
 class DrawerItems extends StatefulWidget {
@@ -48,7 +47,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                     color: Colors.blue,
                   ),
                   onTap: () {
-                    controllerPageFlip.currentState?.goToPage(kontrol.bookmarkNo.value); //menggunakan index page
+                    Get.to(() => halaman[kontrol.bookmarkNo.value],transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
                     Navigator.pop(context);
                   },
                 ),
@@ -62,19 +61,18 @@ class _DrawerItemsState extends State<DrawerItems> {
                   onTap: () {
                     kontrol.setBookmark(0);
                     kontrol.bookmarkNo.value = 0;
-                    controllerPageFlip.currentState?.goToPage(kontrol.bookmarkNo.value);
                     Navigator.pop(context);
                   },
                 ),
                 const Divider(),
                 ListTile(
-                  title: Text('Halaman sampul'),
+                  title: Text('Daftar Isi'),
                   trailing: Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.blue,
                   ),
                   onTap: () {
-                    controllerPageFlip.currentState?.goToPage(pages.indexOf(coverDepan)); //menggunakan index page
+                    Get.to(() => DaftarIsi(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
                     Navigator.pop(context);
                   },
                 ),
@@ -87,7 +85,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                     color: Colors.blue,
                   ),
                   onTap: () {
-                    controllerPageFlip.currentState?.goToPage(pages.indexOf(daftarIstilah));
+                    Get.to(() => DaftarIstilah(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
                     Navigator.pop(context);
                   },
                 ),
@@ -99,7 +97,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                     color: Colors.blue,
                   ),
                   onTap: () {
-                    controllerPageFlip.currentState?.goToPage(pages.indexOf(pages.last));
+                    Get.to(() => LastPage(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
                     Navigator.pop(context);
                   },
                 ),
@@ -118,9 +116,9 @@ class _DrawerItemsState extends State<DrawerItems> {
             ),
             trailing: const Icon(Icons.share, color: Colors.blue),
             onTap: () {
-              // Share.share(
-              //     'Aplikasi Pasaran Jawa :\nhttps://pasaranjawa.page.link/ingsoon',
-              //     subject: 'Pasaran Jawa');
+              Share.share(
+                  'E-Book Seni Perang Sun Tzu :\nhttps://play.google.com/store/apps/details?id=com.ingsoon.tsunzu',
+                  subject: 'Seni Perang Sun Tzu');
               Navigator.pop(context);
             },
           ),
