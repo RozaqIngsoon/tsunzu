@@ -39,7 +39,7 @@ class Kontroller extends GetxController {
     int intValue = prefs.getInt(bookmark) ?? 0;
     bookmarkNo.value = intValue;
     // debugPrint('.........bookmarkNo.value stelah getBookmark : ${bookmarkNo.value}');
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(milliseconds: 500));
     if(bookmarkNo.value != 0){
       Widget _page = halaman[bookmarkNo.value];
       Get.to(() => _page, transition: Transition.rightToLeft,
