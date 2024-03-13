@@ -27,7 +27,7 @@ class BabSembilan6 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab9_6,bab: 'Pergerakan Pasukan',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab9_6,bab: 'Pergerakan Pasukan',context: context)
           ],
         ),
       ),

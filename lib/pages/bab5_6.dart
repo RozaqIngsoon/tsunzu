@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:tsunzu/shared/menu.dart';
+
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -29,7 +29,7 @@ class BabLima6 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab5_6,bab: 'Energi',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab5_6,bab: 'Energi',context: context)
           ],
         ),
       ),

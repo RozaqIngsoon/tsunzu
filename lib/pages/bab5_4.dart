@@ -27,7 +27,7 @@ class BabLima4 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab5_4,bab: 'Energi',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab5_4,bab: 'Energi',context: context)
           ],
         ),
       ),

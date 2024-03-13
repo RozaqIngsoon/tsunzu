@@ -27,7 +27,7 @@ class BabDuaBelas2 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab12_2,bab: 'Serangan Dengan Api',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab12_2,bab: 'Serangan Dengan Api',context: context)
           ],
         ),
       ),

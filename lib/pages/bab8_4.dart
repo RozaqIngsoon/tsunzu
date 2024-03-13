@@ -27,7 +27,7 @@ class BabDelapan4 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab8_4,bab: 'Variasi Taktik',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab8_4,bab: 'Variasi Taktik',context: context)
           ],
         ),
       ),

@@ -27,7 +27,7 @@ class BabSebelas3 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab11_3,bab: 'Sembilan Situasi',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab11_3,bab: 'Sembilan Situasi',context: context)
           ],
         ),
       ),

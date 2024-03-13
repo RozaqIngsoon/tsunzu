@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tsunzu/halaman/bab1_0.dart';
+import 'package:tsunzu/halaman/bab2_0.dart';
 import 'package:tsunzu/halaman/cover.dart';
 import 'package:tsunzu/halaman/halaman.dart';
+import 'package:tsunzu/kontroller.dart';
 
 
 class DaftarIsi extends StatelessWidget {
@@ -11,10 +13,8 @@ class DaftarIsi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var lebar = MediaQuery
-        .of(context)
-        .size
-        .width;
+    final kontrol = Get.find<Kontroller>();
+    var lebar = Get.width;
     Widget isi({
       required String judul,
       required String halaman,
@@ -41,6 +41,7 @@ class DaftarIsi extends StatelessWidget {
         }
         //next
         if (detail.delta.direction > 0) {
+          kontrol.tampilkanIklan();
           Get.to(() => Bab1_0(), transition: Transition.rightToLeft,
             duration: Duration(seconds: 1),);
         }
@@ -83,10 +84,13 @@ class DaftarIsi extends StatelessWidget {
                                   lompatke: () =>
                                       Get.to(() => Bab1_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
-                              // isi(
-                              //   judul: '02. Peperangan',
-                              //   halaman: '0${pages.indexOf(bab2_cover)}',
-                              //   lompatke: pages.indexOf(bab2_cover),),
+                              isi(
+                                  judul: '02. Peperangan',
+                                  halaman: '0${halaman.indexOf(bab2_0)}',
+                                  lompatke: () =>
+                                      Get.to(() => Bab2_0(), transition: Transition.rightToLeft,
+                                        duration: Duration(seconds: 1),)),
+
                               // isi(
                               //   judul: '03. Strategi',
                               //   halaman: '${pages.indexOf(bab3_cover)}',

@@ -15,21 +15,56 @@ class Kontroller extends GetxController {
   String hitungBaca = 'PAGE_TERBACA'; //key di sharepreference
   String coverBuku = 'assets/ikon_app.png';
   var bookmarkNo = 0.obs;
-  late Timer timer;
-  var halSkg = 1.obs;
+  var halSkg  = 0.obs;
+  ///atur timer
+  //variabel untuk menyimpan timer
+  var timerValue = 0.obs;
+  //timer
+  Timer? _timer;
+  //memulai timer
+  void startTimer(){
+    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+      timerValue.value ++;
+      //timer disimpan setiap 5 detik
+      if(timerValue.value % 5 == 0){
+        saveTimerValue();
+      }
+
+    });
+
+  }
+  //mematikan timer dan menyimpan
+  void stopTimer(){
+    _timer?.cancel();
+    saveTimerValue();
+  }
+  //menyimpan nilai timer
+  Future<void> saveTimerValue() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('timerValue', timerValue.value);
+  }
+  //mengambil nilai timer
+  Future<void> loadTimerValue() async {
+    final prefs = await SharedPreferences.getInstance();
+    final value = prefs.getInt('timerValue')??0;
+    timerValue.value = value;
+    startTimer();
+  }
+
 
   @override
   void onInit() async {
     await getBookmark();
-     getHitungBaca();
+    loadTimerValue();
     loadAdIntersitial();
     super.onInit();
   }
 
   @override
-  void dispose() {
+  void onClose() {
     interstitialAd?.dispose();
-    super.dispose();
+    stopTimer();
+    super.onClose();
   }
 
   getBookmark() async {
@@ -39,7 +74,6 @@ class Kontroller extends GetxController {
     int intValue = prefs.getInt(bookmark) ?? 0;
     bookmarkNo.value = intValue;
     // debugPrint('.........bookmarkNo.value stelah getBookmark : ${bookmarkNo.value}');
-    await Future.delayed(Duration(milliseconds: 500));
     if(bookmarkNo.value != 0){
       Widget _page = halaman[bookmarkNo.value];
       Get.to(() => _page, transition: Transition.rightToLeft,
@@ -54,35 +88,16 @@ class Kontroller extends GetxController {
   }
 
 //atur iklan
-  Timer? _timer;
-  var isHalamanTerbaca =0.obs;
-  getHitungBaca() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    //Return int
-    int intValue = prefs.getInt(hitungBaca) ?? 0;
-    isHalamanTerbaca.value = intValue;
-  }
-  Future<void> setHitungBaca(int kaliBaca) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setInt(hitungBaca, kaliBaca);
-  }
+
   tampilkanIklan() {
-    _timer?.cancel();
-
-    //dianggap membaca bila halaman terbuka lebih dari 5 detik selain halaman cover depan & daftar isi
-    if(halSkg > 3 ){
-      _timer = Timer(Duration(seconds: 5),(){
-          isHalamanTerbaca.value = isHalamanTerbaca.value+1;
-          // print('...........menghitung halaman terbaca = ${isHalamanTerbaca.value}');
-          setHitungBaca(isHalamanTerbaca.value);
-      });
-      //iklan ditampilkan bila telah membaca 3 halaman
-      if (_timer!=null && isHalamanTerbaca.value >1 && isHalamanTerbaca.value%3 == 0) {
-        // print('...........iklan di tampilkan setelah membaca 3 halaman');
-        interstitialAd!.show();
-      }
+    //iklan tampil setiap 5 menit sekali
+    int menit5 = 60*5;
+    if(timerValue.value >= menit5 && interstitialAd != null){
+      stopTimer();
+      timerValue.value =0;
+      interstitialAd!.show();
+      startTimer();
     }
-
   }
 
   //intersitial admob

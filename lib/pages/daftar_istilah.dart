@@ -27,7 +27,7 @@ class DaftarIstilah extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:daftarIstilah,bab: 'Daftar Istilah',context: context)
+            //NoHalaman(pages: pages,itemOfPages:daftarIstilah,bab: 'Daftar Istilah',context: context)
           ],
         ),
       ),

@@ -48,7 +48,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                   ),
                   onTap: () {
                     Get.to(() => halaman[kontrol.bookmarkNo.value],transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Navigator.pop(context);
+                    Scaffold.of(context).closeDrawer();
                   },
                 ),
                 const Divider(),
@@ -61,7 +61,8 @@ class _DrawerItemsState extends State<DrawerItems> {
                   onTap: () {
                     kontrol.setBookmark(0);
                     kontrol.bookmarkNo.value = 0;
-                    Navigator.pop(context);
+                    kontrol.update();
+                    Scaffold.of(context).closeDrawer();
                   },
                 ),
                 const Divider(),
@@ -73,7 +74,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                   ),
                   onTap: () {
                     Get.to(() => DaftarIsi(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Navigator.pop(context);
+                    Scaffold.of(context).closeDrawer();
                   },
                 ),
                 const Divider(),
@@ -86,7 +87,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                   ),
                   onTap: () {
                     Get.to(() => DaftarIstilah(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Navigator.pop(context);
+                    Scaffold.of(context).closeDrawer();
                   },
                 ),
                 const Divider(),
@@ -98,7 +99,7 @@ class _DrawerItemsState extends State<DrawerItems> {
                   ),
                   onTap: () {
                     Get.to(() => LastPage(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Navigator.pop(context);
+                    Scaffold.of(context).closeDrawer();
                   },
                 ),
                 const Divider(),
@@ -119,7 +120,7 @@ class _DrawerItemsState extends State<DrawerItems> {
               Share.share(
                   'E-Book Seni Perang Sun Tzu :\nhttps://play.google.com/store/apps/details?id=com.ingsoon.tsunzu',
                   subject: 'Seni Perang Sun Tzu');
-              Navigator.pop(context);
+              Scaffold.of(context).closeDrawer();
             },
           ),
           Container(
@@ -133,7 +134,7 @@ class _DrawerItemsState extends State<DrawerItems> {
             ),
             trailing: const Icon(Icons.auto_awesome, color: Colors.blue),
             onTap: () async {
-              Navigator.pop(context);
+              Scaffold.of(context).closeDrawer();
               showDialog(
                 context: context,
                 barrierDismissible: true,

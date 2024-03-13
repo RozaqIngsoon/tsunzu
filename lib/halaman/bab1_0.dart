@@ -3,21 +3,25 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tsunzu/halaman/bab1_1.dart';
 import 'package:tsunzu/halaman/daftar_isi.dart';
+import 'package:tsunzu/kontroller.dart';
 
 class Bab1_0 extends StatelessWidget {
   const Bab1_0({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final kontrol = Get.find<Kontroller>();
     return GestureDetector(
       onVerticalDragUpdate: (detail){},
       onHorizontalDragUpdate: (detail) {
         //ke kiri
         if(detail.delta.direction<=0){
+          kontrol.tampilkanIklan();
           Get.to(() =>  DaftarIsi(),transition: Transition.leftToRight, duration: Duration(seconds: 1),);
         }
         //ke kanan
         if(detail.delta.direction>0){
+          kontrol.tampilkanIklan();
           Get.to(() => Bab1_1(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
         }
       },

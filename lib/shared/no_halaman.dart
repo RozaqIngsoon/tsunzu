@@ -2,12 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tsunzu/kontroller.dart';
-import 'package:tsunzu/shared/menu.dart';
 
 
-Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,required String bab,required BuildContext context}){
+
+Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,required String bab,required Function() fungsiOpenDrawer}){
   final kontrol = Get.find<Kontroller>();
-  kontrol.tampilkanIklan();
   kontrol.halSkg.value = pages.indexOf(itemOfPages);
   return Container(
     height: 50,
@@ -20,7 +19,17 @@ Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,requ
           ' $bab',
           style: TextStyle(color: Colors.yellow, fontStyle: FontStyle.italic),
         ),
-        menu(context),
+        InkWell(
+          onTap: fungsiOpenDrawer,
+          child: Container(
+            width: 50,
+            height: 50,
+            child: Icon(
+              Icons.menu_book, size: 22,
+              color: Colors.yellow,
+            ),
+          ),
+        ),
         GetBuilder<Kontroller>(
           builder:
             (_kontrol)=> InkWell(
@@ -31,6 +40,23 @@ Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,requ
                 _kontrol.bookmarkNo.value = hal;
                 _kontrol.update();
                 // debugPrint('..........kontrol.bookmarkNo.value : ${_kontrol.bookmarkNo.value}');
+                //cari teks
+                // String searchText ='perang diatur';
+                // for(var entry in dataSunZu.entries){
+                //   if(entry.key.contains(searchText) || entry.value.contains(searchText)){
+                //     debugPrint('text ditemukan di key :${entry.key} atau value : ${entry.value}');
+                //     String teksOriginal = entry.value;
+                //     //substring
+                //     int startIndex = teksOriginal.indexOf(searchText);
+                //     int endIndex = startIndex + searchText.length + 6;//3 kata didepan & 3 di belakang
+                //     String extractedText = teksOriginal.substring(startIndex-3,endIndex);
+                //     debugPrint('teks yang ditemukan : $extractedText');
+                //     //split dan join
+                //     List<String> splitTeks = teksOriginal.split(searchText);
+                //     String extractedText2 = [splitTeks[0].split(' ').last, searchText , splitTeks[1].split(' ')[0]].join(' ');
+                //     debugPrint('teks yang ditemukan2 : $extractedText2');
+                //   }
+                // }
               },
               child:  Container(
                   width: 50,

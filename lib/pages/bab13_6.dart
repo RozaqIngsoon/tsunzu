@@ -27,7 +27,7 @@ class BabTigaBelas6 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab13_6,bab: 'Penggunaan Mata-Mata',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab13_6,bab: 'Penggunaan Mata-Mata',context: context)
           ],
         ),
       ),

@@ -27,7 +27,7 @@ class BabEnam5 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab6_5,bab: 'Titik Lemah & Kuat',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab6_5,bab: 'Titik Lemah & Kuat',context: context)
           ],
         ),
       ),

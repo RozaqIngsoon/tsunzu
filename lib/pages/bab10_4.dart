@@ -27,7 +27,7 @@ class BabSepuluh4 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab10_4,bab: 'Medan Pertempuran',context: context)
+            // NoHalaman(pages: pages,itemOfPages:bab10_4,bab: 'Medan Pertempuran',context: context)
           ],
         ),
       ),

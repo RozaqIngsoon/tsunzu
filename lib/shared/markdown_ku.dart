@@ -16,5 +16,15 @@ class MarkDownku extends StatelessWidget {
         h4: TextStyle(fontSize: MediaQuery.of(context).size.width / 21,color: Colors.black ),
       ),
     );
+
+    // return MarkdownBody(
+    //   data: teksData,
+    //   styleSheet: MarkdownStyleSheet(
+    //     h2: TextStyle(fontSize: MediaQuery.of(context).size.width / 18,color: Colors.black,fontWeight: FontWeight.bold ),
+    //     h3: TextStyle(fontSize: MediaQuery.of(context).size.width / 20,color: Colors.black ),
+    //     listBullet: TextStyle(fontSize: MediaQuery.of(context).size.width / 21,color: Colors.black ),
+    //     h4: TextStyle(fontSize: MediaQuery.of(context).size.width / 21,color: Colors.black ),
+    //   ),
+    // );
   }
 }

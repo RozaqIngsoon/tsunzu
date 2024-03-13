@@ -27,7 +27,7 @@ class BabTujuh7 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab7_7,bab: 'Manuver',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab7_7,bab: 'Manuver',context: context)
           ],
         ),
       ),

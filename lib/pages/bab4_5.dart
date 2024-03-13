@@ -27,7 +27,7 @@ class BabEmpat5 extends StatelessWidget {
                 teksData: teks,
               ),
             )),
-            NoHalaman(pages: pages,itemOfPages:bab4_5,bab: 'Taktik',context: context)
+            //NoHalaman(pages: pages,itemOfPages:bab4_5,bab: 'Taktik',context: context)
           ],
         ),
       ),
