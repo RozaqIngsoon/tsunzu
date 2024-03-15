@@ -5,7 +5,7 @@ import 'package:tsunzu/halaman/bab2_0.dart';
 import 'package:tsunzu/shared/drawer_items.dart';
 import 'package:tsunzu/shared/no_halaman.dart';
 
-import '../data/data.dart';
+import '../data/bab.dart';
 import '../kontroller.dart';
 import '../shared/markdown_ku.dart';
 import 'halaman.dart';

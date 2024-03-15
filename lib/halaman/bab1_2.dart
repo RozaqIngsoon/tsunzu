@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tsunzu/data/data.dart';
+import 'package:tsunzu/data/bab.dart';
 import 'package:tsunzu/halaman/bab1_1.dart';
 import 'package:tsunzu/halaman/bab1_3.dart';
 import 'package:tsunzu/shared/drawer_items.dart';
