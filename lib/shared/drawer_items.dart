@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:tsunzu/halaman/daftar_istilah.dart';
 import 'package:tsunzu/halaman/lastPage.dart';
 import 'package:tsunzu/kontroller.dart';
-import 'package:tsunzu/pages/daftar_istilah.dart';
 import '../halaman/daftar_isi.dart';
 import '../halaman/halaman.dart';
 import 'dukungan.dart';

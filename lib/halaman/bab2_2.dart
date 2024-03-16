@@ -6,8 +6,8 @@ import '../shared/drawer_items.dart';
 import '../shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 
-class Bab2_1 extends StatelessWidget {
-  const Bab2_1({super.key});
+class Bab2_2 extends StatelessWidget {
+  const Bab2_2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,12 +32,12 @@ class Bab2_1 extends StatelessWidget {
               padding: EdgeInsets.only(top: 30),
               color: Colors.white.withOpacity(0.5),
               child: MarkDownku(
-                teksData: dataSunZu['bab2_1'],
+                teksData: dataSunZu['bab2_2'],
               ),
             )),
             NoHalaman(
               pages: halaman,
-              itemOfPages: bab2_1,
+              itemOfPages: bab2_2,
               bab: 'Peperangan',
               fungsiOpenDrawer: () => _scaffoldKey.currentState!.openDrawer(),
             )

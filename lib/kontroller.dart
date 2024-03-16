@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tsunzu/halaman/halaman.dart';
-import 'package:tsunzu/home_screen.dart';
 
 
 class Kontroller extends GetxController {

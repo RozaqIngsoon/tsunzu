@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tsunzu/data/bab.dart';
-import 'package:tsunzu/halaman/bab1_1.dart';
-import 'package:tsunzu/halaman/bab1_2.dart';
-import 'package:tsunzu/halaman/bab1_3.dart';
 import 'package:tsunzu/shared/drawer_items.dart';
+import 'package:tsunzu/shared/gesture_ku.dart';
 import 'package:tsunzu/shared/no_halaman.dart';
 
-import '../kontroller.dart';
 import '../shared/markdown_ku.dart';
-import 'bab1_4.dart';
 import 'halaman.dart';
 
 
@@ -20,35 +16,23 @@ class Bab1_3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-    final kontrol = Get.find<Kontroller>();
     return Scaffold(
       key: _scaffoldKey,
       drawer: Drawer(
         child: DrawerItems(),
       ),
       drawerEnableOpenDragGesture: false,
-      body: GestureDetector(
-        onVerticalDragUpdate: (detail) {},
-        onHorizontalDragUpdate: (detail) {
-          //ke kiri
-          if (detail.delta.direction <= 0) {
-            kontrol.tampilkanIklan();
-            Get.to(
-              () => Bab1_2(),
-              transition: Transition.leftToRight,
-              duration: Duration(seconds: 1),
-            );
-          }
-          //ke kanan
-          if (detail.delta.direction > 0) {
-            kontrol.tampilkanIklan();
-            Get.to(
-              () => Bab1_4(),
-              transition: Transition.rightToLeft,
-              duration: Duration(seconds: 1),
-            );
-          }
-        },
+      body: GestureKu(
+        onSwipeKiri: () =>Get.to(
+              () => bab1_2,
+          transition: Transition.leftToRight,
+          duration: Duration(seconds: 1),
+        ),
+        onSwipeKanan: ()=>Get.to(
+              () => bab1_4,
+          transition: Transition.rightToLeft,
+          duration: Duration(seconds: 1),
+        ),
         child: Container(
           height: double.infinity,
           width: double.infinity,

@@ -1,33 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tsunzu/halaman/bab1_1.dart';
-import 'package:tsunzu/halaman/bab1_6.dart';
-import 'package:tsunzu/halaman/daftar_isi.dart';
-import 'package:tsunzu/kontroller.dart';
-
-import 'bab2_1.dart';
+import 'package:tsunzu/shared/gesture_ku.dart';
+import 'halaman.dart';
 
 class Bab2_0 extends StatelessWidget {
   const Bab2_0({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final kontrol = Get.find<Kontroller>();
-    return GestureDetector(
-      onVerticalDragUpdate: (detail){},
-      onHorizontalDragUpdate: (detail) {
-        //ke kiri
-        if(detail.delta.direction<=0){
-          kontrol.tampilkanIklan();
-          Get.to(() =>  Bab1_6(),transition: Transition.leftToRight, duration: Duration(seconds: 1),);
-        }
-        //ke kanan
-        if(detail.delta.direction>0){
-          kontrol.tampilkanIklan();
-          Get.to(() => Bab2_1(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-        }
-      },
+    return GestureKu(
+      onSwipeKiri: () => Get.to(() =>  bab1_6,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
+      onSwipeKanan: ()=> Get.to(() => bab2_1,transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
       child: Scaffold(
         body: Container(
           height: double.infinity,
