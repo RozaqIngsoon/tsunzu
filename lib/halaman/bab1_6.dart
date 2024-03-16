@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tsunzu/halaman/bab1_5.dart';
+import 'package:tsunzu/halaman/bab2_0.dart';
 import 'package:tsunzu/shared/drawer_items.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 import 'package:tsunzu/shared/no_halaman.dart';
@@ -24,12 +26,12 @@ class Bab1_6 extends StatelessWidget {
       drawerEnableOpenDragGesture: false,
       body: GestureKu(
         onSwipeKiri: () =>Get.to(
-              () => bab1_5,
+              () =>Bab1_5() ,
           transition: Transition.leftToRight,
           duration: Duration(seconds: 1),
         ),
         onSwipeKanan: ()=>Get.to(
-              () => bab2_0,
+              () =>Bab2_0() ,
           transition: Transition.rightToLeft,
           duration: Duration(seconds: 1),
         ),

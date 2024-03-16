@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tsunzu/data/bab.dart';
+import 'package:tsunzu/halaman/bab2_4.dart';
+import 'package:tsunzu/halaman/bab3_0.dart';
 import 'package:tsunzu/halaman/halaman.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 
@@ -9,7 +11,7 @@ import '../shared/markdown_ku.dart';
 import '../shared/no_halaman.dart';
 
 class Bab2_5 extends StatelessWidget {
-  const Bab2_5({super.key});
+  const  Bab2_5({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +23,8 @@ class Bab2_5 extends StatelessWidget {
       ),
       drawerEnableOpenDragGesture: false,
       body: GestureKu(
-        onSwipeKiri: () => Get.to(() =>bab2_4 ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
-        onSwipeKanan: ()=> Get.to(() => bab3_0,transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
+        onSwipeKiri: () => Get.to(() =>Bab2_4()  ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
+        onSwipeKanan: ()=> Get.to(() =>Bab3_0() ,transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
 
         child: Container(
           height: double.infinity,
