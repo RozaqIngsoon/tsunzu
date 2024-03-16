@@ -6,6 +6,8 @@ import 'package:tsunzu/shared/gesture_ku.dart';
 import 'package:tsunzu/shared/no_halaman.dart';
 
 import '../shared/markdown_ku.dart';
+import 'bab1_1.dart';
+import 'bab1_3.dart';
 import 'halaman.dart';
 
 
@@ -24,12 +26,12 @@ class Bab1_2 extends StatelessWidget {
       drawerEnableOpenDragGesture: false,
       body: GestureKu(
         onSwipeKiri: () =>Get.to(
-              () => bab1_1,
+              () => Bab1_1(),
           transition: Transition.leftToRight,
           duration: Duration(seconds: 1),
         ),
         onSwipeKanan: ()=>Get.to(
-              () => bab1_3,
+              () => Bab1_3(),
           transition: Transition.rightToLeft,
           duration: Duration(seconds: 1),
         ),

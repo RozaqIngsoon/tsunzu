@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tsunzu/halaman/daftar_isi.dart';
 
+import '../shared/gesture_ku.dart';
 import 'halaman.dart';
 
 class Cover extends StatelessWidget {
@@ -12,13 +13,8 @@ class Cover extends StatelessWidget {
   Widget build(BuildContext context) {
     double lebar = double.infinity;
     double tinggi = double.infinity;
-    return GestureDetector(
-      onVerticalDragUpdate: (detail){},
-      onHorizontalDragUpdate: (detail) {
-        if(detail.delta.direction>0){
-          Get.to(() => DaftarIsi(),transition: Transition.rightToLeft, duration: Duration(seconds: 1));
-        }
-      },
+    return GestureKu(
+      onSwipeKanan: () =>Get.to(() => DaftarIsi(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
       child: Scaffold(
           body: Container(
               padding: EdgeInsets.all(8),
