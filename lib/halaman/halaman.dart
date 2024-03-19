@@ -112,10 +112,12 @@ import 'package:tsunzu/halaman/bab9_9.dart';
 import 'package:tsunzu/halaman/cover.dart';
 import 'package:tsunzu/halaman/daftar_isi.dart';
 import 'package:tsunzu/halaman/daftar_istilah.dart';
+import 'package:tsunzu/halaman/lastPage.dart';
 
 var cover = Cover();
 var daftarIsi = DaftarIsi();
 var daftarIstilah = DaftarIstilah();
+var lastPage = LastPage();
 //1
 Widget bab1_0 = Bab1_0();
 Widget bab1_1 = Bab1_1();
@@ -255,5 +257,7 @@ List<Widget> halaman =[
   bab10_0,bab10_1,bab10_2,bab10_3,bab10_4,bab10_5,bab10_6,bab10_7,bab10_8,bab10_9,
   bab11_0,bab11_1,bab11_2,bab11_3,bab11_4,bab11_5,bab11_6,bab11_7,bab11_8,bab11_9,bab11_10,bab11_11,bab11_12,bab11_13,bab11_14,bab11_15,bab11_16,bab11_17,
   bab12_0,bab12_1,bab12_2,bab12_3,bab12_4,bab12_5,
-  bab13_0,bab13_1,bab13_2,bab13_3,bab13_4,bab13_5,bab13_6,bab13_7
+  bab13_0,bab13_1,bab13_2,bab13_3,bab13_4,bab13_5,bab13_6,bab13_7,
+  daftarIstilah,
+  lastPage
 ];

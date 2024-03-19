@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tsunzu/halaman/bab2_5.dart';
 import 'package:tsunzu/halaman/bab3_1.dart';
-import 'package:tsunzu/halaman/halaman.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 
 class Bab3_0 extends StatelessWidget {

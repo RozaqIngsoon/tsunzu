@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:tsunzu/halaman/bab13_7.dart';
 import 'package:tsunzu/halaman/halaman.dart';
+import 'package:tsunzu/halaman/lastPage.dart';
+import 'package:tsunzu/shared/gesture_ku.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
 import '../shared/no_halaman.dart';
@@ -10,34 +14,39 @@ class DaftarIstilah extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-    return Scaffold(
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration: const BoxDecoration(
-          // color:Color(0xff1d2031) ,
-            color: Colors.blueGrey
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(child: Container(
-              padding: EdgeInsets.only(top: 25),
-              color: Colors.white.withOpacity(0.5),
-              child: MarkDownku(
-                teksData: teks,
-              ),
-            )),
-            NoHalaman(
-              pages: halaman,
-              itemOfPages: daftarIstilah,
-              bab: 'Daftar Istilah',
-              fungsiOpenDrawer: () => _scaffoldKey.currentState!.openDrawer(),
-            )
-          ],
-        ),
-      ),
+    return  GestureKu(
+      onSwipeKiri: () => Get.to(() => Bab13_7() ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
+      onSwipeKanan: ()=> Get.to(() => LastPage(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
 
+      child: Scaffold(
+        body: Container(
+          height: double.infinity,
+          width: double.infinity,
+          decoration: const BoxDecoration(
+            // color:Color(0xff1d2031) ,
+              color: Colors.blueGrey
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: Container(
+                padding: EdgeInsets.only(top: 25),
+                color: Colors.white.withOpacity(0.5),
+                child: MarkDownku(
+                  teksData: teks,
+                ),
+              )),
+              NoHalaman(
+                pages: halaman,
+                itemOfPages: daftarIstilah,
+                bab: 'Daftar Istilah',
+                fungsiOpenDrawer: () => _scaffoldKey.currentState!.openDrawer(),
+              )
+            ],
+          ),
+        ),
+
+      ),
     );
   }
 }

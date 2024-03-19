@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tsunzu/data/bab.dart';
+import 'package:tsunzu/halaman/bab11_5.dart';
+import 'package:tsunzu/halaman/bab11_7.dart';
 import 'package:tsunzu/halaman/halaman.dart';
+import 'package:tsunzu/shared/gesture_ku.dart';
 
 import '../shared/drawer_items.dart';
 import '../shared/markdown_ku.dart';
@@ -18,30 +22,35 @@ class Bab11_6 extends StatelessWidget {
         child: DrawerItems(),
       ),
       drawerEnableOpenDragGesture: false,
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration: const BoxDecoration(
-            // color:Color(0xff1d2031) ,
-            color: Colors.blueGrey),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-                child: Container(
-              padding: EdgeInsets.only(top: 30),
-              color: Colors.white.withOpacity(0.5),
-              child: MarkDownku(
-                teksData: dataSunZu['bab11_6'],
-              ),
-            )),
-            NoHalaman(
-              pages: halaman,
-              itemOfPages: bab11_6,
-              bab: 'Sembilan Situasi',
-              fungsiOpenDrawer: () => _scaffoldKey.currentState!.openDrawer(),
-            )
-          ],
+      body:  GestureKu(
+        onSwipeKiri: () => Get.to(() => Bab11_5() ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
+        onSwipeKanan: ()=> Get.to(() => Bab11_7(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
+
+        child: Container(
+          height: double.infinity,
+          width: double.infinity,
+          decoration: const BoxDecoration(
+              // color:Color(0xff1d2031) ,
+              color: Colors.blueGrey),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                  child: Container(
+                padding: EdgeInsets.only(top: 30),
+                color: Colors.white.withOpacity(0.5),
+                child: MarkDownku(
+                  teksData: dataSunZu['bab11_6'],
+                ),
+              )),
+              NoHalaman(
+                pages: halaman,
+                itemOfPages: bab11_6,
+                bab: 'Sembilan Situasi',
+                fungsiOpenDrawer: () => _scaffoldKey.currentState!.openDrawer(),
+              )
+            ],
+          ),
         ),
       ),
     );

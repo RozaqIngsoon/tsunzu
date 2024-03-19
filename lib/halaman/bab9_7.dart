@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tsunzu/data/bab.dart';
+import 'package:tsunzu/halaman/bab9_6.dart';
+import 'package:tsunzu/halaman/bab9_8.dart';
 import 'package:tsunzu/halaman/halaman.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 
@@ -21,8 +23,8 @@ class Bab9_7 extends StatelessWidget {
       ),
       drawerEnableOpenDragGesture: false,
       body: GestureKu(
-        onSwipeKiri: () => Get.to(() =>  ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
-        onSwipeKanan: ()=> Get.to(() => ,transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
+        onSwipeKiri: () => Get.to(() => Bab9_6() ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
+        onSwipeKanan: ()=> Get.to(() => Bab9_8() ,transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
 
         child: Container(
           height: double.infinity,
