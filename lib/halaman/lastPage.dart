@@ -13,11 +13,10 @@ class LastPage extends StatelessWidget {
     double lebar = double.infinity;
     double tinggi = double.infinity;
     final kontrol = Get.find<Kontroller>();
-    return  GestureKu(
-      onSwipeKiri: () => Get.to(() =>  DaftarIstilah(),transition: Transition.leftToRight, duration: Duration(seconds: 1),),
-
-      child: Scaffold(
-        body: Container(
+    return   Scaffold(
+        body: GestureKu(
+          onSwipeKiri: () => Get.to(() =>  DaftarIstilah(),transition: Transition.leftToRight, duration: Duration(seconds: 1),),
+          child:Container(
           padding: EdgeInsets.all(8),
           height: lebar,
           width: tinggi,

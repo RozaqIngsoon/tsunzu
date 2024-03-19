@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:tsunzu/halaman/daftar_isi.dart';
 
 import '../shared/gesture_ku.dart';
-import 'halaman.dart';
 
 class Cover extends StatelessWidget {
   const Cover({super.key});
@@ -13,10 +12,14 @@ class Cover extends StatelessWidget {
   Widget build(BuildContext context) {
     double lebar = double.infinity;
     double tinggi = double.infinity;
-    return GestureKu(
-      onSwipeKanan: () =>Get.to(() => DaftarIsi(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
-      child: Scaffold(
-          body: Container(
+    return Scaffold(
+      body: GestureKu(
+          onSwipeKanan: () => Get.to(
+                () => DaftarIsi(),
+                transition: Transition.rightToLeft,
+                duration: Duration(seconds: 1),
+              ),
+          child: Container(
               padding: EdgeInsets.all(8),
               height: lebar,
               width: tinggi,
@@ -24,7 +27,7 @@ class Cover extends StatelessWidget {
                   image: DecorationImage(
                       image: AssetImage('assets/background_1.png'),
                       fit: BoxFit.cover)),
-              child:  Column(
+              child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   SizedBox(
@@ -45,7 +48,10 @@ class Cover extends StatelessWidget {
                     child: Text(
                       'Art of War\nSun Tzu',
                       style: GoogleFonts.merienda(
-                        textStyle: TextStyle(color: Colors.yellow, fontSize: 65,fontWeight: FontWeight.bold),
+                        textStyle: TextStyle(
+                            color: Colors.yellow,
+                            fontSize: 65,
+                            fontWeight: FontWeight.bold),
                       ),
                       textAlign: TextAlign.center,
                     ),

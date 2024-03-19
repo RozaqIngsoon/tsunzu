@@ -1,6 +1,8 @@
 import 'dart:async';
 
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -27,6 +29,7 @@ class Kontroller extends GetxController {
       //timer disimpan setiap 5 detik
       if(timerValue.value % 5 == 0){
         saveTimerValue();
+        cekKoneksi();
       }
 
     });
@@ -50,9 +53,12 @@ class Kontroller extends GetxController {
     startTimer();
   }
 
+  //cek internet
+  var connectionStatus = ConnectivityResult.none.obs;
 
   @override
   void onInit() async {
+    cekKoneksi();
     await getBookmark();
     loadTimerValue();
     loadAdIntersitial();
@@ -140,6 +146,21 @@ class Kontroller extends GetxController {
             debugPrint('InterstitialAd failed to load: $error');
           },
         ));
+  }
+
+  //cek koneksi
+  Future<void> cekKoneksi() async {
+    late ConnectivityResult result;
+
+    try {
+      result = await (Connectivity().checkConnectivity());
+    } on PlatformException catch (e) {
+      debugPrint('Couldn\'t check connectivity status error: $e');
+      return;
+    }
+
+    connectionStatus.value = result;
+    // debugPrint('....connectionStatus.value : ${connectionStatus.value}');
   }
 
   ///end

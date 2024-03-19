@@ -14,22 +14,29 @@ class DaftarIstilah extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-    return  GestureKu(
-      onSwipeKiri: () => Get.to(() => Bab13_7() ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
-      onSwipeKanan: ()=> Get.to(() => LastPage(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
-
-      child: Scaffold(
-        body: Container(
+    return  Scaffold(
+        body: GestureKu(
+          onSwipeKiri: () => Get.to(
+                () => Bab13_7(),
+            transition: Transition.leftToRight,
+            duration: Duration(seconds: 1),
+          ),
+          onSwipeKanan: () => Get.to(
+                () => LastPage(),
+            transition: Transition.rightToLeft,
+            duration: Duration(seconds: 1),
+          ),
+          child:Container(
           height: double.infinity,
           width: double.infinity,
           decoration: const BoxDecoration(
-            // color:Color(0xff1d2031) ,
-              color: Colors.blueGrey
-          ),
+              // color:Color(0xff1d2031) ,
+              color: Colors.blueGrey),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(child: Container(
+              Expanded(
+                  child: Container(
                 padding: EdgeInsets.only(top: 25),
                 color: Colors.white.withOpacity(0.5),
                 child: MarkDownku(
@@ -45,7 +52,6 @@ class DaftarIstilah extends StatelessWidget {
             ],
           ),
         ),
-
       ),
     );
   }

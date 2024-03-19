@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,7 +19,6 @@ import 'package:tsunzu/halaman/cover.dart';
 import 'package:tsunzu/halaman/daftar_istilah.dart';
 import 'package:tsunzu/halaman/halaman.dart';
 import 'package:tsunzu/halaman/lastPage.dart';
-import 'package:tsunzu/kontroller.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 
 
@@ -44,19 +44,19 @@ class DaftarIsi extends StatelessWidget {
       );
     }
 
-    return GestureKu(
-      onSwipeKiri:()=>Get.to(
-            () => Cover(),
-        transition: Transition.leftToRight,
-        duration: Duration(seconds: 1),
-      ),
-      onSwipeKanan:()=>Get.to(
-            () => Bab1_0(),
-        transition: Transition.rightToLeft,
-        duration: Duration(seconds: 1),
-      ),
-      child: Scaffold(
-        body: Container(
+    return Scaffold(
+        body:  GestureKu(
+          onSwipeKiri:()=>Get.to(
+                () => Cover(),
+            transition: Transition.leftToRight,
+            duration: Duration(seconds: 1),
+          ),
+          onSwipeKanan:()=>Get.to(
+                () => Bab1_0(),
+            transition: Transition.rightToLeft,
+            duration: Duration(seconds: 1),
+          ),
+          child: Container(
           height: double.infinity,
           width: double.infinity,
           decoration: const BoxDecoration(
@@ -69,22 +69,22 @@ class DaftarIsi extends StatelessWidget {
                 color: Color(0xff1d2031),
               ),
               Expanded(
-                  child: Container(
-                    padding:
-                    const EdgeInsets.only(top: 35, bottom: 8, right: 8),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('  Daftar Isi',
-                            style: GoogleFonts.merienda(
-                              textStyle: TextStyle(
-                                  color: Colors.yellow,
-                                  fontSize: lebar / 18,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 1.0),
-                            )),
-                        Expanded(
-                          child: ListView(
+                child: Container(
+                  padding:
+                  const EdgeInsets.only(top: 35, bottom: 8, right: 8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('  Daftar Isi',
+                          style: GoogleFonts.merienda(
+                            textStyle: TextStyle(
+                                color: Colors.yellow,
+                                fontSize: lebar / 18,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 1.0),
+                          )),
+                      Expanded(
+                        child: ListView(
                             padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 20.0),
                             children: [
                               isi(
@@ -101,43 +101,43 @@ class DaftarIsi extends StatelessWidget {
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: '03. Strategi',
-                                  halaman: '0${halaman.indexOf(bab3_0)}',
+                                  halaman: '${halaman.indexOf(bab3_0)}',
                                   lompatke: () =>
                                       Get.to(() => Bab3_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: '04. Taktik',
-                                  halaman: '0${halaman.indexOf(bab4_0)}',
+                                  halaman: '${halaman.indexOf(bab4_0)}',
                                   lompatke: () =>
                                       Get.to(() => Bab4_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: '05. Energi',
-                                  halaman: '0${halaman.indexOf(bab5_0)}',
+                                  halaman: '${halaman.indexOf(bab5_0)}',
                                   lompatke: () =>
                                       Get.to(() => Bab5_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: '06. Titik Lemah dan Kuat',
-                                  halaman: '0${halaman.indexOf(bab6_0)}',
+                                  halaman: '${halaman.indexOf(bab6_0)}',
                                   lompatke: () =>
                                       Get.to(() => Bab6_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: '07. Manuver',
-                                  halaman: '0${halaman.indexOf(bab7_0)}',
+                                  halaman: '${halaman.indexOf(bab7_0)}',
                                   lompatke: () =>
                                       Get.to(() => Bab7_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: '08. Variasi Taktik',
-                                  halaman: '0${halaman.indexOf(bab8_0)}',
+                                  halaman: '${halaman.indexOf(bab8_0)}',
                                   lompatke: () =>
                                       Get.to(() => Bab8_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: '09. Pergerakan Pasukan',
-                                  halaman: '0${halaman.indexOf(bab9_0)}',
+                                  halaman: '${halaman.indexOf(bab9_0)}',
                                   lompatke: () =>
                                       Get.to(() => Bab9_0(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
@@ -167,22 +167,24 @@ class DaftarIsi extends StatelessWidget {
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: 'Daftar Istilah',
-                                  halaman: '0${halaman.indexOf(daftarIstilah)}',
+                                  halaman: '${halaman.indexOf(daftarIstilah)}',
                                   lompatke: () =>
                                       Get.to(() => DaftarIstilah(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                               isi(
                                   judul: 'Halaman Penutup',
-                                  halaman: '0${halaman.indexOf(lastPage)}',
+                                  halaman: '${halaman.indexOf(lastPage)}',
                                   lompatke: () =>
                                       Get.to(() => LastPage(), transition: Transition.rightToLeft,
                                         duration: Duration(seconds: 1),)),
                             ],
                           ),
-                        ),
-                      ],
-                    ),
-                  ))
+
+                      ),
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
