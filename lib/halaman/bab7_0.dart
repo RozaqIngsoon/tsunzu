@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tsunzu/halaman/bab6_9.dart';
+import 'package:tsunzu/halaman/bab7_1.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 
 class Bab7_0 extends StatelessWidget {
@@ -9,8 +11,8 @@ class Bab7_0 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureKu(
-      onSwipeKiri: () => Get.to(() =>  ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
-      onSwipeKanan: ()=> Get.to(() => ,transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
+      onSwipeKiri: () => Get.to(() => Bab6_9() ,transition: Transition.leftToRight, duration: Duration(seconds: 1),),
+      onSwipeKanan: ()=> Get.to(() => Bab7_1(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),),
       child: Scaffold(
         body: Container(
           height: double.infinity,
