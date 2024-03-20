@@ -5,7 +5,7 @@ Map bab13_4 = {
 ### Mereka tidak dapat dikelola dengan baik tanpa kebaikan hati dan kejujuran.
 ### Tanpa kecerdasan pikiran yang halus, seseorang tidak dapat memastikan kebenaran laporan mereka.
 ### Bersikaplah halus! bersikaplah halus! dan gunakan mata-matamu untuk segala jenis urusan.
-### Jika berita rahasia bocor oleh seorang mata-mata sebelum waktunya, dia harus dihukum mati bersama dengan 
+### Jika berita rahasia bocor oleh seorang mata-mata sebelum waktunya, dia
 
 '''
 };
