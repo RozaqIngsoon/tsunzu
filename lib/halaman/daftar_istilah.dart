@@ -31,14 +31,15 @@ class DaftarIstilah extends StatelessWidget {
           width: double.infinity,
           decoration: const BoxDecoration(
               // color:Color(0xff1d2031) ,
-              color: Colors.blueGrey),
+              color: Colors.blueGrey
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                   child: Container(
                 padding: EdgeInsets.only(top: 25),
-                color: Colors.white.withOpacity(0.5),
+                color: Colors.white.withOpacity(0.3),
                 child: MarkDownku(
                   teksData: teks,
                 ),
@@ -58,7 +59,7 @@ class DaftarIstilah extends StatelessWidget {
 }
 
 const String teks = '''
-## GLOSSARY
+## **GLOSSARY**
 ---
 ### * Deviasi
 #### Deviasi (menyimpang, penyimpangan) disini merujuk pada kemampuan untuk menyesuaikan diri, mengubah rencana, atau mengatasi situasi yang tidak sesuai dengan rencana awal.

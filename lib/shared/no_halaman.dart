@@ -70,9 +70,9 @@ Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,requ
         ),
 
         Text(
-          '${ kontrol.halSkg.value.toString().length < 2 ? "0${ kontrol.halSkg.value}" : {
+          '${ kontrol.halSkg.value.toString().length < 2 ? "0${ kontrol.halSkg.value}" :
             kontrol.halSkg.value
-            }} ',
+            } ',
           style: TextStyle(color: Colors.yellow, fontStyle: FontStyle.italic),
         )
       ],
