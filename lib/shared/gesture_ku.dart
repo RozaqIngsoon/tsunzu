@@ -22,12 +22,12 @@ class GestureKu extends StatelessWidget {
       onVerticalDragUpdate: (detail) {},
       onHorizontalDragUpdate: (detail) {
         //ke kiri
-        if (detail.delta.direction <= 0) {
+        if (detail.delta.direction <= 0 && onSwipeKiri!= null) {
           kontrol.tampilkanIklan();
           onSwipeKiri!();
         }
         //ke kanan
-        if (detail.delta.direction > 0) {
+        if (detail.delta.direction > 0 && onSwipeKanan!=null ) {
           kontrol.tampilkanIklan();
           onSwipeKanan!();
         }
