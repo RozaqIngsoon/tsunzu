@@ -1,9 +1,8 @@
 Map bab9_10 = {
    'bab9_10' :'''
-###  maka pasukan akan terhindar dari penyakit, dan ini akan membawa kemenangan.
-### Saat kamu sampai di sebuah bukit atau tebing, kuasai sisi yang terkena sinar matahari, dengan kemiringan ke belakang sebelah kananmu. Dengan cara ini, kamu akan memberikan keuntungan bagi para prajuritmu dan sekaligus memanfaatkan keunggulan alami dari tanah tersebut.
-### Ketika, akibat hujan deras di daerah hulu, sungai yang ingin kamu lintasi mengalami peluberan dan berbusa, kamu harus menunggu hingga air surut.
-### Daerah yang memiliki tebing curam dengan aliran deras di antara mereka, lubang alami yang dalam, tempat-tempat sempit, semak-semak yang berantakan, rawa-rawa, dan celah-celah harus segera ditinggalkan dan tidak mendekat.
-### Sementara kita menjauhi tempat-tempat
+### jika mereka tidak patuh, mereka akan menjadi tidak berguna. Sebaliknya, jika para prajurit sudah memiliki keterikatan denganmu dan tidak dikenakan hukuman, mereka juga dapat menjadi tidak efektif.
+### Maka, penting untuk memperlakukan prajurit dengan kemanusiaan dari awal, tetapi tetap menjaga kendali melalui penerapan disiplin yang ketat. Pendekatan ini merupakan jalan yang pasti menuju kemenangan.
+### Dalam melatih prajurit, penting untuk konsisten dalam menegakkan perintah-perintah. Jika ini dilakukan, tentara akan memiliki tingkat disiplin yang baik. Sebaliknya, jika tidak konsisten, tingkat disiplin dapat menjadi buruk.
+### Jika seorang jenderal menunjukkan keyakinan pada anak buahnya dan tetap tegas agar perintahnya diikuti, maka hubungan ini akan membawa keuntungan bersama.
 '''
 };

@@ -95,8 +95,8 @@ class Kontroller extends GetxController {
 //atur iklan
 
   tampilkanIklan() {
-    //iklan tampil setiap 5 menit sekali
-    int menit5 = 60*5;
+    //iklan tampil setiap 4 menit sekali
+    int menit5 = 60*4;
     if(timerValue.value >= menit5 && interstitialAd != null){
       stopTimer();
       timerValue.value =0;
