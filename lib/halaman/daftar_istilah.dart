@@ -6,6 +6,7 @@ import 'package:tsunzu/halaman/lastPage.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 import 'package:tsunzu/shared/markdown_ku.dart';
 
+import '../shared/drawer_items.dart';
 import '../shared/no_halaman.dart';
 
 class DaftarIstilah extends StatelessWidget {
@@ -15,6 +16,11 @@ class DaftarIstilah extends StatelessWidget {
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
     return  Scaffold(
+      key: _scaffoldKey,
+      drawer: Drawer(
+        child: DrawerItems(),
+      ),
+      drawerEnableOpenDragGesture: false,
         body: GestureKu(
           onSwipeKiri: () => Get.to(
                 () => Bab13_7(),

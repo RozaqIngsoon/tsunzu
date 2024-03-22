@@ -102,6 +102,10 @@ class Kontroller extends GetxController {
       interstitialAd!.show();
       startTimer();
     }
+    if(interstitialAd == null){
+      interstitialAd?.dispose();
+      loadAdIntersitial();
+    }
   }
 
   //intersitial admob

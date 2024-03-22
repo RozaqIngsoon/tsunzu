@@ -19,7 +19,7 @@ Widget NoHalaman({required List<Widget> pages,  required Widget itemOfPages,requ
           ' $bab',
           style: TextStyle(color: Colors.yellow, fontStyle: FontStyle.italic),
         ),
-        Obx(()=> Text('${kontrol.timerValue.value}',style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic))),
+        // Obx(()=> Text('${kontrol.timerValue.value}',style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic))),
         InkWell(
           onTap: fungsiOpenDrawer,
           child: Container(
