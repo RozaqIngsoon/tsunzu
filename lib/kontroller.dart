@@ -13,7 +13,6 @@ class Kontroller extends GetxController {
   Color backgroundGelap = Color(0xff1d2031);
   Color backgroundTerang = Colors.blueGrey;
   String bookmark = 'PAGE_BOOKMARK'; //key di sharepreference
-  String hitungBaca = 'PAGE_TERBACA'; //key di sharepreference
   String coverBuku = 'assets/ikon_app.png';
   var bookmarkNo = 0.obs;
   var halSkg  = 0.obs;
