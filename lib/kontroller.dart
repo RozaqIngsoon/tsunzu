@@ -53,7 +53,7 @@ class Kontroller extends GetxController {
   }
 
   //cek internet
-  var connectionStatus = ConnectivityResult.none.obs;
+  var connectionStatus = false.obs;
 
   @override
   void onInit() async {
@@ -153,17 +153,16 @@ class Kontroller extends GetxController {
 
   //cek koneksi
   Future<void> cekKoneksi() async {
-    late ConnectivityResult result;
+    final List<ConnectivityResult> connectivityResult =
+    await (Connectivity().checkConnectivity());
 
-    try {
-      result = await (Connectivity().checkConnectivity());
-    } on PlatformException catch (e) {
-      debugPrint('Couldn\'t check connectivity status error: $e');
-      return;
+    if (connectivityResult.contains(ConnectivityResult.mobile) ||
+        connectivityResult.contains(ConnectivityResult.wifi)) {
+      connectionStatus.value = true;
+    }else{
+      connectionStatus.value = false;
     }
 
-    connectionStatus.value = result;
-    // debugPrint('....connectionStatus.value : ${connectionStatus.value}');
   }
 
   ///end

@@ -32,7 +32,7 @@ class GestureKu extends StatelessWidget {
           onSwipeKanan!();
         }
       },
-      child: Obx(() => kontrol.connectionStatus.value == ConnectivityResult.none
+      child: Obx(() => !kontrol.connectionStatus.value
           ? Container(
               height: double.infinity,
               width: double.infinity,
