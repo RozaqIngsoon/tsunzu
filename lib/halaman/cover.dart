@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:tsunzu/halaman/daftar_isi.dart';
+import 'package:tsunzu/kontroller.dart';
 
 import '../shared/gesture_ku.dart';
 
@@ -12,6 +14,7 @@ class Cover extends StatelessWidget {
   Widget build(BuildContext context) {
     double lebar = double.infinity;
     double tinggi = double.infinity;
+    final kontrol = Get.find<Kontroller>();
     return Scaffold(
       body: GestureKu(
           onSwipeKanan: () => Get.to(
@@ -78,8 +81,27 @@ class Cover extends StatelessWidget {
                   SizedBox(
                     height: 50,
                   ),
+                  // Obx(
+                  //       ()=> kontrol.bannerAd.value == null
+                  //       ? SizedBox()
+                  //       : SizedBox(
+                  //       width: kontrol.bannerAd.value!.size.width.toDouble(),
+                  //       height: kontrol.bannerAd.value!.size.height.toDouble(),
+                  //       child: AdWidget(ad: kontrol.bannerAd.value!)),
+                  // ),
                 ],
               ))),
+      bottomNavigationBar: Container(
+        height: 50,
+        child:  Obx(
+              ()=> kontrol.bannerAd.value == null
+              ? SizedBox()
+              : SizedBox(
+              width: kontrol.bannerAd.value!.size.width.toDouble(),
+              height: kontrol.bannerAd.value!.size.height.toDouble(),
+              child: AdWidget(ad: kontrol.bannerAd.value!)),
+        ),
+      ),
     );
   }
 }

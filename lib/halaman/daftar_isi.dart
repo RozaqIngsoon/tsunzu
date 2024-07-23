@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:tsunzu/halaman/bab10_0.dart';
 import 'package:tsunzu/halaman/bab11_0.dart';
 import 'package:tsunzu/halaman/bab12_0.dart';
@@ -21,6 +22,8 @@ import 'package:tsunzu/halaman/halaman.dart';
 import 'package:tsunzu/halaman/lastPage.dart';
 import 'package:tsunzu/shared/gesture_ku.dart';
 
+import '../kontroller.dart';
+
 
 class DaftarIsi extends StatelessWidget {
   const DaftarIsi({super.key});
@@ -28,6 +31,7 @@ class DaftarIsi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var lebar = Get.width;
+    final kontrol = Get.find<Kontroller>();
     Widget isi({
       required String judul,
       required String halaman,
@@ -181,6 +185,14 @@ class DaftarIsi extends StatelessWidget {
                           ),
 
                       ),
+                      // Obx(
+                      //       ()=> kontrol.bannerAd.value == null
+                      //       ? SizedBox()
+                      //       : SizedBox(
+                      //       width: kontrol.bannerAd.value!.size.width.toDouble(),
+                      //       height: kontrol.bannerAd.value!.size.height.toDouble(),
+                      //       child: AdWidget(ad: kontrol.bannerAd.value!)),
+                      // )
                     ],
                   ),
                 ),
@@ -189,6 +201,19 @@ class DaftarIsi extends StatelessWidget {
           ),
         ),
       ),
+    bottomNavigationBar: Container(
+    height: 50,
+    child:
+      Obx(
+            ()=> kontrol.bannerAd.value == null
+            ? SizedBox()
+            : SizedBox(
+            width: kontrol.bannerAd.value!.size.width.toDouble(),
+            height: kontrol.bannerAd.value!.size.height.toDouble(),
+            child: AdWidget(ad: kontrol.bannerAd.value!)),
+      )
+    )
+
     );
   }
 }
