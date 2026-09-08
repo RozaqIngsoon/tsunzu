@@ -1,92 +1,241 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:tsunzu/halaman/bab13_7.dart';
-import 'package:tsunzu/halaman/halaman.dart';
-import 'package:tsunzu/halaman/lastPage.dart';
-import 'package:tsunzu/shared/gesture_ku.dart';
-import 'package:tsunzu/shared/markdown_ku.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../providers/reader_provider.dart';
+import '../theme/app_theme.dart';
 
-import '../shared/drawer_items.dart';
-import '../shared/no_halaman.dart';
+class GlossaryItem {
+  final String term;
+  final String definition;
+  final String? category;
 
-class DaftarIstilah extends StatelessWidget {
+  const GlossaryItem({
+    required this.term,
+    required this.definition,
+    this.category,
+  });
+}
+
+class DaftarIstilah extends ConsumerStatefulWidget {
   const DaftarIstilah({super.key});
 
   @override
+  ConsumerState<DaftarIstilah> createState() => _DaftarIstilahState();
+}
+
+class _DaftarIstilahState extends ConsumerState<DaftarIstilah> {
+  final TextEditingController _searchController = TextEditingController();
+  String _query = '';
+
+  static const List<GlossaryItem> allTerms = [
+    GlossaryItem(
+      term: 'Deviasi',
+      category: 'Strategi & Taktik',
+      definition: 'Kemampuan untuk menyesuaikan diri, mengubah rencana, atau mengatasi situasi yang tidak sesuai dengan proyeksi awal.',
+    ),
+    GlossaryItem(
+      term: 'Disposisi',
+      category: 'Militer',
+      definition: 'Pengorganisasian dan penempatan pasukan di medan perang (infanteri, kavaleri, pertahanan, komunikasi, logistik) serta penyesuaian taktis terhadap pergerakan musuh.',
+    ),
+    GlossaryItem(
+      term: 'Falcon (Alap-alap)',
+      category: 'Fauna Simbolik',
+      definition: 'Burung pemangsa dalam keluarga Falconidae, simbol kecepatan kilat dan ketepatan kalkulasi berburu tanpa ampun.',
+    ),
+    GlossaryItem(
+      term: 'Konstelasi di Bulan (Sieve, Wall, Wing, Cross-bar)',
+      category: 'Astronomi & Alam',
+      definition: 'Formasi geologis di permukaan Bulan yang digunakan dalam perumpamaan Sun Tzu:\n• Sieve: Area kawah-kawah kecil berdekatan (saringan).\n• Wall: Struktur panjang menjulang akibat patahan kerak Bulan.\n• Wing: Struktur menonjol akibat aliran lava mendingin.\n• Cross-bar: Palang melintang di atas kawah.',
+    ),
+    GlossaryItem(
+      term: 'Li',
+      category: 'Pengukuran Kuno',
+      definition: 'Satuan jarak tradisional Tiongkok. 1 Li setara dengan kurang lebih 500 meter.',
+    ),
+    GlossaryItem(
+      term: 'Picul',
+      category: 'Pengukuran Kuno',
+      definition: 'Satuan berat kuno Tiongkok untuk logistik (beras, perlengkapan). 1 picul setara dengan 133,33 pound atau sekitar 60,48 kilogram.',
+    ),
+    GlossaryItem(
+      term: 'Superstitious (Takhayul)',
+      category: 'Psikologi Pasukan',
+      definition: 'Keyakinan tanpa dasar rasional atau ilmiah. Sun Tzu menekankan agar komandan tidak terpengaruh takhayul dan pertanda gaib dalam mengambil keputusan perang.',
+    ),
+    GlossaryItem(
+      term: 'Yueh (Tentara Yueh)',
+      category: 'Sejarah Militer',
+      definition: 'Pasukan tangguh dari wilayah Yueh (Tiongkok kuno), dirujuk Sun Tzu sebagai contoh penerapan disiplin, formasi, dan prinsip taktis yang tangguh.',
+    ),
+  ];
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-    return  Scaffold(
-      key: _scaffoldKey,
-      drawer: Drawer(
-        child: DrawerItems(),
-      ),
-      drawerEnableOpenDragGesture: false,
-        body: GestureKu(
-          onSwipeKiri: () => Get.to(
-                () => Bab13_7(),
-            transition: Transition.leftToRight,
-            duration: Duration(seconds: 1),
-          ),
-          onSwipeKanan: () => Get.to(
-                () => LastPage(),
-            transition: Transition.rightToLeft,
-            duration: Duration(seconds: 1),
-          ),
-          child:Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: const BoxDecoration(
-              // color:Color(0xff1d2031) ,
-              color: Colors.blueGrey
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                  child: Container(
-                padding: EdgeInsets.only(top: 25),
-                color: Colors.white.withOpacity(0.3),
-                child: MarkDownku(
-                  teksData: teks,
-                ),
-              )),
-              NoHalaman(
-                pages: halaman,
-                itemOfPages: daftarIstilah,
-                bab: 'Daftar Istilah',
-                fungsiOpenDrawer: () => _scaffoldKey.currentState!.openDrawer(),
-              )
-            ],
+    final readerState = ref.watch(readerProvider);
+    final isDark = readerState.themeMode == ReaderThemeMode.dark;
+
+    final bgColor = isDark ? AppTheme.darkBackground : AppTheme.sepiaBackground;
+    final cardColor = isDark ? AppTheme.darkCard : AppTheme.sepiaCard;
+    final accentColor = isDark ? AppTheme.darkGold : AppTheme.sepiaVermilion;
+    final textColor = isDark ? AppTheme.darkTextPrimary : AppTheme.sepiaTextPrimary;
+    final subtitleColor = isDark ? AppTheme.darkTextSecondary : AppTheme.sepiaTextSecondary;
+    final borderColor = isDark ? AppTheme.darkBorder : AppTheme.sepiaBorder;
+
+    final filtered = allTerms.where((item) {
+      final q = _query.toLowerCase();
+      return item.term.toLowerCase().contains(q) ||
+          item.definition.toLowerCase().contains(q) ||
+          (item.category?.toLowerCase().contains(q) ?? false);
+    }).toList();
+
+    return Scaffold(
+      backgroundColor: bgColor,
+      appBar: AppBar(
+        backgroundColor: isDark ? AppTheme.darkSurface : AppTheme.sepiaSurface,
+        title: Text(
+          'Daftar Istilah',
+          style: GoogleFonts.cinzel(
+            color: accentColor,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.2,
           ),
         ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_new, color: accentColor),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
+      body: Column(
+        children: [
+          // Search box
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            color: isDark ? AppTheme.darkSurface : AppTheme.sepiaSurface,
+            child: TextField(
+              controller: _searchController,
+              onChanged: (val) => setState(() => _query = val),
+              style: TextStyle(color: textColor),
+              decoration: InputDecoration(
+                hintText: 'Cari istilah atau definisi...',
+                hintStyle: TextStyle(color: subtitleColor),
+                prefixIcon: Icon(Icons.search, color: accentColor),
+                suffixIcon: _query.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear, size: 18),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _query = '');
+                        },
+                      )
+                    : null,
+                filled: true,
+                fillColor: cardColor,
+                contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: borderColor),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: borderColor),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: BorderSide(color: accentColor),
+                ),
+              ),
+            ),
+          ),
+
+          Expanded(
+            child: filtered.isEmpty
+                ? Center(
+                    child: Text(
+                      'Tidak ada istilah yang cocok',
+                      style: TextStyle(color: subtitleColor, fontSize: 15),
+                    ),
+                  )
+                : ListView.builder(
+                    padding: const EdgeInsets.all(16),
+                    itemCount: filtered.length,
+                    itemBuilder: (context, index) {
+                      final item = filtered[index];
+                      return Container(
+                        margin: const EdgeInsets.only(bottom: 12),
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: cardColor,
+                          borderRadius: BorderRadius.circular(14),
+                          border: Border.all(color: borderColor),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Expanded(
+                                  child: Text(
+                                    item.term,
+                                    style: GoogleFonts.cinzel(
+                                      color: accentColor,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 0.8,
+                                    ),
+                                  ),
+                                ),
+                                if (item.category != null)
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 8,
+                                      vertical: 3,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: accentColor.withValues(alpha: 0.12),
+                                      borderRadius: BorderRadius.circular(8),
+                                      border: Border.all(
+                                        color: accentColor.withValues(alpha: 0.3),
+                                        width: 0.8,
+                                      ),
+                                    ),
+                                    child: Text(
+                                      item.category!,
+                                      style: TextStyle(
+                                        color: accentColor,
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ),
+                              ],
+                            ),
+                            const SizedBox(height: 8),
+                            const Divider(height: 1, thickness: 0.5),
+                            const SizedBox(height: 8),
+                            Text(
+                              item.definition,
+                              style: GoogleFonts.notoSerif(
+                                color: textColor,
+                                fontSize: 14.5,
+                                height: 1.6,
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+          ),
+        ],
       ),
     );
   }
 }
-
-const String teks = '''
-## **GLOSSARY**
----
-### * Deviasi
-#### Deviasi (menyimpang, penyimpangan) disini merujuk pada kemampuan untuk menyesuaikan diri, mengubah rencana, atau mengatasi situasi yang tidak sesuai dengan rencana awal.
-### * Disposisi 
-#### Dalam strategi militer, disposisi mencakup pemilihan dan penempatan pertahanan, penggunaan medan, dan penyesuaian taktis berdasarkan pergerakan musuh. Pemahaman yang baik tentang disposisi memungkinkan seorang komandan untuk merencanakan dan mengkoordinasikan serangan atau pertahanan dengan lebih baik. Disposisi melibatkan pengorganisasian dan penempatan pasukan di lapangan perang, termasuk posisi infanteri, kavaleri, artileri, serta elemen-elemen pendukung seperti logistik dan komunikasi.
-### * Falcon 
-#### Burung falcon (Alap-alap) merujuk pada sekelompok burung pemangsa dalam keluarga Falconidae. Falcon terkenal karena kecepatan dan keterampilan berburu mereka. Beberapa spesies falcon digunakan dalam olahraga berburu dan disebut sebagai burung pemangsa yang terlatih.
-### * Konstelasi Sieve, Wall, Wing, dan Cross-bar di Bulan 
-#### Sieve, Wall, Wing, dan Cross-bar adalah istilah yang digunakan untuk mendeskripsikan beberapa formasi geologi yang menonjol di permukaan Bulan. Berikut penjelasannya:
-1) #### Sieve (saringan) adalah area di permukaan Bulan yang dipenuhi dengan kawah kecil dan berdekatan. Kawah-kawah ini terkesan seperti lubang pada saringan. Sieve sering ditemukan di dataran tinggi Bulan.
-2) #### Wall (tembok) adalah struktur yang panjang dan menjulang di permukaan Bulan. Wall biasanya terbentuk akibat patahan atau retakan di kerak Bulan. Contoh Wall yang terkenal adalah Hadley Rille dan Straight Wall.
-3) #### Wing (sayap) adalah struktur yang menonjol dari permukaan Bulan dan menyerupai sayap. Wing biasanya terbentuk akibat aliran lava yang mendingin dan mengeras. Contoh Wing yang terkenal adalah Promontorium Heraclides.
-4) #### Cross-bar (palang) adalah struktur yang melintang di atas kawah Bulan. Cross-bar biasanya terbentuk akibat material yang runtuh dari tepi kawah. Contoh Cross-bar yang terkenal adalah di kawah Tycho.
-### * Li
-#### Li merupakan satuan jarak. 1 li = 500 meter.
-### * Picul
-#### Picul merujuk pada satuan berat yang digunakan di Tiongkok tradisional. Sebuah picul setara dengan sekitar 133.33 pound atau sekitar 60.48 kilogram. Picul sering digunakan untuk mengukur berat barang dagangan, seperti beras atau rempah-rempah, dalam konteks sejarah perdagangan Tiongkok.
-### * Superstitious
-#### Superstitious adalah istilah yang digunakan untuk menggambarkan keyakinan atau sikap terhadap sesuatu yang tidak memiliki dasar ilmiah atau rasional, tetapi masih dipegang teguh oleh sebagian orang karena tradisi, kepercayaan turun-temurun, atau kebiasaan. Orang yang bersifat superstitious cenderung mempercayai bahwa tindakan atau kejadian kecil dapat memiliki pengaruh besar terhadap keberuntungan atau nasib mereka, tanpa adanya bukti yang kuat atau dasar ilmiah yang mendukung keyakinan tersebut.
-#### Contoh dari superstitious adalah ketakutan terhadap angka tertentu, melewati di bawah tangga, atau takut akan kucing hitam. Meskipun tidak ada bukti ilmiah yang mendukung bahwa hal-hal tersebut benar-benar membawa keberuntungan atau malapetaka, beberapa orang masih memegang keyakinan ini dan menghindari tindakan atau objek yang dianggap membawa sial.
-#### Superstisi juga bisa muncul dalam berbagai bentuk di berbagai budaya, dan sering kali dapat berubah seiring waktu. Meskipun banyak orang mungkin menyadari bahwa keyakinan superstitious mereka tidak didukung oleh fakta ilmiah, mereka tetap mempertahankannya karena merupakan bagian dari warisan budaya atau tradisi yang dipegang oleh masyarakat.
-### * Yueh
-#### Tentara Yueh adalah tentara yang sangat kuat dan bijaksana. Sun Tzu mencatat bahwa Tentara Yueh adalah contoh yang baik dalam penerapan prinsip-prinsip strategis dan taktis yang dijelaskan dalam karyanya.
-''';

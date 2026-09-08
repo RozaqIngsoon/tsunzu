@@ -1,148 +1,325 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
-import 'package:tsunzu/kontroller.dart';
-class Dukungan extends StatefulWidget {
-  const Dukungan({Key? key}) : super(key: key);
+import 'package:gal/gal.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:share_plus/share_plus.dart';
+import '../theme/app_theme.dart';
+
+class DukunganModal extends StatefulWidget {
+  const DukunganModal({super.key});
+
+  static Future<void> show(BuildContext context) {
+    return showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => const DukunganModal(),
+    );
+  }
 
   @override
-  State<Dukungan> createState() => _DukunganState();
+  State<DukunganModal> createState() => _DukunganModalState();
 }
 
-class _DukunganState extends State<Dukungan> {
-  bool dukunganlain = false;
+class _DukunganModalState extends State<DukunganModal> {
+  bool _isSaving = false;
+
+  Future<void> _simpanKeGaleri() async {
+    setState(() => _isSaving = true);
+    try {
+      final byteData = await rootBundle.load('assets/qris.jpg');
+      final bytes = byteData.buffer.asUint8List();
+
+      final hasAccess = await Gal.hasAccess();
+      if (!hasAccess) {
+        await Gal.requestAccess();
+      }
+
+      await Gal.putImageBytes(bytes, name: 'ingsoon_qris');
+
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          behavior: SnackBarBehavior.floating,
+          backgroundColor: Color(0xFF1E7E34),
+          content: Row(
+            children: [
+              Icon(Icons.check_circle, color: Colors.white),
+              SizedBox(width: 10),
+              Expanded(
+                  child: Text('QRIS Ingsoon berhasil disimpan ke galeri!')),
+            ],
+          ),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          behavior: SnackBarBehavior.floating,
+          backgroundColor: Colors.red.shade800,
+          content: Text('Gagal menyimpan gambar: $e'),
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _isSaving = false);
+    }
+  }
+
+  void _tampilkanGambarBesar(BuildContext context) {
+    showDialog(
+      context: context,
+      barrierColor: Colors.black.withValues(alpha: 0.85),
+      builder: (ctx) {
+        return Dialog(
+          backgroundColor: Colors.transparent,
+          insetPadding:
+              const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Container(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(ctx).size.width * 0.92,
+                  maxHeight: MediaQuery.of(ctx).size.height * 0.75,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppTheme.darkGold.withValues(alpha: 0.4),
+                      blurRadius: 25,
+                      spreadRadius: 4,
+                    ),
+                  ],
+                ),
+                padding: const EdgeInsets.all(16),
+                child: InteractiveViewer(
+                  minScale: 1.0,
+                  maxScale: 4.0,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Image.asset(
+                      'assets/qris.jpg',
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 0,
+                right: 0,
+                child: Material(
+                  color: Colors.black87,
+                  shape: const CircleBorder(),
+                  child: IconButton(
+                    icon:
+                        const Icon(Icons.close, color: Colors.white, size: 24),
+                    tooltip: 'Tutup',
+                    onPressed: () => Navigator.of(ctx).pop(),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    final kontrol = Get.find<Kontroller>();
     return Container(
-          padding: EdgeInsets.all(10),
-          margin: EdgeInsets.all(10),
-          decoration: BoxDecoration(
-              color: kontrol.backgroundGelap, border: Border.all(color: Colors.white)),
-          child: Scaffold(
-            backgroundColor: kontrol.backgroundGelap,
-            body: Column(
-              children: [
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: InkWell(
-                    onTap: ()=>Navigator.pop(context),
-                    child: Container(
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle,color: Colors.white
-                      ),
-                      child: Text('X',style: TextStyle(color: Colors.redAccent)),),
-                  ),
-                ),
-                Expanded(
-                  child: ListView(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image(image: AssetImage('assets/ikon_qris.png'), height: 15),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Text(
-                            'Ingsoon',
-                            style: TextStyle(fontSize: 18, color: Colors.white),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                      Divider(thickness: 1,),
-                      Text(
-                        'Hai...!,\nsupport ingsoon ya... 5000 perak dari kamu akan sangat berarti.',
-                        style: TextStyle( color: Colors.white),textAlign: TextAlign.left,
-                      ),
-                      Align(
-                        alignment: Alignment.bottomRight,
-                        child: Text('Terimakasih',style: TextStyle(color: Colors.white)),),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Divider(thickness: 1,),
-                      ListTile(
-                        title: Text(
-                          'i. Dengan 1 hp',
-                          style: TextStyle(fontSize: 16, color: Colors.white),
-                        ),
-                        subtitle: Text(
-                            'Simpan qris ingsoon dengan cara klik tombol dibawah ini :',
-                            style: TextStyle(color: Colors.white)),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Center(
-                        child: ElevatedButton(
-                            onPressed: () async {
-                              ByteData imageData = await rootBundle.load('assets/ingsoon_qris.png');
-                              Uint8List bytes = imageData.buffer.asUint8List();// get the image bytes
-                              String imageName = 'ingsoon_qris';//nama file
-
-                              final result = await ImageGallerySaver.saveImage(bytes, name: imageName);
-                              if (result['isSuccess']) {
-                                // Image saved successfully
-                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                                  content: Text('qris Ingsoon berhasil disimpan'),
-                                ));
-                              } else {
-                                // Image failed to save
-                                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                                  content: Text('Gagal menyimpan qris Ingsoon\nHarap ulangi lagi'),
-                                ));
-                              }
-                            },
-                            style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.green,
-                                foregroundColor: Colors.white,
-                                shadowColor: Colors.white,
-                                elevation: 3,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10.0)),
-                                fixedSize: const Size(250, 50)),
-                            child: Text(
-                              'Simpan QRIS Ingsoon ke galeri',
-                              textAlign: TextAlign.center,
-                            )),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      ListTile(
-                        subtitle: Text(
-                            'Kemudian scan qr "qris ingsoon" yang sudah ada di galeri hp menggunakan e-wallet / m-banking kesayangan kamu.',
-                            style: TextStyle(color: Colors.white)),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Divider(thickness: 1,),
-                      ListTile(
-                        title: Text(
-                          'ii. Dengan 2 hp',
-                          style: TextStyle(fontSize: 16, color: Colors.white),
-                        ),
-                        subtitle: Text(
-                            'Scan qris dibawah ini menggunakan e-wallet / m-banking dari hp lain',
-                            style: TextStyle(color: Colors.white)),
-                      ),
-                      Image(
-                        image: AssetImage('assets/ingsoon_qris.png'),
-                        height: 200,
-                      ),
-
-                    ],
-                  ),
-                ),
-              ],
+      padding: EdgeInsets.only(
+        top: 20,
+        left: 20,
+        right: 20,
+        bottom: MediaQuery.of(context).viewInsets.bottom + 24,
+      ),
+      decoration: const BoxDecoration(
+        color: AppTheme.darkSurface,
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+        border: Border(
+          top: BorderSide(color: AppTheme.darkGold, width: 1.5),
+        ),
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Drag handle
+          Center(
+            child: Container(
+              width: 48,
+              height: 4,
+              decoration: BoxDecoration(
+                color: Colors.white24,
+                borderRadius: BorderRadius.circular(2),
+              ),
             ),
-          ));
+          ),
+          const SizedBox(height: 16),
+
+          // Header
+          Row(
+            children: [
+              Image.asset('assets/ikon_qris.png', height: 20),
+              const SizedBox(width: 8),
+              Text(
+                'Dukungan Komunitas',
+                style: GoogleFonts.cinzel(
+                  color: AppTheme.darkGold,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Spacer(),
+              IconButton(
+                icon: const Icon(Icons.close, color: Colors.white70),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+            ],
+          ),
+          const Divider(color: AppTheme.darkBorder),
+          const SizedBox(height: 10),
+
+          Text(
+            'Buku ini gratis untuk semua pembaca. Kontribusi 5.000 perak dari Anda sangat berarti untuk memelihara server dan riset karya-karya klasik berikutnya.',
+            style: GoogleFonts.notoSerif(
+              color: AppTheme.darkTextSecondary,
+              fontSize: 14,
+              height: 1.5,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 16),
+
+          // QRIS Image with golden border (clickable to zoom)
+          GestureDetector(
+            onTap: () => _tampilkanGambarBesar(context),
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppTheme.darkGold.withValues(alpha: 0.2),
+                      blurRadius: 15,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.asset(
+                    'assets/qris.jpg',
+                    height: 200,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          GestureDetector(
+            onTap: () => _tampilkanGambarBesar(context),
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.zoom_in, size: 14, color: AppTheme.darkGold),
+                  const SizedBox(width: 4),
+                  Text(
+                    'Ketuk gambar untuk memperbesar',
+                    style: GoogleFonts.notoSerif(
+                      color: AppTheme.darkGold.withValues(alpha: 0.8),
+                      fontSize: 11,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // Actions
+          Row(
+            children: [
+              Expanded(
+                child: ElevatedButton.icon(
+                  onPressed: _isSaving ? null : _simpanKeGaleri,
+                  icon: _isSaving
+                      ? const SizedBox(
+                          width: 16,
+                          height: 16,
+                          child: CircularProgressIndicator(
+                              strokeWidth: 2, color: Colors.black),
+                        )
+                      : const Icon(Icons.download, color: Colors.black),
+                  label: Text(
+                    _isSaving ? 'Menyimpan...' : 'Simpan ke Galeri',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.black),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppTheme.darkGold,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              OutlinedButton.icon(
+                onPressed: () {
+                  SharePlus.instance.share(
+                    ShareParams(
+                      uri: Uri.parse(
+                        'https://play.google.com/store/apps/details?id=com.ingsoon.tsunzu',
+                      ),
+                      title: 'Seni Perang Sun Tzu',
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.share, color: AppTheme.darkGold),
+                label: const Text(
+                  'Bagikan',
+                  style: TextStyle(color: AppTheme.darkGold),
+                ),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: AppTheme.darkGold),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Text(
+            'Scan via e-wallet atau M-Banking apapun.',
+            style: TextStyle(color: Colors.grey.shade500, fontSize: 11),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Backward compatibility widget for any existing dialog invocation
+class Dukungan extends StatelessWidget {
+  const Dukungan({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const DukunganModal();
   }
 }

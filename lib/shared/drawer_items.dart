@@ -1,149 +1,153 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:tsunzu/halaman/daftar_istilah.dart';
-import 'package:tsunzu/halaman/lastPage.dart';
-import 'package:tsunzu/kontroller.dart';
 import '../halaman/daftar_isi.dart';
-import '../halaman/halaman.dart';
+import '../halaman/daftar_istilah.dart';
+import '../halaman/last_page.dart';
+import '../halaman/reader_screen.dart';
+import '../providers/reader_provider.dart';
+import '../theme/app_theme.dart';
 import 'dukungan.dart';
 
-class DrawerItems extends StatefulWidget {
-  const DrawerItems(
-      {super.key});
+class DrawerItems extends ConsumerWidget {
+  const DrawerItems({super.key});
 
   @override
-  State<DrawerItems> createState() => _DrawerItemsState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    final readerState = ref.watch(readerProvider);
+    final isDark = readerState.themeMode == ReaderThemeMode.dark;
+    final accentColor = isDark ? AppTheme.darkGold : AppTheme.sepiaVermilion;
 
-class _DrawerItemsState extends State<DrawerItems> {
-  final kontrol = Get.find<Kontroller>();
-
-  @override
-  Widget build(BuildContext context) {
-
-
-    UserAccountsDrawerHeader drawerHeader = UserAccountsDrawerHeader(
-      decoration: BoxDecoration(
-        color: kontrol.backgroundGelap,
-      ),
-      accountName: Text('Seni Perang Sun Tzu'),
-      accountEmail:  Text('Buku strategi perang dari Tiongkok kuno'),
-      currentAccountPicture:  CircleAvatar(
-        backgroundColor: Colors.white,
-        child: Image(image: AssetImage(kontrol.coverBuku)),
-      ),
-    );
-    return Column(
+    return Container(
+      color: isDark ? AppTheme.darkSurface : AppTheme.sepiaSurface,
+      child: Column(
         children: [
+          UserAccountsDrawerHeader(
+            decoration: BoxDecoration(
+              color: isDark ? AppTheme.darkBackground : AppTheme.sepiaCard,
+            ),
+            accountName: Text(
+              'Seni Perang Sun Tzu',
+              style: GoogleFonts.cinzel(
+                color: accentColor,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+            accountEmail: const Text(
+              'Buku strategi perang klasik Tiongkok',
+              style: TextStyle(fontSize: 12),
+            ),
+            currentAccountPicture: CircleAvatar(
+              backgroundColor: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Image.asset('assets/ikon_app.png'),
+              ),
+            ),
+          ),
           Expanded(
             child: ListView(
+              padding: EdgeInsets.zero,
               children: <Widget>[
-                drawerHeader,
-                ListTile(
-                  title:  Text('Ke penanda halaman : ${kontrol.bookmarkNo.value}'),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.blue,
+                if (readerState.bookmarkPage > 0) ...[
+                  ListTile(
+                    leading: const Icon(Icons.bookmark, color: Colors.amber),
+                    title: Text('Ke Penanda (Hal. ${readerState.bookmarkPage})'),
+                    trailing: const Icon(Icons.arrow_forward_ios, size: 14),
+                    onTap: () {
+                      Navigator.of(context).pop();
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => ReaderScreen(initialPage: readerState.bookmarkPage),
+                        ),
+                      );
+                    },
                   ),
+                  ListTile(
+                    leading: const Icon(Icons.bookmark_remove, color: Colors.redAccent),
+                    title: const Text('Hapus Penanda'),
+                    onTap: () {
+                      ref.read(readerProvider.notifier).removeBookmark();
+                      Navigator.of(context).pop();
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          duration: Duration(seconds: 1),
+                          content: Text('Penanda halaman dihapus'),
+                        ),
+                      );
+                    },
+                  ),
+                  const Divider(),
+                ],
+                ListTile(
+                  leading: Icon(Icons.list_alt, color: accentColor),
+                  title: const Text('Daftar Isi'),
+                  trailing: const Icon(Icons.arrow_forward_ios, size: 14),
                   onTap: () {
-                    Get.to(() => halaman[kontrol.bookmarkNo.value],transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Scaffold.of(context).closeDrawer();
+                    Navigator.of(context).pop();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const DaftarIsi()),
+                    );
                   },
                 ),
-                const Divider(),
                 ListTile(
-                  title:  Text('Hapus penanda'),
-                  trailing: Icon(
-                    Icons.bookmark_remove,
-                    color: Colors.blue,
-                  ),
+                  leading: Icon(Icons.menu_book, color: accentColor),
+                  title: const Text('Daftar Istilah'),
+                  subtitle: const Text('Glosarium kata & istilah khusus'),
+                  trailing: const Icon(Icons.arrow_forward_ios, size: 14),
                   onTap: () {
-                    kontrol.setBookmark(0);
-                    kontrol.bookmarkNo.value = 0;
-                    kontrol.update();
-                    Scaffold.of(context).closeDrawer();
+                    Navigator.of(context).pop();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const DaftarIstilah()),
+                    );
                   },
                 ),
-                const Divider(),
                 ListTile(
-                  title: Text('Daftar Isi'),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.blue,
-                  ),
+                  leading: Icon(Icons.flag, color: accentColor),
+                  title: const Text('Halaman Penutup'),
+                  trailing: const Icon(Icons.arrow_forward_ios, size: 14),
                   onTap: () {
-                    Get.to(() => DaftarIsi(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Scaffold.of(context).closeDrawer();
+                    Navigator.of(context).pop();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const LastPage()),
+                    );
                   },
                 ),
-                const Divider(),
-                ListTile(
-                  title: Text('Halaman glossary'),
-                  subtitle: Text('daftar kata-kata atau istilah khusus'),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.blue,
-                  ),
-                  onTap: () {
-                    Get.to(() => DaftarIstilah(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Scaffold.of(context).closeDrawer();
-                  },
-                ),
-                const Divider(),
-                ListTile(
-                  title: Text('Halaman penutup'),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.blue,
-                  ),
-                  onTap: () {
-                    Get.to(() => LastPage(),transition: Transition.rightToLeft, duration: Duration(seconds: 1),);
-                    Scaffold.of(context).closeDrawer();
-                  },
-                ),
-                const Divider(),
               ],
             ),
           ),
-          Container(
-            height: 1,
-            color: Colors.white,
-          ),
+          const Divider(height: 1),
           ListTile(
-            tileColor: Colors.black12,
-            title: const Text(
-              "Bagikan app ini",
-            ),
-            trailing: const Icon(Icons.share, color: Colors.blue),
+            leading: const Icon(Icons.share, color: Colors.blue),
+            title: const Text('Bagikan Aplikasi'),
             onTap: () {
-              Share.share(
-                  'E-Book Seni Perang Sun Tzu :\nhttps://play.google.com/store/apps/details?id=com.ingsoon.tsunzu',
-                  subject: 'Seni Perang Sun Tzu');
-              Scaffold.of(context).closeDrawer();
-            },
-          ),
-          Container(
-            height: 1,
-            color: Colors.white,
-          ),
-          ListTile(
-            tileColor: Colors.black12,
-            title: const Text(
-              "Dukungan",
-            ),
-            trailing: const Icon(Icons.auto_awesome, color: Colors.blue),
-            onTap: () async {
-              Scaffold.of(context).closeDrawer();
-              showDialog(
-                context: context,
-                barrierDismissible: true,
-                builder: (_) => const Dukungan(),
+              Navigator.of(context).pop();
+              SharePlus.instance.share(
+                ShareParams(
+                  text:
+                      'E-Book Seni Perang Sun Tzu :\nhttps://play.google.com/store/apps/details?id=com.ingsoon.tsunzu',
+                  subject: 'Seni Perang Sun Tzu',
+                ),
               );
             },
           ),
-
+          ListTile(
+            leading: const Icon(Icons.favorite, color: Colors.redAccent),
+            title: const Text('Dukungan Donasi'),
+            onTap: () {
+              Navigator.of(context).pop();
+              DukunganModal.show(context);
+            },
+          ),
+          const SizedBox(height: 12),
         ],
-      );
+      ),
+    );
   }
 }
